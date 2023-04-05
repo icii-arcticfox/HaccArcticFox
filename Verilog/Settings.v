@@ -1,6 +1,6 @@
 module Settings;
 
 
-/*[$^UseHardwareAcceleration true]*/
+  /*[$^UseHardwareAcceleration false]*/
 /*[$^RadiationValueWidth 32]*/
 endmodule

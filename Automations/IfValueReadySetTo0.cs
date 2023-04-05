@@ -7,8 +7,8 @@ public class IfValueReadySetTo0 : IfAutomation
 {
     protected override Dependencies Dependencies => new Dependencies
     {
-      Values.Get("UseHardwareAcceleration") //,
-			// Values.Get($"@{Module.ModuleName}.radiationValue.read.rising")
+      Values.Get("UseHardwareAcceleration"),
+			Values.Get($"@{Module.ModuleName}.radiationValue.read.rising")
     };
 
     protected override string IfClause()

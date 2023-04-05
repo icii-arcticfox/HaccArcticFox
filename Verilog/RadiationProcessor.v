@@ -416,7 +416,6 @@ reg [31:0] countAmount;
 
 
 
-
 //MBHERE fix lines 122 and 130
 /*[always valueReady]*//*<>:*/
 always@(posedge clk)/*:<>*/  begin
@@ -426,6 +425,7 @@ always@(posedge clk)/*:<>*/  begin
 /*<>*/        valueReady <= 0;
     // else if(/*[$radiationValue.read.rising]*/) /*[IfValueReadySetTo0]*/
     else if(
+/*<>*//*$-*/ risingRadiationValueRead /*-$*/ ) /*[IfValueReadySetTo0]*/
         /*[<= 0]*/
 /*<>*/        valueReady <= 0;
     else if(sendNextValue)

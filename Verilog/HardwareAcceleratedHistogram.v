@@ -130,6 +130,14 @@ end
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg [9:0] histogramReadAddress;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        histogramReadAddress <= 0;
+/*<>*/    else if(/*[$histogramReadAddress.write]*//*<>:*/ histogramReadAddress_Write/*:<>*/)
+/*<>*/        histogramReadAddress <= /*[$histogramReadAddress.writeValue]*//*<>:*/ histogramReadAddress_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        histogramReadAddress <= histogramReadAddress;
+/*<>*/end
 /*<>*///***Base:     $histogramReadAddress
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$histogramReadAddress.write]*/
@@ -141,14 +149,6 @@ reg [9:0] histogramReadAddress;
 /*<>*//*[$histogramReadAddress.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived]
 /*<>*/    wire histogramReadAddress_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        histogramReadAddress <= 0;
-/*<>*/    else if(/*[$histogramReadAddress.write]*//*<>:*/ histogramReadAddress_Write/*:<>*/)
-/*<>*/        histogramReadAddress <= /*[$histogramReadAddress.writeValue]*//*<>:*/ histogramReadAddress_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        histogramReadAddress <= histogramReadAddress;
-/*<>*/end
 
 /*[External]*/
 /*<>*///[AxiReg:RadiationReceiver]

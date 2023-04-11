@@ -7,38 +7,38 @@ module RadiationReceiver(
 /*<>*/    output requestEthernetValues,
 /*<>*/    /*[.RadiationProcessor]*/
 /*<>*/    output valueReady,
-/*~<>*/    //[Clock Secondary]
-/*~<>*/    input wire S_AXI_ACLK,
-/*~<>*/    //[Reset --activeLow]
-/*~<>*/    input wire   S_AXI_ARESETN,
-/*~<>*/    input wire   [5 : 0] S_AXI_AWADDR,
-/*~<>*/    input wire   [2 : 0] S_AXI_AWPROT,
-/*~<>*/    input wire   S_AXI_AWVALID,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  S_AXI_AWREADY,
-/*~<>*/    input wire   [31:0] S_AXI_WDATA,
-/*~<>*/    input wire   [3:0] S_AXI_WSTRB,
-/*~<>*/    input wire   S_AXI_WVALID,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  S_AXI_WREADY,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  [1 : 0] S_AXI_BRESP,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  S_AXI_BVALID,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    input wire   S_AXI_BREADY,
-/*~<>*/    input wire   [5 : 0] S_AXI_ARADDR,
-/*~<>*/    input wire   [2 : 0] S_AXI_ARPROT,
-/*~<>*/    input wire   S_AXI_ARVALID,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  S_AXI_ARREADY,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  [31:0] S_AXI_RDATA,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  [1 : 0] S_AXI_RRESP,
-/*~<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
-/*~<>*/    output wire  S_AXI_RVALID,
-/*~<>*/    input wire   S_AXI_RREADY,
+/*<>*/    //[Clock Secondary]
+/*<>*/    input wire S_AXI_ACLK,
+/*<>*/    //[Reset --activeLow]
+/*<>*/    input wire   S_AXI_ARESETN,
+/*<>*/    input wire   [5 : 0] S_AXI_AWADDR,
+/*<>*/    input wire   [2 : 0] S_AXI_AWPROT,
+/*<>*/    input wire   S_AXI_AWVALID,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  S_AXI_AWREADY,
+/*<>*/    input wire   [31:0] S_AXI_WDATA,
+/*<>*/    input wire   [3:0] S_AXI_WSTRB,
+/*<>*/    input wire   S_AXI_WVALID,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  S_AXI_WREADY,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  [1 : 0] S_AXI_BRESP,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  S_AXI_BVALID,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    input wire   S_AXI_BREADY,
+/*<>*/    input wire   [5 : 0] S_AXI_ARADDR,
+/*<>*/    input wire   [2 : 0] S_AXI_ARPROT,
+/*<>*/    input wire   S_AXI_ARVALID,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  S_AXI_ARREADY,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  [31:0] S_AXI_RDATA,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  [1 : 0] S_AXI_RRESP,
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver]
+/*<>*/    output wire  S_AXI_RVALID,
+/*<>*/    input wire   S_AXI_RREADY,
     //[Clock 100 MHz]
     input clk,
 
@@ -46,15 +46,6 @@ module RadiationReceiver(
 );
 /*<>*///***Module start code
 /*<>*/Axi4ListSlaveInterface_RadiationReceiver axi4ListSlaveInterface_RadiationReceiver(
-/*<>*/    .S_AXI_AWREADY__OUTPUT(S_AXI_AWREADY),
-/*<>*/    .S_AXI_WREADY__OUTPUT(S_AXI_WREADY),
-/*<>*/    .S_AXI_BRESP__OUTPUT(S_AXI_BRESP),
-/*<>*/    .S_AXI_BVALID__OUTPUT(S_AXI_BVALID),
-/*<>*/    .S_AXI_BREADY__OUTPUT(S_AXI_BREADY),
-/*<>*/    .S_AXI_ARREADY__OUTPUT(S_AXI_ARREADY),
-/*<>*/    .S_AXI_RDATA__OUTPUT(S_AXI_RDATA),
-/*<>*/    .S_AXI_RRESP__OUTPUT(S_AXI_RRESP),
-/*<>*/    .S_AXI_RVALID__OUTPUT(S_AXI_RVALID),
 /*<>*/    .S_AXI_ACLK(S_AXI_ACLK),
 /*<>*/    .S_AXI_ARESETN(S_AXI_ARESETN),
 /*<>*/    .S_AXI_AWADDR(PUSHDOWN__S_AXI_AWADDR),
@@ -117,7 +108,16 @@ module RadiationReceiver(
 /*<>*/    .HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived),
 /*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_WriteReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_WriteReceived),
 /*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_Write__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_Write),
-/*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_ReadReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_ReadReceived)
+/*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_ReadReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_ReadReceived),
+/*<>*/    .S_AXI_AWREADY__OUTPUT(S_AXI_AWREADY),
+/*<>*/    .S_AXI_WREADY__OUTPUT(S_AXI_WREADY),
+/*<>*/    .S_AXI_BRESP__OUTPUT(S_AXI_BRESP),
+/*<>*/    .S_AXI_BVALID__OUTPUT(S_AXI_BVALID),
+/*<>*/    .S_AXI_BREADY__OUTPUT(S_AXI_BREADY),
+/*<>*/    .S_AXI_ARREADY__OUTPUT(S_AXI_ARREADY),
+/*<>*/    .S_AXI_RDATA__OUTPUT(S_AXI_RDATA),
+/*<>*/    .S_AXI_RRESP__OUTPUT(S_AXI_RRESP),
+/*<>*/    .S_AXI_RVALID__OUTPUT(S_AXI_RVALID)
 /*<>*/);
 /*<>*///***Start Routing Signals
 /*<>*/wire  RadiationReceiver__radiationProcessor1__valueReady;
@@ -251,58 +251,8 @@ module RadiationReceiver(
 /*<>*/    .histogramReadValue_Read(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_ReadReceived)
 /*~<>*/ );
 
-
-
-// /*[.RadiationProcessor]*/
-// wire [31:0] debugSource;
-
-// /*[.RadiationProcessor]*/
-// wire radiationMemoryWriteA;
-// /*[.RadiationProcessor]*/
-// wire [11:0] radiationMemoryAddressA;
-// /*[.RadiationProcessor]*/
-// wire [31:0] radiationMemoryDataInA;
-// /*[.RadiationProcessor]*/
-// wire radiationMemoryWriteB;
-// /*[.RadiationProcessor]*/
-// wire [11:0] radiationMemoryAddressB;
-// /*[.RadiationProcessor]*/
-// wire [31:0] radiationMemoryDataInB;
-
-// /*[.RadiationProcessor]*/
-// wire [31:0] ethernetValue;
-// /*[.RadiationProcessor]*/
-// wire [31:0] radiationValue;
-// /*[.RadiationProcessor]*/
-// wire [31:0] counter;
-
 /*[.HardwareAcceleratedHistogram]*/
 wire [15:0] histogramReadValue;
-
-
-/*[always leds]*//*<>:*/
-always@(posedge clk)/*:<>*/ begin
-    /*[<= histogramReadValue]*/
-/*<>*/    leds <= histogramReadValue;
-    // if(debugSource == 1)
-    //     /*[<= radiationMemoryWriteA]*/
-    // else if(debugSource == 2)
-    //     /*[<= radiationMemoryAddressA]*/
-    // else if(debugSource == 3)
-    //     /*[<= radiationMemoryDataInA]*/
-    // else if(debugSource == 4)
-    //     /*[<= radiationMemoryWriteB]*/
-    // else if(debugSource == 5)
-    //     /*[<= radiationMemoryAddressB]*/
-    // else if(debugSource == 6)
-    //     /*[<= radiationMemoryDataInB]*/
-    // else if(debugSource == 7)
-    //     /*[<= ethernetValue]*/
-    // else if(debugSource == 8)
-    //     /*[<= radiationValue]*/
-    // else if(debugSource == 9)
-    //     /*[<= counter]*/
-end
 
 /*<>*///***Module end code
 /*<>*/assign valueReady = RadiationReceiver__radiationProcessor1__valueReady;
@@ -327,15 +277,6 @@ endmodule
 /*<>*///[Check --reset]
 /*<>*///*** Reset: S_AXI_ARESETN, for module: Axi4ListSlaveInterface_RadiationReceiver
 /*<>*/module Axi4ListSlaveInterface_RadiationReceiver(
-/*<>*/    output  S_AXI_AWREADY__OUTPUT,
-/*<>*/    output  S_AXI_WREADY__OUTPUT,
-/*<>*/    output [1 : 0] S_AXI_BRESP__OUTPUT,
-/*<>*/    output  S_AXI_BVALID__OUTPUT,
-/*<>*/    output  S_AXI_BREADY__OUTPUT,
-/*<>*/    output  S_AXI_ARREADY__OUTPUT,
-/*<>*/    output [31:0] S_AXI_RDATA__OUTPUT,
-/*<>*/    output [1 : 0] S_AXI_RRESP__OUTPUT,
-/*<>*/    output  S_AXI_RVALID__OUTPUT,
 /*<>*/    input wire  S_AXI_ACLK,
 /*<>*/    input wire  S_AXI_ARESETN,
 /*<>*/    input wire [5 : 0] S_AXI_AWADDR,
@@ -398,7 +339,16 @@ endmodule
 /*<>*/    output  HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived__OUTPUT,
 /*<>*/    output  HardwareAcceleratedHistogram_histogramReadValue_WriteReceived__OUTPUT,
 /*<>*/    output [15:0] HardwareAcceleratedHistogram_histogramReadValue_Write__OUTPUT,
-/*<>*/    output  HardwareAcceleratedHistogram_histogramReadValue_ReadReceived__OUTPUT
+/*<>*/    output  HardwareAcceleratedHistogram_histogramReadValue_ReadReceived__OUTPUT,
+/*<>*/    output  S_AXI_AWREADY__OUTPUT,
+/*<>*/    output  S_AXI_WREADY__OUTPUT,
+/*<>*/    output [1 : 0] S_AXI_BRESP__OUTPUT,
+/*<>*/    output  S_AXI_BVALID__OUTPUT,
+/*<>*/    output  S_AXI_BREADY__OUTPUT,
+/*<>*/    output  S_AXI_ARREADY__OUTPUT,
+/*<>*/    output [31:0] S_AXI_RDATA__OUTPUT,
+/*<>*/    output [1 : 0] S_AXI_RRESP__OUTPUT,
+/*<>*/    output  S_AXI_RVALID__OUTPUT
 /*<>*/);
 /*<>*///***Module start code
 /*<>*/
@@ -1227,15 +1177,6 @@ endmodule
 /*<>*/        HardwareAcceleratedHistogram_histogramReadValue_Write <= HardwareAcceleratedHistogram_histogramReadValue_Write;
 /*<>*/end
 /*<>*///***Start Routing Signals
-/*<>*/assign S_AXI_AWREADY__OUTPUT = S_AXI_AWREADY;
-/*<>*/assign S_AXI_WREADY__OUTPUT = S_AXI_WREADY;
-/*<>*/assign S_AXI_BRESP__OUTPUT = S_AXI_BRESP;
-/*<>*/assign S_AXI_BVALID__OUTPUT = S_AXI_BVALID;
-/*<>*/assign S_AXI_BREADY__OUTPUT = S_AXI_BREADY;
-/*<>*/assign S_AXI_ARREADY__OUTPUT = S_AXI_ARREADY;
-/*<>*/assign S_AXI_RDATA__OUTPUT = S_AXI_RDATA;
-/*<>*/assign S_AXI_RRESP__OUTPUT = S_AXI_RRESP;
-/*<>*/assign S_AXI_RVALID__OUTPUT = S_AXI_RVALID;
 /*<>*/assign RadiationProcessor_debugSource_WriteReceived__OUTPUT = RadiationProcessor_debugSource_WriteReceived;
 /*<>*/assign RadiationProcessor_debugSource_Write__OUTPUT = RadiationProcessor_debugSource_Write;
 /*<>*/assign RadiationProcessor_debugSource_ReadReceived__OUTPUT = RadiationProcessor_debugSource_ReadReceived;
@@ -1274,4 +1215,13 @@ endmodule
 /*<>*/assign HardwareAcceleratedHistogram_histogramReadValue_WriteReceived__OUTPUT = HardwareAcceleratedHistogram_histogramReadValue_WriteReceived;
 /*<>*/assign HardwareAcceleratedHistogram_histogramReadValue_Write__OUTPUT = HardwareAcceleratedHistogram_histogramReadValue_Write;
 /*<>*/assign HardwareAcceleratedHistogram_histogramReadValue_ReadReceived__OUTPUT = HardwareAcceleratedHistogram_histogramReadValue_ReadReceived;
+/*<>*/assign S_AXI_AWREADY__OUTPUT = S_AXI_AWREADY;
+/*<>*/assign S_AXI_WREADY__OUTPUT = S_AXI_WREADY;
+/*<>*/assign S_AXI_BRESP__OUTPUT = S_AXI_BRESP;
+/*<>*/assign S_AXI_BVALID__OUTPUT = S_AXI_BVALID;
+/*<>*/assign S_AXI_BREADY__OUTPUT = S_AXI_BREADY;
+/*<>*/assign S_AXI_ARREADY__OUTPUT = S_AXI_ARREADY;
+/*<>*/assign S_AXI_RDATA__OUTPUT = S_AXI_RDATA;
+/*<>*/assign S_AXI_RRESP__OUTPUT = S_AXI_RRESP;
+/*<>*/assign S_AXI_RVALID__OUTPUT = S_AXI_RVALID;
 /*<>*/endmodule

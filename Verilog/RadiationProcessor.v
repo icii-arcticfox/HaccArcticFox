@@ -62,6 +62,14 @@ module RadiationProcessor(
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg [31:0] debugSource;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        debugSource <= 0;
+/*<>*/    else if(/*[$debugSource.write]*//*<>:*/ debugSource_Write/*:<>*/)
+/*<>*/        debugSource <= /*[$debugSource.writeValue]*//*<>:*/ debugSource_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        debugSource <= debugSource;
+/*<>*/end
 /*<>*///***Base:     $debugSource
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$debugSource.write]*/
@@ -73,19 +81,19 @@ reg [31:0] debugSource;
 /*<>*//*[$debugSource.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_debugSource_ReadReceived]
 /*<>*/    wire debugSource_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        debugSource <= 0;
-/*<>*/    else if(/*[$debugSource.write]*//*<>:*/ debugSource_Write/*:<>*/)
-/*<>*/        debugSource <= /*[$debugSource.writeValue]*//*<>:*/ debugSource_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        debugSource <= debugSource;
-/*<>*/end
 
 /*[External]*/
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg startReceivingData;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        startReceivingData <= 0;
+/*<>*/    else if(/*[$startReceivingData.write]*//*<>:*/ startReceivingData_Write/*:<>*/)
+/*<>*/        startReceivingData <= /*[$startReceivingData.writeValue]*//*<>:*/ startReceivingData_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        startReceivingData <= startReceivingData;
+/*<>*/end
 /*<>*///***Base:     $startReceivingData
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$startReceivingData.write]*/
@@ -97,14 +105,6 @@ reg startReceivingData;
 /*<>*//*[$startReceivingData.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_startReceivingData_ReadReceived]
 /*<>*/    wire startReceivingData_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        startReceivingData <= 0;
-/*<>*/    else if(/*[$startReceivingData.write]*//*<>:*/ startReceivingData_Write/*:<>*/)
-/*<>*/        startReceivingData <= /*[$startReceivingData.writeValue]*//*<>:*/ startReceivingData_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        startReceivingData <= startReceivingData;
-/*<>*/end
 
 
 //*********************************************************
@@ -115,6 +115,14 @@ reg startReceivingData;
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg [15:0] ethernetLoadFloor;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        ethernetLoadFloor <= 0;
+/*<>*/    else if(/*[$ethernetLoadFloor.write]*//*<>:*/ ethernetLoadFloor_Write/*:<>*/)
+/*<>*/        ethernetLoadFloor <= /*[$ethernetLoadFloor.writeValue]*//*<>:*/ ethernetLoadFloor_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        ethernetLoadFloor <= ethernetLoadFloor;
+/*<>*/end
 /*<>*///***Base:     $ethernetLoadFloor
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$ethernetLoadFloor.write]*/
@@ -126,14 +134,6 @@ reg [15:0] ethernetLoadFloor;
 /*<>*//*[$ethernetLoadFloor.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_ethernetLoadFloor_ReadReceived]
 /*<>*/    wire ethernetLoadFloor_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        ethernetLoadFloor <= 0;
-/*<>*/    else if(/*[$ethernetLoadFloor.write]*//*<>:*/ ethernetLoadFloor_Write/*:<>*/)
-/*<>*/        ethernetLoadFloor <= /*[$ethernetLoadFloor.writeValue]*//*<>:*/ ethernetLoadFloor_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        ethernetLoadFloor <= ethernetLoadFloor;
-/*<>*/end
 
 reg requestMoreValues;
 /*[always requestMoreValues]*//*<>:*/
@@ -152,24 +152,8 @@ always@(posedge clk)/*:<>*/ begin
 end
 
 /*[Counter --count 50 --start clearRequestEthernetValues]*/
+/*<>*///ISSUE: Trying to use a reset signal in module: RadiationProcessor, but it has not been identified yet. Perhaps a reset dependency should be added to the automation
 reg [7:0] ethernetHoldInterruptTimer;
-/*<>*///***Base:     $ethernetHoldInterruptTimer
-/*<>*///***Members:  $.countTo, $.start, $.done
-/*<>*//*[$ethernetHoldInterruptTimer.countTo 50]*/
-/*<>*//*[$ethernetHoldInterruptTimer.start clearRequestEthernetValues]*/
-/*<>*//*[$ethernetHoldInterruptTimer.done]*/ wire ethernetHoldInterruptTimerDone;
-/*<>*/assign ethernetHoldInterruptTimerDone = ethernetHoldInterruptTimer == 50;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        ethernetHoldInterruptTimer <= 0;
-/*<>*/    else
-/*<>*/    if(ethernetHoldInterruptTimerDone)
-/*<>*/        ethernetHoldInterruptTimer <= 0;
-/*<>*/    else if(clearRequestEthernetValues || (ethernetHoldInterruptTimer > 0))
-/*<>*/        ethernetHoldInterruptTimer <= ethernetHoldInterruptTimer + 1;
-/*<>*/    else
-/*<>*/        ethernetHoldInterruptTimer <= 0;
-/*<>*/end
 
 /*[Interrupt]*/
 reg requestEthernetValues;
@@ -221,6 +205,14 @@ wire clearRequestEthernetValues;
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg [31:0] ethernetValue;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        ethernetValue <= 0;
+/*<>*/    else if(/*[$ethernetValue.write]*//*<>:*/ ethernetValue_Write/*:<>*/)
+/*<>*/        ethernetValue <= /*[$ethernetValue.writeValue]*//*<>:*/ ethernetValue_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        ethernetValue <= ethernetValue;
+/*<>*/end
 /*<>*///***Base:     $ethernetValue
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$ethernetValue.write]*/
@@ -232,14 +224,6 @@ reg [31:0] ethernetValue;
 /*<>*//*[$ethernetValue.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_ethernetValue_ReadReceived]
 /*<>*/    wire ethernetValue_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        ethernetValue <= 0;
-/*<>*/    else if(/*[$ethernetValue.write]*//*<>:*/ ethernetValue_Write/*:<>*/)
-/*<>*/        ethernetValue <= /*[$ethernetValue.writeValue]*//*<>:*/ ethernetValue_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        ethernetValue <= ethernetValue;
-/*<>*/end
 /*[RisingEdge $ethernetValue.write]*/
 /*<>*//*[$ethernetValue.write.rising]*/
 wire risingEthernetValueWrite;
@@ -394,6 +378,14 @@ end
 /*<>*///[AxiReg:RadiationReceiver]
 /*[BasicAxiReadWrite]*/
 reg [31:0] countAmount;
+/*<>*/always@(posedge clk) begin
+/*<>*/    if(!reset)
+/*<>*/        countAmount <= 0;
+/*<>*/    else if(/*[$countAmount.write]*//*<>:*/ countAmount_Write/*:<>*/)
+/*<>*/        countAmount <= /*[$countAmount.writeValue]*//*<>:*/ countAmount_WriteValue/*:<>*/;
+/*<>*/    else
+/*<>*/        countAmount <= countAmount;
+/*<>*/end
 /*<>*///***Base:     $countAmount
 /*<>*///***Members:  $.write, $.writeValue, $.read
 /*<>*//*[$countAmount.write]*/
@@ -405,14 +397,6 @@ reg [31:0] countAmount;
 /*<>*//*[$countAmount.read]*/
 /*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_countAmount_ReadReceived]
 /*<>*/    wire countAmount_Read;
-/*<>*/always@(posedge clk) begin
-/*<>*/    if(!reset)
-/*<>*/        countAmount <= 0;
-/*<>*/    else if(/*[$countAmount.write]*//*<>:*/ countAmount_Write/*:<>*/)
-/*<>*/        countAmount <= /*[$countAmount.writeValue]*//*<>:*/ countAmount_WriteValue/*:<>*/;
-/*<>*/    else
-/*<>*/        countAmount <= countAmount;
-/*<>*/end
 
 
 
@@ -425,7 +409,6 @@ always@(posedge clk)/*:<>*/  begin
 /*<>*/        valueReady <= 0;
     // else if(/*[$radiationValue.read.rising]*/) /*[IfValueReadySetTo0]*/
     else if(
-/*<>*//*$-*/ risingRadiationValueRead /*-$*/ ) /*[IfValueReadySetTo0]*/
         /*[<= 0]*/
 /*<>*/        valueReady <= 0;
     else if(sendNextValue)
@@ -577,17 +560,6 @@ wire valueProcessingFinished;
 /*<>*///[AxiReg:RadiationReceiver]
 /*[Timer --start risingValueReady --stop valueProcessingFinished]*/
 reg [31:0] radiationTimer;
-/*<>*///***Base:     $radiationTimer
-/*<>*///***Members:  $.write, $.writeValue, $.read
-/*<>*//*[$radiationTimer.write]*/
-/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_WriteReceived]
-/*<>*/    wire radiationTimer_Write;
-/*<>*//*[$radiationTimer.writeValue]*/
-/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_Write]
-/*<>*/    wire [31:0] radiationTimer_WriteValue;
-/*<>*//*[$radiationTimer.read]*/
-/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_ReadReceived]
-/*<>*/    wire radiationTimer_Read;
 /*<>*/always@(posedge clk) begin
 /*<>*/    if(!reset)
 /*<>*/        radiationTimer <= 0;
@@ -601,6 +573,17 @@ reg [31:0] radiationTimer;
 /*<>*/    else
 /*<>*/        radiationTimer <= radiationTimer;
 /*<>*/end
+/*<>*///***Base:     $radiationTimer
+/*<>*///***Members:  $.write, $.writeValue, $.read
+/*<>*//*[$radiationTimer.write]*/
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_WriteReceived]
+/*<>*/    wire radiationTimer_Write;
+/*<>*//*[$radiationTimer.writeValue]*/
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_Write]
+/*<>*/    wire [31:0] radiationTimer_WriteValue;
+/*<>*//*[$radiationTimer.read]*/
+/*<>*/    //[.Axi4ListSlaveInterface_RadiationReceiver RadiationProcessor_radiationTimer_ReadReceived]
+/*<>*/    wire radiationTimer_Read;
 
 
 

@@ -1,0 +1,15 @@
+12:32:47 INFO  : Registering command handlers for Vitis TCF services
+12:32:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\HaccArcticFox\VitisProject\temp_xsdb_launch_script.tcl
+12:32:51 INFO  : Platform repository initialization has completed.
+12:32:52 INFO  : XSCT server has started successfully.
+12:32:52 INFO  : plnx-install-location is set to ''
+12:32:52 INFO  : Successfully done setting XSCT server connection channel  
+12:32:55 INFO  : Successfully done setting workspace for the tool. 
+12:32:55 INFO  : Successfully done query RDI_DATADIR 
+12:36:20 INFO  : Result from executing command 'getProjects': HaccPL_wrapper
+12:36:20 INFO  : Result from executing command 'getPlatforms': 
+12:36:21 INFO  : Platform 'HaccPL_wrapper' is added to custom repositories.
+12:36:35 INFO  : Platform 'HaccPL_wrapper' is added to custom repositories.
+12:47:14 INFO  : Result from executing command 'getProjects': HaccPL_wrapper
+12:47:14 INFO  : Result from executing command 'getPlatforms': HaccPL_wrapper|C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/HaccPL_wrapper.xpfm
+12:50:18 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...

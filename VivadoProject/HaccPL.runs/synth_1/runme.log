@@ -1,0 +1,1141 @@
+
+*** Running vivado
+    with args -log RadiationReceiver.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RadiationReceiver.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source RadiationReceiver.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1093.230 ; gain = 0.000
+Command: synth_design -top RadiationReceiver -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24752
+WARNING: [Synth 8-2611] redeclaration of ansi port clk is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:24]
+CRITICAL WARNING: [Synth 8-976] clk has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:24]
+CRITICAL WARNING: [Synth 8-2654] second declaration of clk ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:24]
+INFO: [Synth 8-994] clk is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:8]
+WARNING: [Synth 8-2611] redeclaration of ansi port reset is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:27]
+CRITICAL WARNING: [Synth 8-976] reset has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:27]
+CRITICAL WARNING: [Synth 8-2654] second declaration of reset ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:27]
+INFO: [Synth 8-994] reset is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:9]
+WARNING: [Synth 8-2611] redeclaration of ansi port valueReady is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:30]
+CRITICAL WARNING: [Synth 8-976] valueReady has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:30]
+CRITICAL WARNING: [Synth 8-2654] second declaration of valueReady ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:30]
+INFO: [Synth 8-994] valueReady is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:10]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValue is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:32]
+CRITICAL WARNING: [Synth 8-976] radiationValue has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:32]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValue ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:32]
+INFO: [Synth 8-994] radiationValue is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:11]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadAddress_Write is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:145]
+CRITICAL WARNING: [Synth 8-976] histogramReadAddress_Write has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:145]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadAddress_Write ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:145]
+INFO: [Synth 8-994] histogramReadAddress_Write is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadAddress_WriteValue is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:148]
+CRITICAL WARNING: [Synth 8-976] histogramReadAddress_WriteValue has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:148]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadAddress_WriteValue ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:148]
+INFO: [Synth 8-994] histogramReadAddress_WriteValue is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadAddress_Read is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:151]
+CRITICAL WARNING: [Synth 8-976] histogramReadAddress_Read has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:151]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadAddress_Read ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:151]
+INFO: [Synth 8-994] histogramReadAddress_Read is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:16]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadValue_Write is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:160]
+CRITICAL WARNING: [Synth 8-976] histogramReadValue_Write has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:160]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadValue_Write ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:160]
+INFO: [Synth 8-994] histogramReadValue_Write is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadValue_WriteValue is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:163]
+CRITICAL WARNING: [Synth 8-976] histogramReadValue_WriteValue has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:163]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadValue_WriteValue ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:163]
+INFO: [Synth 8-994] histogramReadValue_WriteValue is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:18]
+WARNING: [Synth 8-2611] redeclaration of ansi port histogramReadValue_Read is not allowed [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:166]
+CRITICAL WARNING: [Synth 8-976] histogramReadValue_Read has already been declared [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:166]
+CRITICAL WARNING: [Synth 8-2654] second declaration of histogramReadValue_Read ignored [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:166]
+INFO: [Synth 8-994] histogramReadValue_Read is declared here [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:19]
+WARNING: [Synth 8-2611] redeclaration of ansi port clk is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:58]
+CRITICAL WARNING: [Synth 8-976] clk has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:58]
+CRITICAL WARNING: [Synth 8-2654] second declaration of clk ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:58]
+INFO: [Synth 8-994] clk is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:9]
+WARNING: [Synth 8-2611] redeclaration of ansi port reset is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:59]
+CRITICAL WARNING: [Synth 8-976] reset has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:59]
+CRITICAL WARNING: [Synth 8-2654] second declaration of reset ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:59]
+INFO: [Synth 8-994] reset is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:10]
+WARNING: [Synth 8-2611] redeclaration of ansi port debugSource_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:77]
+CRITICAL WARNING: [Synth 8-976] debugSource_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:77]
+CRITICAL WARNING: [Synth 8-2654] second declaration of debugSource_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:77]
+INFO: [Synth 8-994] debugSource_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:23]
+WARNING: [Synth 8-2611] redeclaration of ansi port debugSource_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:80]
+CRITICAL WARNING: [Synth 8-976] debugSource_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:80]
+CRITICAL WARNING: [Synth 8-2654] second declaration of debugSource_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:80]
+INFO: [Synth 8-994] debugSource_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:24]
+WARNING: [Synth 8-2611] redeclaration of ansi port debugSource_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:83]
+CRITICAL WARNING: [Synth 8-976] debugSource_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:83]
+CRITICAL WARNING: [Synth 8-2654] second declaration of debugSource_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:83]
+INFO: [Synth 8-994] debugSource_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:25]
+WARNING: [Synth 8-2611] redeclaration of ansi port startReceivingData_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:101]
+CRITICAL WARNING: [Synth 8-976] startReceivingData_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:101]
+CRITICAL WARNING: [Synth 8-2654] second declaration of startReceivingData_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:101]
+INFO: [Synth 8-994] startReceivingData_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:26]
+WARNING: [Synth 8-2611] redeclaration of ansi port startReceivingData_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:104]
+CRITICAL WARNING: [Synth 8-976] startReceivingData_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:104]
+CRITICAL WARNING: [Synth 8-2654] second declaration of startReceivingData_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:104]
+INFO: [Synth 8-994] startReceivingData_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port startReceivingData_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:107]
+CRITICAL WARNING: [Synth 8-976] startReceivingData_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:107]
+CRITICAL WARNING: [Synth 8-2654] second declaration of startReceivingData_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:107]
+INFO: [Synth 8-994] startReceivingData_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:28]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetLoadFloor_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:130]
+CRITICAL WARNING: [Synth 8-976] ethernetLoadFloor_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:130]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetLoadFloor_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:130]
+INFO: [Synth 8-994] ethernetLoadFloor_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:29]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetLoadFloor_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:133]
+CRITICAL WARNING: [Synth 8-976] ethernetLoadFloor_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:133]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetLoadFloor_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:133]
+INFO: [Synth 8-994] ethernetLoadFloor_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:30]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetLoadFloor_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:136]
+CRITICAL WARNING: [Synth 8-976] ethernetLoadFloor_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:136]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetLoadFloor_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:136]
+INFO: [Synth 8-994] ethernetLoadFloor_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:31]
+WARNING: [Synth 8-2611] redeclaration of ansi port clearRequestEthernetValues_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:187]
+CRITICAL WARNING: [Synth 8-976] clearRequestEthernetValues_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:187]
+CRITICAL WARNING: [Synth 8-2654] second declaration of clearRequestEthernetValues_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:187]
+INFO: [Synth 8-994] clearRequestEthernetValues_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValue_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:220]
+CRITICAL WARNING: [Synth 8-976] ethernetValue_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:220]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValue_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:220]
+INFO: [Synth 8-994] ethernetValue_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValue_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:223]
+CRITICAL WARNING: [Synth 8-976] ethernetValue_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:223]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValue_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:223]
+INFO: [Synth 8-994] ethernetValue_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValue_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:226]
+CRITICAL WARNING: [Synth 8-976] ethernetValue_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:226]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValue_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:226]
+INFO: [Synth 8-994] ethernetValue_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:35]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValuesReceived_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:286]
+CRITICAL WARNING: [Synth 8-976] ethernetValuesReceived_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:286]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValuesReceived_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:286]
+INFO: [Synth 8-994] ethernetValuesReceived_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValuesReceived_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:289]
+CRITICAL WARNING: [Synth 8-976] ethernetValuesReceived_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:289]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValuesReceived_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:289]
+INFO: [Synth 8-994] ethernetValuesReceived_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port ethernetValuesReceived_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:292]
+CRITICAL WARNING: [Synth 8-976] ethernetValuesReceived_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:292]
+CRITICAL WARNING: [Synth 8-2654] second declaration of ethernetValuesReceived_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:292]
+INFO: [Synth 8-994] ethernetValuesReceived_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:38]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValue_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:320]
+CRITICAL WARNING: [Synth 8-976] radiationValue_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:320]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValue_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:320]
+INFO: [Synth 8-994] radiationValue_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:39]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValue_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:323]
+CRITICAL WARNING: [Synth 8-976] radiationValue_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:323]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValue_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:323]
+INFO: [Synth 8-994] radiationValue_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:40]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValue_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:326]
+CRITICAL WARNING: [Synth 8-976] radiationValue_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:326]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValue_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:326]
+INFO: [Synth 8-994] radiationValue_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:41]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValuesSent_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:356]
+CRITICAL WARNING: [Synth 8-976] radiationValuesSent_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:356]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValuesSent_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:356]
+INFO: [Synth 8-994] radiationValuesSent_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValuesSent_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:359]
+CRITICAL WARNING: [Synth 8-976] radiationValuesSent_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:359]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValuesSent_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:359]
+INFO: [Synth 8-994] radiationValuesSent_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationValuesSent_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:362]
+CRITICAL WARNING: [Synth 8-976] radiationValuesSent_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:362]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationValuesSent_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:362]
+INFO: [Synth 8-994] radiationValuesSent_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port countAmount_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:393]
+CRITICAL WARNING: [Synth 8-976] countAmount_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:393]
+CRITICAL WARNING: [Synth 8-2654] second declaration of countAmount_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:393]
+INFO: [Synth 8-994] countAmount_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:45]
+WARNING: [Synth 8-2611] redeclaration of ansi port countAmount_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:396]
+CRITICAL WARNING: [Synth 8-976] countAmount_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:396]
+CRITICAL WARNING: [Synth 8-2654] second declaration of countAmount_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:396]
+INFO: [Synth 8-994] countAmount_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:46]
+WARNING: [Synth 8-2611] redeclaration of ansi port countAmount_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:399]
+CRITICAL WARNING: [Synth 8-976] countAmount_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:399]
+CRITICAL WARNING: [Synth 8-2654] second declaration of countAmount_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:399]
+INFO: [Synth 8-994] countAmount_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:47]
+WARNING: [Synth 8-1102] /* in comment [C:/HaccArcticFox/Verilog/RadiationProcessor.v:412]
+WARNING: [Synth 8-2611] redeclaration of ansi port nextValueDelaySaved_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:497]
+CRITICAL WARNING: [Synth 8-976] nextValueDelaySaved_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:497]
+CRITICAL WARNING: [Synth 8-2654] second declaration of nextValueDelaySaved_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:497]
+INFO: [Synth 8-994] nextValueDelaySaved_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port nextValueDelaySaved_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:500]
+CRITICAL WARNING: [Synth 8-976] nextValueDelaySaved_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:500]
+CRITICAL WARNING: [Synth 8-2654] second declaration of nextValueDelaySaved_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:500]
+INFO: [Synth 8-994] nextValueDelaySaved_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:49]
+WARNING: [Synth 8-2611] redeclaration of ansi port nextValueDelaySaved_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:503]
+CRITICAL WARNING: [Synth 8-976] nextValueDelaySaved_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:503]
+CRITICAL WARNING: [Synth 8-2654] second declaration of nextValueDelaySaved_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:503]
+INFO: [Synth 8-994] nextValueDelaySaved_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:50]
+WARNING: [Synth 8-2611] redeclaration of ansi port valueProcessingFinished_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:542]
+CRITICAL WARNING: [Synth 8-976] valueProcessingFinished_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:542]
+CRITICAL WARNING: [Synth 8-2654] second declaration of valueProcessingFinished_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:542]
+INFO: [Synth 8-994] valueProcessingFinished_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:51]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationTimer_Write is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:580]
+CRITICAL WARNING: [Synth 8-976] radiationTimer_Write has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:580]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationTimer_Write ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:580]
+INFO: [Synth 8-994] radiationTimer_Write is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:52]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationTimer_WriteValue is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:583]
+CRITICAL WARNING: [Synth 8-976] radiationTimer_WriteValue has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:583]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationTimer_WriteValue ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:583]
+INFO: [Synth 8-994] radiationTimer_WriteValue is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port radiationTimer_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationProcessor.v:586]
+CRITICAL WARNING: [Synth 8-976] radiationTimer_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationProcessor.v:586]
+CRITICAL WARNING: [Synth 8-2654] second declaration of radiationTimer_Read ignored [C:/HaccArcticFox/Verilog/RadiationProcessor.v:586]
+INFO: [Synth 8-994] radiationTimer_Read is declared here [C:/HaccArcticFox/Verilog/RadiationProcessor.v:54]
+WARNING: [Synth 8-6901] identifier 'radiationValuesSent' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:145]
+WARNING: [Synth 8-6901] identifier 'ethernetValuesReceived' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:145]
+WARNING: [Synth 8-6901] identifier 'ethernetValuesReceived' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:146]
+WARNING: [Synth 8-6901] identifier 'clearRequestEthernetValues' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:166]
+WARNING: [Synth 8-6901] identifier 'radiationMemoryDataOutB' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:347]
+WARNING: [Synth 8-6901] identifier 'sendNextValue' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:369]
+WARNING: [Synth 8-6901] identifier 'sendNextValue' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:414]
+WARNING: [Synth 8-6901] identifier 'sendNextValue' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:436]
+WARNING: [Synth 8-6901] identifier 'radiationMemoryDataOutB' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:438]
+WARNING: [Synth 8-6901] identifier 'radiationMemoryAddressB' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:439]
+WARNING: [Synth 8-6901] identifier 'radiationMemoryAddressA' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:439]
+WARNING: [Synth 8-6901] identifier 'radiationMemoryAddressB' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:439]
+WARNING: [Synth 8-6901] identifier 'p1_radiationMemoryAddressA' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationProcessor.v:439]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__radiationValue is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:124]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_AWADDR is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:125]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_AWPROT is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:126]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_AWVALID is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:127]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_WDATA is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:128]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_WSTRB is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:129]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_WVALID is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:130]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_BREADY is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:131]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_ARADDR is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:132]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_ARPROT is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:133]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_ARVALID is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:134]
+WARNING: [Synth 8-992] PUSHDOWN__S_AXI_RREADY is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:135]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__debugSource is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:136]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__startReceivingData is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:137]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__ethernetLoadFloor is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:138]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__ethernetValue is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:139]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__ethernetValuesReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:140]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__radiationValuesSent is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:141]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__countAmount is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:142]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__nextValueDelaySaved is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:143]
+WARNING: [Synth 8-992] RadiationReceiver__radiationProcessor1__radiationTimer is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:144]
+CRITICAL WARNING: [Synth 8-976] RadiationReceiver__radiationProcessor1__radiationValue has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:145]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationReceiver__radiationProcessor1__radiationValue ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:145]
+INFO: [Synth 8-994] RadiationReceiver__radiationProcessor1__radiationValue is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:124]
+WARNING: [Synth 8-992] RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadAddress is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:146]
+WARNING: [Synth 8-992] RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:147]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:148]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:149]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:150]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:151]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:152]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:153]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetLoadFloor_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:154]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetLoadFloor_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:155]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetLoadFloor_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:156]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:157]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:158]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:159]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:160]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValuesReceived_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:161]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValuesReceived_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:162]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValuesReceived_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:163]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:164]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:165]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:166]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValuesSent_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:167]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValuesSent_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:168]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValuesSent_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:169]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_countAmount_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:170]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_countAmount_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:171]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_countAmount_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:172]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_nextValueDelaySaved_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:173]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_nextValueDelaySaved_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:174]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_nextValueDelaySaved_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:175]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:176]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationTimer_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:177]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationTimer_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:178]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationTimer_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:179]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:180]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:181]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:182]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_WriteReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:183]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_Write is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:184]
+WARNING: [Synth 8-992] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadValue_ReadReceived is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:185]
+WARNING: [Synth 8-992] histogramReadValue is already implicitly declared earlier [C:/HaccArcticFox/Verilog/RadiationReceiver.v:255]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_ACLK is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:360]
+CRITICAL WARNING: [Synth 8-976] S_AXI_ACLK has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:360]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_ACLK ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:360]
+INFO: [Synth 8-994] S_AXI_ACLK is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:280]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_ARESETN is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:363]
+CRITICAL WARNING: [Synth 8-976] S_AXI_ARESETN has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:363]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_ARESETN ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:363]
+INFO: [Synth 8-994] S_AXI_ARESETN is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:281]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_AWADDR is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:365]
+CRITICAL WARNING: [Synth 8-976] S_AXI_AWADDR has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:365]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_AWADDR ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:365]
+INFO: [Synth 8-994] S_AXI_AWADDR is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:282]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_AWPROT is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:367]
+CRITICAL WARNING: [Synth 8-976] S_AXI_AWPROT has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:367]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_AWPROT ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:367]
+INFO: [Synth 8-994] S_AXI_AWPROT is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:283]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_AWVALID is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:369]
+CRITICAL WARNING: [Synth 8-976] S_AXI_AWVALID has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:369]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_AWVALID ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:369]
+INFO: [Synth 8-994] S_AXI_AWVALID is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:284]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_WDATA is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:371]
+CRITICAL WARNING: [Synth 8-976] S_AXI_WDATA has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:371]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_WDATA ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:371]
+INFO: [Synth 8-994] S_AXI_WDATA is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:285]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_WSTRB is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:373]
+CRITICAL WARNING: [Synth 8-976] S_AXI_WSTRB has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:373]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_WSTRB ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:373]
+INFO: [Synth 8-994] S_AXI_WSTRB is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:286]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_WVALID is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:375]
+CRITICAL WARNING: [Synth 8-976] S_AXI_WVALID has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:375]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_WVALID ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:375]
+INFO: [Synth 8-994] S_AXI_WVALID is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:287]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_BREADY is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:377]
+CRITICAL WARNING: [Synth 8-976] S_AXI_BREADY has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:377]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_BREADY ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:377]
+INFO: [Synth 8-994] S_AXI_BREADY is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:288]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_ARADDR is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:379]
+CRITICAL WARNING: [Synth 8-976] S_AXI_ARADDR has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:379]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_ARADDR ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:379]
+INFO: [Synth 8-994] S_AXI_ARADDR is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:289]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_ARPROT is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:381]
+CRITICAL WARNING: [Synth 8-976] S_AXI_ARPROT has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:381]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_ARPROT ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:381]
+INFO: [Synth 8-994] S_AXI_ARPROT is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:290]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_ARVALID is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:383]
+CRITICAL WARNING: [Synth 8-976] S_AXI_ARVALID has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:383]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_ARVALID ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:383]
+INFO: [Synth 8-994] S_AXI_ARVALID is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:291]
+WARNING: [Synth 8-2611] redeclaration of ansi port S_AXI_RREADY is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:385]
+CRITICAL WARNING: [Synth 8-976] S_AXI_RREADY has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:385]
+CRITICAL WARNING: [Synth 8-2654] second declaration of S_AXI_RREADY ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:385]
+INFO: [Synth 8-994] S_AXI_RREADY is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:292]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_debugSource_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:411]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_debugSource_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:411]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_debugSource_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:411]
+INFO: [Synth 8-994] RadiationProcessor_debugSource_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:293]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_startReceivingData_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:427]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_startReceivingData_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:427]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_startReceivingData_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:427]
+INFO: [Synth 8-994] RadiationProcessor_startReceivingData_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:294]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_ethernetLoadFloor_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:443]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_ethernetLoadFloor_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:443]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_ethernetLoadFloor_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:443]
+INFO: [Synth 8-994] RadiationProcessor_ethernetLoadFloor_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:295]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_ethernetValue_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:471]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_ethernetValue_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:471]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_ethernetValue_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:471]
+INFO: [Synth 8-994] RadiationProcessor_ethernetValue_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:296]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_ethernetValuesReceived_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:487]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_ethernetValuesReceived_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:487]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_ethernetValuesReceived_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:487]
+INFO: [Synth 8-994] RadiationProcessor_ethernetValuesReceived_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:297]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_radiationValuesSent_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:503]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_radiationValuesSent_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:503]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_radiationValuesSent_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:503]
+INFO: [Synth 8-994] RadiationProcessor_radiationValuesSent_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:298]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_countAmount_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:519]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_countAmount_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:519]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_countAmount_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:519]
+INFO: [Synth 8-994] RadiationProcessor_countAmount_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:299]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_nextValueDelaySaved_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:535]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_nextValueDelaySaved_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:535]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_nextValueDelaySaved_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:535]
+INFO: [Synth 8-994] RadiationProcessor_nextValueDelaySaved_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:300]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_radiationTimer_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:563]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_radiationTimer_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:563]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_radiationTimer_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:563]
+INFO: [Synth 8-994] RadiationProcessor_radiationTimer_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:301]
+WARNING: [Synth 8-2611] redeclaration of ansi port RadiationProcessor_radiationValue_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:579]
+CRITICAL WARNING: [Synth 8-976] RadiationProcessor_radiationValue_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:579]
+CRITICAL WARNING: [Synth 8-2654] second declaration of RadiationProcessor_radiationValue_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:579]
+INFO: [Synth 8-994] RadiationProcessor_radiationValue_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:302]
+WARNING: [Synth 8-2611] redeclaration of ansi port HardwareAcceleratedHistogram_histogramReadAddress_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:595]
+CRITICAL WARNING: [Synth 8-976] HardwareAcceleratedHistogram_histogramReadAddress_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:595]
+CRITICAL WARNING: [Synth 8-2654] second declaration of HardwareAcceleratedHistogram_histogramReadAddress_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:595]
+INFO: [Synth 8-994] HardwareAcceleratedHistogram_histogramReadAddress_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:303]
+WARNING: [Synth 8-2611] redeclaration of ansi port HardwareAcceleratedHistogram_histogramReadValue_Read is not allowed [C:/HaccArcticFox/Verilog/RadiationReceiver.v:611]
+CRITICAL WARNING: [Synth 8-976] HardwareAcceleratedHistogram_histogramReadValue_Read has already been declared [C:/HaccArcticFox/Verilog/RadiationReceiver.v:611]
+CRITICAL WARNING: [Synth 8-2654] second declaration of HardwareAcceleratedHistogram_histogramReadValue_Read ignored [C:/HaccArcticFox/Verilog/RadiationReceiver.v:611]
+INFO: [Synth 8-994] HardwareAcceleratedHistogram_histogramReadValue_Read is declared here [C:/HaccArcticFox/Verilog/RadiationReceiver.v:304]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:396]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:396]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:407]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:407]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:414]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:414]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:425]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:425]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:430]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:430]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:441]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:441]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:446]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:446]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:458]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:458]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:469]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:469]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:474]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:474]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:485]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:485]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:490]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:490]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:501]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:501]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:506]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:506]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:517]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:517]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:522]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:522]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:533]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:533]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:538]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:538]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:550]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:550]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:561]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:561]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:566]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:566]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:577]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:577]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:582]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:582]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:593]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:593]
+WARNING: [Synth 8-6901] identifier 'slv_reg_wren' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:598]
+WARNING: [Synth 8-6901] identifier 'axi_awaddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:598]
+WARNING: [Synth 8-6901] identifier 'axi_araddr' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:609]
+WARNING: [Synth 8-6901] identifier 'axi_arready' is used before its declaration [C:/HaccArcticFox/Verilog/RadiationReceiver.v:609]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1093.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RadiationReceiver' [C:/HaccArcticFox/Verilog/RadiationReceiver.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Axi4ListSlaveInterface_RadiationReceiver' [C:/HaccArcticFox/Verilog/RadiationReceiver.v:279]
+INFO: [Synth 8-6155] done synthesizing module 'Axi4ListSlaveInterface_RadiationReceiver' (1#1) [C:/HaccArcticFox/Verilog/RadiationReceiver.v:279]
+WARNING: [Synth 8-6104] Input port 'S_AXI_BREADY' has an internal driver [C:/HaccArcticFox/Verilog/RadiationReceiver.v:116]
+INFO: [Synth 8-6157] synthesizing module 'RadiationProcessor' [C:/HaccArcticFox/Verilog/RadiationProcessor.v:8]
+INFO: [Synth 8-638] synthesizing module 'BRAM_16384_32' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/synth/BRAM_16384_32.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: BRAM_16384_32.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 16384 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 16384 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 16384 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 16384 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 14 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 14 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     27.553604 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/synth/BRAM_16384_32.vhd:245]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_16384_32' (12#1) [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/synth/BRAM_16384_32.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'RadiationProcessor' (13#1) [C:/HaccArcticFox/Verilog/RadiationProcessor.v:8]
+INFO: [Synth 8-6157] synthesizing module 'HardwareAcceleratedHistogram' [C:/HaccArcticFox/Verilog/HardwareAcceleratedHistogram.v:7]
+INFO: [Synth 8-638] synthesizing module 'BRAM_1024_16' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/synth/BRAM_1024_16.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: BRAM_1024_16.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 16 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.0361 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/synth/BRAM_1024_16.vhd:245]
+
+*** Running vivado
+    with args -log HaccPL_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HaccPL_wrapper.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source HaccPL_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.332 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx2/Vivado/2020.1/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1104.332 ; gain = 0.000
+Command: synth_design -top HaccPL_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26328
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_wrapper' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/hdl/HaccPL_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:13]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_RadiationReceiver_0_0' [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_RadiationReceiver_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_RadiationReceiver_0_0' (1#1) [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_RadiationReceiver_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_processing_system7_0_0' [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_processing_system7_0_0' (2#1) [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'HaccPL_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:172]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'HaccPL_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:172]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'HaccPL_processing_system7_0_0' has 66 connections declared, but only 64 given [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:172]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_ps7_0_axi_periph_0' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:314]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_4RUI1R' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:629]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_auto_pc_0' [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_auto_pc_0' (3#1) [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_4RUI1R' (4#1) [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:629]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_ps7_0_axi_periph_0' (5#1) [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:314]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_rst_ps7_0_50M_0' [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_rst_ps7_0_50M_0' (6#1) [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/.Xil/Vivado-17596-Sofia/realtime/HaccPL_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'HaccPL_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:301]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'HaccPL_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:301]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'HaccPL_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:301]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'HaccPL_rst_ps7_0_50M_0' is unconnected for instance 'rst_ps7_0_50M' [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:301]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'HaccPL_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:301]
+INFO: [Synth 8-6157] synthesizing module 'HaccPL_xlconcat_0_0' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_xlconcat_0_0/synth/HaccPL_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (7#1) [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_xlconcat_0_0' (8#1) [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_xlconcat_0_0/synth/HaccPL_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL' (9#1) [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/synth/HaccPL.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'HaccPL_wrapper' (10#1) [C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/hdl/HaccPL_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.039 ; gain = 14.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.039 ; gain = 14.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.039 ; gain = 14.707
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1119.039 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc] for cell 'HaccPL_i/processing_system7_0'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc:2]
+Finished Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc] for cell 'HaccPL_i/processing_system7_0'
+Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0_in_context.xdc] for cell 'HaccPL_i/RadiationReceiver_0'
+Finished Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0_in_context.xdc] for cell 'HaccPL_i/RadiationReceiver_0'
+Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0_in_context.xdc] for cell 'HaccPL_i/rst_ps7_0_50M'
+Finished Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0_in_context.xdc] for cell 'HaccPL_i/rst_ps7_0_50M'
+Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_auto_pc_0/HaccPL_auto_pc_0/HaccPL_auto_pc_0_in_context.xdc] for cell 'HaccPL_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_auto_pc_0/HaccPL_auto_pc_0/HaccPL_auto_pc_0_in_context.xdc] for cell 'HaccPL_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [C:/HaccArcticFox/VivadoProject/Constraints/ZyboTest.xdc]
+Finished Parsing XDC File [C:/HaccArcticFox/VivadoProject/Constraints/ZyboTest.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/HaccArcticFox/VivadoProject/Constraints/ZyboTest.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HaccPL_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HaccPL_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1164.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1164.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1164.699 ; gain = 60.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1164.699 ; gain = 60.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property DONT_TOUCH = true for HaccPL_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/RadiationReceiver_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/rst_ps7_0_50M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HaccPL_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1164.699 ; gain = 60.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1164.699 ; gain = 60.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1164.699 ; gain = 60.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1211.242 ; gain = 106.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1211.316 ; gain = 106.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1230.438 ; gain = 126.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |HaccPL_auto_pc_0              |         1|
+|2     |HaccPL_RadiationReceiver_0_0  |         1|
+|3     |HaccPL_processing_system7_0_0 |         1|
+|4     |HaccPL_rst_ps7_0_50M_0        |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |HaccPL_RadiationReceiver_0  |     1|
+|2     |HaccPL_auto_pc              |     1|
+|3     |HaccPL_processing_system7_0 |     1|
+|4     |HaccPL_rst_ps7_0_50M        |     1|
+|5     |OBUF                        |     4|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 1236.176 ; gain = 86.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.176 ; gain = 131.844
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1246.734 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:40 . Memory (MB): peak = 1258.469 ; gain = 154.137
+INFO: [Common 17-1381] The checkpoint 'C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/HaccPL_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HaccPL_wrapper_utilization_synth.rpt -pb HaccPL_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 12:27:09 2023...

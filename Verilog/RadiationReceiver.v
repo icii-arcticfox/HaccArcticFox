@@ -1,7 +1,7 @@
 //[ExternalGroup RadiationReceiver]
 //[ExternalConnection --axi4LiteSlave]
 /*<>*///[Axi4LiteSlave:RadiationReceiver --top]
-/*<>*///ARCITC FOX ISSUE: Cannot find any vendor projects linked to this Arctic Fox project
+/*<>*///Info: Cannot find block design XML file
 module RadiationReceiver(
 /*<>*/    /*[.RadiationProcessor]*/
 /*<>*/    output requestEthernetValues,
@@ -59,18 +59,18 @@ module RadiationReceiver(
 /*<>*/    .S_AXI_ARPROT(PUSHDOWN__S_AXI_ARPROT),
 /*<>*/    .S_AXI_ARVALID(PUSHDOWN__S_AXI_ARVALID),
 /*<>*/    .S_AXI_RREADY(PUSHDOWN__S_AXI_RREADY),
-/*<>*/    .RadiationProcessor_debugSource_Read(RadiationReceiver__radiationProcessor2__debugSource),
-/*<>*/    .RadiationProcessor_startReceivingData_Read(RadiationReceiver__radiationProcessor2__startReceivingData),
-/*<>*/    .RadiationProcessor_ethernetLoadFloor_Read(RadiationReceiver__radiationProcessor2__ethernetLoadFloor),
-/*<>*/    .RadiationProcessor_ethernetValue_Read(RadiationReceiver__radiationProcessor2__ethernetValue),
-/*<>*/    .RadiationProcessor_ethernetValuesReceived_Read(RadiationReceiver__radiationProcessor2__ethernetValuesReceived),
-/*<>*/    .RadiationProcessor_radiationValuesSent_Read(RadiationReceiver__radiationProcessor2__radiationValuesSent),
-/*<>*/    .RadiationProcessor_countAmount_Read(RadiationReceiver__radiationProcessor2__countAmount),
-/*<>*/    .RadiationProcessor_nextValueDelaySaved_Read(RadiationReceiver__radiationProcessor2__nextValueDelaySaved),
-/*<>*/    .RadiationProcessor_radiationTimer_Read(RadiationReceiver__radiationProcessor2__radiationTimer),
-/*<>*/    .RadiationProcessor_radiationValue_Read(RadiationReceiver__radiationProcessor2__radiationValue),
-/*<>*/    .HardwareAcceleratedHistogram_histogramReadAddress_Read(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadAddress),
-/*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_Read(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue),
+/*<>*/    .RadiationProcessor_debugSource_Read(RadiationReceiver__radiationProcessor1__debugSource),
+/*<>*/    .RadiationProcessor_startReceivingData_Read(RadiationReceiver__radiationProcessor1__startReceivingData),
+/*<>*/    .RadiationProcessor_ethernetLoadFloor_Read(RadiationReceiver__radiationProcessor1__ethernetLoadFloor),
+/*<>*/    .RadiationProcessor_ethernetValue_Read(RadiationReceiver__radiationProcessor1__ethernetValue),
+/*<>*/    .RadiationProcessor_ethernetValuesReceived_Read(RadiationReceiver__radiationProcessor1__ethernetValuesReceived),
+/*<>*/    .RadiationProcessor_radiationValuesSent_Read(RadiationReceiver__radiationProcessor1__radiationValuesSent),
+/*<>*/    .RadiationProcessor_countAmount_Read(RadiationReceiver__radiationProcessor1__countAmount),
+/*<>*/    .RadiationProcessor_nextValueDelaySaved_Read(RadiationReceiver__radiationProcessor1__nextValueDelaySaved),
+/*<>*/    .RadiationProcessor_radiationTimer_Read(RadiationReceiver__radiationProcessor1__radiationTimer),
+/*<>*/    .RadiationProcessor_radiationValue_Read(RadiationReceiver__radiationProcessor1__radiationValue),
+/*<>*/    .HardwareAcceleratedHistogram_histogramReadAddress_Read(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadAddress),
+/*<>*/    .HardwareAcceleratedHistogram_histogramReadValue_Read(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue),
 /*<>*/    .RadiationProcessor_debugSource_WriteReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_WriteReceived),
 /*<>*/    .RadiationProcessor_debugSource_Write__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_Write),
 /*<>*/    .RadiationProcessor_debugSource_ReadReceived__OUTPUT(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_ReadReceived),
@@ -120,8 +120,8 @@ module RadiationReceiver(
 /*<>*/    .S_AXI_RVALID__OUTPUT(S_AXI_RVALID)
 /*<>*/);
 /*<>*///***Start Routing Signals
-/*<>*/wire  RadiationReceiver__radiationProcessor2__valueReady;
-/*<>*/wire [9:0] RadiationReceiver__radiationProcessor2__radiationValue;
+/*<>*/wire  RadiationReceiver__radiationProcessor1__valueReady;
+/*<>*/wire [9:0] RadiationReceiver__radiationProcessor1__radiationValue;
 /*<>*/wire [5 : 0] PUSHDOWN__S_AXI_AWADDR;
 /*<>*/wire [2 : 0] PUSHDOWN__S_AXI_AWPROT;
 /*<>*/wire  PUSHDOWN__S_AXI_AWVALID;
@@ -133,18 +133,18 @@ module RadiationReceiver(
 /*<>*/wire [2 : 0] PUSHDOWN__S_AXI_ARPROT;
 /*<>*/wire  PUSHDOWN__S_AXI_ARVALID;
 /*<>*/wire  PUSHDOWN__S_AXI_RREADY;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__debugSource;
-/*<>*/wire  RadiationReceiver__radiationProcessor2__startReceivingData;
-/*<>*/wire [15:0] RadiationReceiver__radiationProcessor2__ethernetLoadFloor;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__ethernetValue;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__ethernetValuesReceived;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__radiationValuesSent;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__countAmount;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__nextValueDelaySaved;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__radiationTimer;
-/*<>*/wire [31:0] RadiationReceiver__radiationProcessor2__radiationValue;
-/*<>*/wire [9:0] RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadAddress;
-/*<>*/wire [15:0] RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__debugSource;
+/*<>*/wire  RadiationReceiver__radiationProcessor1__startReceivingData;
+/*<>*/wire [15:0] RadiationReceiver__radiationProcessor1__ethernetLoadFloor;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__ethernetValue;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__ethernetValuesReceived;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__radiationValuesSent;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__countAmount;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__nextValueDelaySaved;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__radiationTimer;
+/*<>*/wire [31:0] RadiationReceiver__radiationProcessor1__radiationValue;
+/*<>*/wire [9:0] RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadAddress;
+/*<>*/wire [15:0] RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue;
 /*<>*/wire  RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_WriteReceived;
 /*<>*/wire [31:0] RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_Write;
 /*<>*/wire  RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_ReadReceived;
@@ -186,21 +186,21 @@ module RadiationReceiver(
 
 
 //[+RadiationProcessor]
-/*~<>*/ RadiationProcessor radiationProcessor2 (
+/*~<>*/ RadiationProcessor radiationProcessor1 (
 /*<>*/    .clk(clk),
 /*<>*/    .reset(S_AXI_ARESETN),
-/*<>*/    .valueReady__OUTPUT(RadiationReceiver__radiationProcessor2__valueReady),
-/*<>*/    .radiationValue__OUTPUT(RadiationReceiver__radiationProcessor2__radiationValue),
+/*<>*/    .valueReady__OUTPUT(RadiationReceiver__radiationProcessor1__valueReady),
+/*<>*/    .radiationValue__OUTPUT(RadiationReceiver__radiationProcessor1__radiationValue),
 /*<>*/    .requestEthernetValues__OUTPUT(requestEthernetValues),
-/*<>*/    .debugSource__OUTPUT(RadiationReceiver__radiationProcessor2__debugSource),
-/*<>*/    .startReceivingData__OUTPUT(RadiationReceiver__radiationProcessor2__startReceivingData),
-/*<>*/    .ethernetLoadFloor__OUTPUT(RadiationReceiver__radiationProcessor2__ethernetLoadFloor),
-/*<>*/    .ethernetValue__OUTPUT(RadiationReceiver__radiationProcessor2__ethernetValue),
-/*<>*/    .ethernetValuesReceived__OUTPUT(RadiationReceiver__radiationProcessor2__ethernetValuesReceived),
-/*<>*/    .radiationValuesSent__OUTPUT(RadiationReceiver__radiationProcessor2__radiationValuesSent),
-/*<>*/    .countAmount__OUTPUT(RadiationReceiver__radiationProcessor2__countAmount),
-/*<>*/    .nextValueDelaySaved__OUTPUT(RadiationReceiver__radiationProcessor2__nextValueDelaySaved),
-/*<>*/    .radiationTimer__OUTPUT(RadiationReceiver__radiationProcessor2__radiationTimer),
+/*<>*/    .debugSource__OUTPUT(RadiationReceiver__radiationProcessor1__debugSource),
+/*<>*/    .startReceivingData__OUTPUT(RadiationReceiver__radiationProcessor1__startReceivingData),
+/*<>*/    .ethernetLoadFloor__OUTPUT(RadiationReceiver__radiationProcessor1__ethernetLoadFloor),
+/*<>*/    .ethernetValue__OUTPUT(RadiationReceiver__radiationProcessor1__ethernetValue),
+/*<>*/    .ethernetValuesReceived__OUTPUT(RadiationReceiver__radiationProcessor1__ethernetValuesReceived),
+/*<>*/    .radiationValuesSent__OUTPUT(RadiationReceiver__radiationProcessor1__radiationValuesSent),
+/*<>*/    .countAmount__OUTPUT(RadiationReceiver__radiationProcessor1__countAmount),
+/*<>*/    .nextValueDelaySaved__OUTPUT(RadiationReceiver__radiationProcessor1__nextValueDelaySaved),
+/*<>*/    .radiationTimer__OUTPUT(RadiationReceiver__radiationProcessor1__radiationTimer),
 /*<>*/    .debugSource_Write(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_WriteReceived),
 /*<>*/    .debugSource_WriteValue(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_Write),
 /*<>*/    .debugSource_Read(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_debugSource_ReadReceived),
@@ -236,13 +236,13 @@ module RadiationReceiver(
 /*~<>*/ );
 
 /*[+HardwareAcceleratedHistogram]*/
-/*~<>*/ HardwareAcceleratedHistogram hardwareAcceleratedHistogram1 (
+/*~<>*/ HardwareAcceleratedHistogram hardwareAcceleratedHistogram2 (
 /*<>*/    .clk(clk),
 /*<>*/    .reset(S_AXI_ARESETN),
-/*<>*/    .valueReady(RadiationReceiver__radiationProcessor2__valueReady),
-/*<>*/    .radiationValue(RadiationReceiver__radiationProcessor2__radiationValue),
+/*<>*/    .valueReady(RadiationReceiver__radiationProcessor1__valueReady),
+/*<>*/    .radiationValue(RadiationReceiver__radiationProcessor1__radiationValue),
 /*<>*/    .histogramReadValue__OUTPUT(histogramReadValue),
-/*<>*/    .histogramReadAddress__OUTPUT(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadAddress),
+/*<>*/    .histogramReadAddress__OUTPUT(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadAddress),
 /*<>*/    .histogramReadAddress_Write(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_WriteReceived),
 /*<>*/    .histogramReadAddress_WriteValue(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_Write),
 /*<>*/    .histogramReadAddress_Read(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__HardwareAcceleratedHistogram_histogramReadAddress_ReadReceived),
@@ -255,7 +255,7 @@ module RadiationReceiver(
 wire [15:0] histogramReadValue;
 
 /*<>*///***Module end code
-/*<>*/assign valueReady = RadiationReceiver__radiationProcessor2__valueReady;
+/*<>*/assign valueReady = RadiationReceiver__radiationProcessor1__valueReady;
 /*<>*///***Start Routing Signals
 /*<>*/assign PUSHDOWN__S_AXI_AWADDR = S_AXI_AWADDR;
 /*<>*/assign PUSHDOWN__S_AXI_AWPROT = S_AXI_AWPROT;
@@ -268,7 +268,7 @@ wire [15:0] histogramReadValue;
 /*<>*/assign PUSHDOWN__S_AXI_ARPROT = S_AXI_ARPROT;
 /*<>*/assign PUSHDOWN__S_AXI_ARVALID = S_AXI_ARVALID;
 /*<>*/assign PUSHDOWN__S_AXI_RREADY = S_AXI_RREADY;
-/*<>*/assign RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue = histogramReadValue;
+/*<>*/assign RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue = histogramReadValue;
 endmodule
 /*<>*///[Axi4LiteSlave:RadiationReceiver --interpreter]
 /*<>*//*[NormalChecks]*/

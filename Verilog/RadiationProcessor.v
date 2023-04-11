@@ -408,7 +408,8 @@ always@(posedge clk)/*:<>*/  begin
         /*[<= 0]*/
 /*<>*/        valueReady <= 0;
     // else if(/*[$radiationValue.read.rising]*/) /*[IfValueReadySetTo0]*/
-    else if(/*<>*//*$-*/ risingRadiationValueRead /*-$*/ ) /*[IfValueReadySetTo0]
+    else if(
+/*<>*//*$-*/ risingRadiationValueRead /*-$*/ ) /*[IfValueReadySetTo0]
         /*[<= 0]*/
 /*<>*/        valueReady <= 0;
     else if(sendNextValue)

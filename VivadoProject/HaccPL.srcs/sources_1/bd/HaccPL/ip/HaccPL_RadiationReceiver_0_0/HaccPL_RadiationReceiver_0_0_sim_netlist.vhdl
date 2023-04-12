@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Tue Apr 11 12:26:06 2023
+-- Date        : Tue Apr 11 17:21:05 2023
 -- Host        : Sofia running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0_sim_netlist.vhdl
@@ -96,7 +96,7 @@ entity HaccPL_RadiationReceiver_0_0_Axi4ListSlaveInterface_RadiationReceiver is
     \axi_rdata_reg[15]_2\ : in STD_LOGIC_VECTOR ( 14 downto 0 );
     radiationValuesSent_reg : in STD_LOGIC_VECTOR ( 15 downto 0 );
     \axi_rdata_reg[31]_2\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\ : in STD_LOGIC_VECTOR ( 15 downto 0 );
     p1_ethernetValue_Write : in STD_LOGIC;
     p1_valueProcessingFinished_Write : in STD_LOGIC;
     S_AXI_AWVALID : in STD_LOGIC;
@@ -2117,7 +2117,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(0),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(0),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[16]_i_2_n_0\
     );
@@ -2142,7 +2142,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(1),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(1),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(1),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(1),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[17]_i_2_n_0\
     );
@@ -2167,7 +2167,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(2),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(2),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(2),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(2),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[18]_i_2_n_0\
     );
@@ -2192,7 +2192,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(3),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(3),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[19]_i_2_n_0\
     );
@@ -2243,7 +2243,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(4),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(4),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(4),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(4),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[20]_i_2_n_0\
     );
@@ -2268,7 +2268,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(5),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(5),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(5),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(5),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[21]_i_2_n_0\
     );
@@ -2293,7 +2293,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(6),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(6),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(6),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(6),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[22]_i_2_n_0\
     );
@@ -2318,7 +2318,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(7),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(7),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[23]_i_2_n_0\
     );
@@ -2343,7 +2343,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(8),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(8),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(8),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(8),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[24]_i_2_n_0\
     );
@@ -2368,7 +2368,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(9),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(9),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(9),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(9),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[25]_i_2_n_0\
     );
@@ -2393,7 +2393,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(10),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(10),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(10),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(10),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[26]_i_2_n_0\
     );
@@ -2418,7 +2418,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(11),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(11),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[27]_i_2_n_0\
     );
@@ -2443,7 +2443,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(12),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(12),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(12),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(12),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[28]_i_2_n_0\
     );
@@ -2468,7 +2468,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(13),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(13),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(13),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(13),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[29]_i_2_n_0\
     );
@@ -2519,7 +2519,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(14),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(14),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(14),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(14),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[30]_i_2_n_0\
     );
@@ -2593,7 +2593,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       I1 => radiationValuesSent_reg(15),
       I2 => \axi_rdata[31]_i_8_n_0\,
       I3 => \axi_rdata_reg[31]_2\(15),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15),
       I5 => \axi_rdata[31]_i_9_n_0\,
       O => \axi_rdata[31]_i_4_n_0\
     );
@@ -11265,7 +11265,7 @@ entity HaccPL_RadiationReceiver_0_0_HardwareAcceleratedHistogram is
 end HaccPL_RadiationReceiver_0_0_HardwareAcceleratedHistogram;
 
 architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_HardwareAcceleratedHistogram is
-  signal \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\ : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal histogramAddressA : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal histogramAddressB : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal histogramDataInA : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -11328,7 +11328,7 @@ begin
       I1 => \axi_rdata_reg[0]\,
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(0),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(0),
       I5 => D(0),
       O => \histogramReadAddress_reg[0]_0\
     );
@@ -11341,7 +11341,7 @@ begin
       I1 => Q(0),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(1),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(1),
       I5 => D(1),
       O => \histogramReadAddress_reg[1]_0\
     );
@@ -11354,7 +11354,7 @@ begin
       I1 => Q(1),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(2),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(2),
       I5 => D(2),
       O => \histogramReadAddress_reg[2]_0\
     );
@@ -11367,7 +11367,7 @@ begin
       I1 => Q(2),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(3),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(3),
       I5 => D(3),
       O => \histogramReadAddress_reg[3]_0\
     );
@@ -11380,7 +11380,7 @@ begin
       I1 => Q(3),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(4),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(4),
       I5 => D(4),
       O => \histogramReadAddress_reg[4]_0\
     );
@@ -11393,7 +11393,7 @@ begin
       I1 => Q(4),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(5),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(5),
       I5 => D(5),
       O => \histogramReadAddress_reg[5]_0\
     );
@@ -11406,7 +11406,7 @@ begin
       I1 => Q(5),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(6),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(6),
       I5 => D(6),
       O => \histogramReadAddress_reg[6]_0\
     );
@@ -11419,7 +11419,7 @@ begin
       I1 => Q(6),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(7),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(7),
       I5 => D(7),
       O => \histogramReadAddress_reg[7]_0\
     );
@@ -11432,7 +11432,7 @@ begin
       I1 => Q(7),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(8),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(8),
       I5 => D(8),
       O => \histogramReadAddress_reg[8]_0\
     );
@@ -11445,7 +11445,7 @@ begin
       I1 => Q(8),
       I2 => \axi_rdata_reg[0]_0\,
       I3 => \axi_rdata_reg[0]_1\,
-      I4 => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(9),
+      I4 => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(9),
       I5 => D(9),
       O => \histogramReadAddress_reg[9]_0\
     );
@@ -11903,7 +11903,7 @@ memoryhistogram: entity work.HaccPL_RadiationReceiver_0_0_BRAM_1024_16
       dinb(15 downto 0) => B"0000000000000000",
       douta(15 downto 0) => histogramDataOutA(15 downto 0),
       doutb(15 downto 10) => doutb(5 downto 0),
-      doutb(9 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(9 downto 0),
+      doutb(9 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(9 downto 0),
       wea(0) => histogramWriteA,
       web(0) => '0'
     );
@@ -12010,10 +12010,15 @@ end HaccPL_RadiationReceiver_0_0_RadiationProcessor;
 
 architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   signal \^q\ : STD_LOGIC_VECTOR ( 14 downto 0 );
-  signal \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\ : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal countAmount : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal debugSource : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \ethernetHoldInterruptTimer[7]_i_1_n_0\ : STD_LOGIC;
+  signal \ethernetHoldInterruptTimer[7]_i_3_n_0\ : STD_LOGIC;
+  signal \ethernetHoldInterruptTimer[7]_i_4_n_0\ : STD_LOGIC;
+  signal \ethernetHoldInterruptTimer[7]_i_5_n_0\ : STD_LOGIC;
+  signal ethernetHoldInterruptTimer_reg : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal ethernetLoadFloor : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^ethernetloadfloor_reg[15]_0\ : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal ethernetValue : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -12084,7 +12089,7 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   signal \ethernetValuesReceived_reg[8]_i_1_n_6\ : STD_LOGIC;
   signal \ethernetValuesReceived_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal getNextValue : STD_LOGIC;
-  signal \hardwareAcceleratedHistogram2/p1_valueReady\ : STD_LOGIC;
+  signal \hardwareAcceleratedHistogram1/p1_valueReady\ : STD_LOGIC;
   signal \i__carry__0_i_1__0_n_0\ : STD_LOGIC;
   signal \i__carry__0_i_1_n_0\ : STD_LOGIC;
   signal \i__carry_i_1__0_n_0\ : STD_LOGIC;
@@ -12202,6 +12207,7 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   signal p2_getNextValue : STD_LOGIC;
   signal p2_risingEthernetValueWrite : STD_LOGIC;
   signal p3_risingEthernetValueWrite : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal p_0_in0 : STD_LOGIC;
   signal radiationMemoryAddressA : STD_LOGIC;
   signal \radiationMemoryAddressA[0]_i_3_n_0\ : STD_LOGIC;
@@ -12392,6 +12398,8 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   signal \radiationValuesSent_reg[8]_i_1_n_7\ : STD_LOGIC;
   signal \^requestethernetvalues\ : STD_LOGIC;
   signal requestEthernetValues_i_1_n_0 : STD_LOGIC;
+  signal requestEthernetValues_i_2_n_0 : STD_LOGIC;
+  signal requestEthernetValues_i_3_n_0 : STD_LOGIC;
   signal requestMoreValues : STD_LOGIC;
   signal requestMoreValues0 : STD_LOGIC;
   signal requestMoreValues12_in : STD_LOGIC;
@@ -12543,6 +12551,15 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   signal \NLW_requestMoreValues1_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_requestMoreValues1_carry__2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_requestMoreValues2_carry__6_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[0]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[1]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[2]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[3]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[4]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[6]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[7]_i_2\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \ethernetHoldInterruptTimer[7]_i_5\ : label is "soft_lutpair5";
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \ethernetValuesReceived_reg[0]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \ethernetValuesReceived_reg[12]_i_1\ : label is 11;
@@ -12552,23 +12569,22 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationProcessor is
   attribute ADDER_THRESHOLD of \ethernetValuesReceived_reg[28]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \ethernetValuesReceived_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \ethernetValuesReceived_reg[8]_i_1\ : label is 11;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \histogramDataInA[15]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of histogramWriteA_i_1 : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \histogramDataInA[15]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of histogramWriteA_i_1 : label is "soft_lutpair8";
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of memoryradiationMemory : label is "BRAM_16384_32,blk_mem_gen_v8_4_4,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of memoryradiationMemory : label is "yes";
   attribute x_core_info : string;
   attribute x_core_info of memoryradiationMemory : label is "blk_mem_gen_v8_4_4,Vivado 2020.1";
-  attribute SOFT_HLUTNM of \nextValueDelay[0]_i_11\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \nextValueDelay[0]_i_8\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \nextValueDelay[0]_i_11\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \nextValueDelay[0]_i_8\ : label is "soft_lutpair7";
   attribute ADDER_THRESHOLD of \nextValueDelay_reg[0]_i_2\ : label is 11;
   attribute ADDER_THRESHOLD of \nextValueDelay_reg[12]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \nextValueDelay_reg[4]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \nextValueDelay_reg[8]_i_1\ : label is 11;
-  attribute SOFT_HLUTNM of p1_getNextValue_i_6 : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of p1_getNextValue_i_7 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of p1_getNextValue_i_6 : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of p1_getNextValue_i_7 : label is "soft_lutpair6";
   attribute ADDER_THRESHOLD of \radiationMemoryAddressA_reg[0]_i_2\ : label is 11;
   attribute ADDER_THRESHOLD of \radiationMemoryAddressA_reg[12]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \radiationMemoryAddressA_reg[4]_i_1\ : label is 11;
@@ -12646,7 +12662,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(0),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(0),
@@ -12659,7 +12675,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(10),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(10),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(10),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(10),
@@ -12672,7 +12688,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(11),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(11),
@@ -12685,7 +12701,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(12),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(12),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(12),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(12),
@@ -12698,7 +12714,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(13),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(13),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(13),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(13),
@@ -12711,7 +12727,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(14),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(14),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(14),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(14),
@@ -12724,7 +12740,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(15),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(15),
@@ -12781,7 +12797,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(1),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(1),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(1),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(1),
@@ -12904,7 +12920,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(2),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(2),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(2),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(2),
@@ -12939,7 +12955,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(3),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(3),
@@ -12952,7 +12968,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(4),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(4),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(4),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(4),
@@ -12965,7 +12981,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(5),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(5),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(5),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(5),
@@ -12978,7 +12994,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(6),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(6),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(6),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(6),
@@ -12991,7 +13007,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(7),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(7),
@@ -13004,7 +13020,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(8),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(8),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(8),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(8),
@@ -13017,7 +13033,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     )
         port map (
       I0 => countAmount(9),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(9),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(9),
       I2 => \axi_rdata_reg[0]\,
       I3 => \axi_rdata_reg[0]_0\,
       I4 => nextValueDelaySaved(9),
@@ -13536,6 +13552,198 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       Q => \debugSource_reg[31]_0\(8),
       R => \^sr\(0)
     );
+\ethernetHoldInterruptTimer[0]_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(0),
+      O => p_0_in(0)
+    );
+\ethernetHoldInterruptTimer[1]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(0),
+      I1 => ethernetHoldInterruptTimer_reg(1),
+      O => p_0_in(1)
+    );
+\ethernetHoldInterruptTimer[2]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"78"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(0),
+      I1 => ethernetHoldInterruptTimer_reg(1),
+      I2 => ethernetHoldInterruptTimer_reg(2),
+      O => p_0_in(2)
+    );
+\ethernetHoldInterruptTimer[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7F80"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(1),
+      I1 => ethernetHoldInterruptTimer_reg(0),
+      I2 => ethernetHoldInterruptTimer_reg(2),
+      I3 => ethernetHoldInterruptTimer_reg(3),
+      O => p_0_in(3)
+    );
+\ethernetHoldInterruptTimer[4]_i_1\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"7FFF8000"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(2),
+      I1 => ethernetHoldInterruptTimer_reg(0),
+      I2 => ethernetHoldInterruptTimer_reg(1),
+      I3 => ethernetHoldInterruptTimer_reg(3),
+      I4 => ethernetHoldInterruptTimer_reg(4),
+      O => p_0_in(4)
+    );
+\ethernetHoldInterruptTimer[5]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"7FFFFFFF80000000"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(3),
+      I1 => ethernetHoldInterruptTimer_reg(1),
+      I2 => ethernetHoldInterruptTimer_reg(0),
+      I3 => ethernetHoldInterruptTimer_reg(2),
+      I4 => ethernetHoldInterruptTimer_reg(4),
+      I5 => ethernetHoldInterruptTimer_reg(5),
+      O => p_0_in(5)
+    );
+\ethernetHoldInterruptTimer[6]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"6"
+    )
+        port map (
+      I0 => \ethernetHoldInterruptTimer[7]_i_4_n_0\,
+      I1 => ethernetHoldInterruptTimer_reg(6),
+      O => p_0_in(6)
+    );
+\ethernetHoldInterruptTimer[7]_i_1\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"F7"
+    )
+        port map (
+      I0 => requestEthernetValues_i_2_n_0,
+      I1 => S_AXI_ARESETN,
+      I2 => \ethernetHoldInterruptTimer[7]_i_3_n_0\,
+      O => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer[7]_i_2\: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"78"
+    )
+        port map (
+      I0 => \ethernetHoldInterruptTimer[7]_i_4_n_0\,
+      I1 => ethernetHoldInterruptTimer_reg(6),
+      I2 => ethernetHoldInterruptTimer_reg(7),
+      O => p_0_in(7)
+    );
+\ethernetHoldInterruptTimer[7]_i_3\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00080000"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(4),
+      I1 => ethernetHoldInterruptTimer_reg(5),
+      I2 => ethernetHoldInterruptTimer_reg(6),
+      I3 => ethernetHoldInterruptTimer_reg(7),
+      I4 => \ethernetHoldInterruptTimer[7]_i_5_n_0\,
+      O => \ethernetHoldInterruptTimer[7]_i_3_n_0\
+    );
+\ethernetHoldInterruptTimer[7]_i_4\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8000000000000000"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(5),
+      I1 => ethernetHoldInterruptTimer_reg(3),
+      I2 => ethernetHoldInterruptTimer_reg(1),
+      I3 => ethernetHoldInterruptTimer_reg(0),
+      I4 => ethernetHoldInterruptTimer_reg(2),
+      I5 => ethernetHoldInterruptTimer_reg(4),
+      O => \ethernetHoldInterruptTimer[7]_i_4_n_0\
+    );
+\ethernetHoldInterruptTimer[7]_i_5\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0004"
+    )
+        port map (
+      I0 => ethernetHoldInterruptTimer_reg(0),
+      I1 => ethernetHoldInterruptTimer_reg(1),
+      I2 => ethernetHoldInterruptTimer_reg(3),
+      I3 => ethernetHoldInterruptTimer_reg(2),
+      O => \ethernetHoldInterruptTimer[7]_i_5_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[0]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(0),
+      Q => ethernetHoldInterruptTimer_reg(0),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[1]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(1),
+      Q => ethernetHoldInterruptTimer_reg(1),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[2]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(2),
+      Q => ethernetHoldInterruptTimer_reg(2),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[3]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(3),
+      Q => ethernetHoldInterruptTimer_reg(3),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[4]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(4),
+      Q => ethernetHoldInterruptTimer_reg(4),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[5]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(5),
+      Q => ethernetHoldInterruptTimer_reg(5),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[6]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(6),
+      Q => ethernetHoldInterruptTimer_reg(6),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
+\ethernetHoldInterruptTimer_reg[7]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => '1',
+      D => p_0_in(7),
+      Q => ethernetHoldInterruptTimer_reg(7),
+      R => \ethernetHoldInterruptTimer[7]_i_1_n_0\
+    );
 \ethernetLoadFloor_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
@@ -13925,7 +14133,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       INIT => X"1"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
       O => \ethernetValuesReceived[0]_i_2_n_0\
     );
 \ethernetValuesReceived_reg[0]\: unisim.vcomponents.FDRE
@@ -13933,7 +14141,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[0]_i_1_n_7\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[0]_i_1\: unisim.vcomponents.CARRY4
@@ -13949,7 +14157,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       O(2) => \ethernetValuesReceived_reg[0]_i_1_n_5\,
       O(1) => \ethernetValuesReceived_reg[0]_i_1_n_6\,
       O(0) => \ethernetValuesReceived_reg[0]_i_1_n_7\,
-      S(3 downto 1) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3 downto 1),
+      S(3 downto 1) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3 downto 1),
       S(0) => \ethernetValuesReceived[0]_i_2_n_0\
     );
 \ethernetValuesReceived_reg[10]\: unisim.vcomponents.FDRE
@@ -13957,7 +14165,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[8]_i_1_n_5\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(10),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(10),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[11]\: unisim.vcomponents.FDRE
@@ -13965,7 +14173,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[8]_i_1_n_4\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[12]\: unisim.vcomponents.FDRE
@@ -13973,7 +14181,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[12]_i_1_n_7\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(12),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(12),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[12]_i_1\: unisim.vcomponents.CARRY4
@@ -13989,14 +14197,14 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       O(2) => \ethernetValuesReceived_reg[12]_i_1_n_5\,
       O(1) => \ethernetValuesReceived_reg[12]_i_1_n_6\,
       O(0) => \ethernetValuesReceived_reg[12]_i_1_n_7\,
-      S(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15 downto 12)
+      S(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15 downto 12)
     );
 \ethernetValuesReceived_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[12]_i_1_n_6\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(13),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(13),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[14]\: unisim.vcomponents.FDRE
@@ -14004,7 +14212,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[12]_i_1_n_5\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(14),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(14),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[15]\: unisim.vcomponents.FDRE
@@ -14012,7 +14220,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[12]_i_1_n_4\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[16]\: unisim.vcomponents.FDRE
@@ -14067,7 +14275,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[0]_i_1_n_6\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(1),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(1),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[20]\: unisim.vcomponents.FDRE
@@ -14200,7 +14408,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[0]_i_1_n_5\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(2),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(2),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[30]\: unisim.vcomponents.FDRE
@@ -14224,7 +14432,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[0]_i_1_n_4\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[4]\: unisim.vcomponents.FDRE
@@ -14232,7 +14440,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[4]_i_1_n_7\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(4),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(4),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[4]_i_1\: unisim.vcomponents.CARRY4
@@ -14248,14 +14456,14 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       O(2) => \ethernetValuesReceived_reg[4]_i_1_n_5\,
       O(1) => \ethernetValuesReceived_reg[4]_i_1_n_6\,
       O(0) => \ethernetValuesReceived_reg[4]_i_1_n_7\,
-      S(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7 downto 4)
+      S(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7 downto 4)
     );
 \ethernetValuesReceived_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[4]_i_1_n_6\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(5),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(5),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[6]\: unisim.vcomponents.FDRE
@@ -14263,7 +14471,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[4]_i_1_n_5\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(6),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(6),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[7]\: unisim.vcomponents.FDRE
@@ -14271,7 +14479,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[4]_i_1_n_4\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[8]\: unisim.vcomponents.FDRE
@@ -14279,7 +14487,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[8]_i_1_n_7\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(8),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(8),
       R => \^sr\(0)
     );
 \ethernetValuesReceived_reg[8]_i_1\: unisim.vcomponents.CARRY4
@@ -14295,14 +14503,14 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       O(2) => \ethernetValuesReceived_reg[8]_i_1_n_5\,
       O(1) => \ethernetValuesReceived_reg[8]_i_1_n_6\,
       O(0) => \ethernetValuesReceived_reg[8]_i_1_n_7\,
-      S(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11 downto 8)
+      S(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11 downto 8)
     );
 \ethernetValuesReceived_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => clk,
       CE => risingEthernetValueWrite,
       D => \ethernetValuesReceived_reg[8]_i_1_n_6\,
-      Q => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(9),
+      Q => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(9),
       R => \^sr\(0)
     );
 \histogramDataInA[15]_i_1\: unisim.vcomponents.LUT3
@@ -14310,7 +14518,7 @@ axi_awready_i_1: unisim.vcomponents.LUT1
       INIT => X"4F"
     )
         port map (
-      I0 => \hardwareAcceleratedHistogram2/p1_valueReady\,
+      I0 => \hardwareAcceleratedHistogram1/p1_valueReady\,
       I1 => \^valueready_reg_0\,
       I2 => S_AXI_ARESETN,
       O => p1_valueReady_reg_0(0)
@@ -14323,7 +14531,7 @@ histogramWriteA_i_1: unisim.vcomponents.LUT4
       I0 => histogramWriteA_reg(0),
       I1 => S_AXI_ARESETN,
       I2 => \^valueready_reg_0\,
-      I3 => \hardwareAcceleratedHistogram2/p1_valueReady\,
+      I3 => \hardwareAcceleratedHistogram1/p1_valueReady\,
       O => p2_risingValueReady_reg
     );
 \i__carry__0_i_1\: unisim.vcomponents.LUT4
@@ -15702,7 +15910,7 @@ p1_risingValueReady_i_1: unisim.vcomponents.LUT2
     )
         port map (
       I0 => \^valueready_reg_0\,
-      I1 => \hardwareAcceleratedHistogram2/p1_valueReady\,
+      I1 => \hardwareAcceleratedHistogram1/p1_valueReady\,
       O => \^valueready_reg_1\(0)
     );
 p1_valueProcessingFinished_Write_reg: unisim.vcomponents.FDRE
@@ -15718,7 +15926,7 @@ p1_valueReady_reg: unisim.vcomponents.FDRE
       C => clk,
       CE => '1',
       D => \^valueready_reg_0\,
-      Q => \hardwareAcceleratedHistogram2/p1_valueReady\,
+      Q => \hardwareAcceleratedHistogram1/p1_valueReady\,
       R => \^sr\(0)
     );
 p2_getNextValue_reg: unisim.vcomponents.FDRE
@@ -16525,7 +16733,7 @@ p4_risingEthernetValueWrite_reg: unisim.vcomponents.FDRE
         port map (
       I0 => S_AXI_ARESETN,
       I1 => \^valueready_reg_0\,
-      I2 => \hardwareAcceleratedHistogram2/p1_valueReady\,
+      I2 => \hardwareAcceleratedHistogram1/p1_valueReady\,
       I3 => \^p1_valueprocessingfinished_write\,
       I4 => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\,
       O => \radiationTimer[31]_i_1_n_0\
@@ -17266,18 +17474,42 @@ p4_risingEthernetValueWrite_reg: unisim.vcomponents.FDRE
       Q => radiationValuesSent_reg(9),
       R => \^sr\(0)
     );
-requestEthernetValues_i_1: unisim.vcomponents.LUT6
+requestEthernetValues_i_1: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FE00FE000000FE00"
+      INIT => X"0000FE00"
     )
         port map (
-      I0 => \^requestethernetvalues\,
+      I0 => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\,
       I1 => requestMoreValues,
-      I2 => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\,
+      I2 => \^requestethernetvalues\,
       I3 => S_AXI_ARESETN,
-      I4 => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived\,
-      I5 => p1_clearRequestEthernetValues_Write,
+      I4 => requestEthernetValues_i_2_n_0,
       O => requestEthernetValues_i_1_n_0
+    );
+requestEthernetValues_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFFFFFE"
+    )
+        port map (
+      I0 => requestEthernetValues_i_3_n_0,
+      I1 => ethernetHoldInterruptTimer_reg(3),
+      I2 => ethernetHoldInterruptTimer_reg(4),
+      I3 => ethernetHoldInterruptTimer_reg(5),
+      I4 => ethernetHoldInterruptTimer_reg(6),
+      O => requestEthernetValues_i_2_n_0
+    );
+requestEthernetValues_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFF2"
+    )
+        port map (
+      I0 => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived\,
+      I1 => p1_clearRequestEthernetValues_Write,
+      I2 => ethernetHoldInterruptTimer_reg(1),
+      I3 => ethernetHoldInterruptTimer_reg(2),
+      I4 => ethernetHoldInterruptTimer_reg(0),
+      I5 => ethernetHoldInterruptTimer_reg(7),
+      O => requestEthernetValues_i_3_n_0
     );
 requestEthernetValues_reg: unisim.vcomponents.FDRE
      port map (
@@ -17719,7 +17951,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       CO(1) => requestMoreValues2_carry_n_2,
       CO(0) => requestMoreValues2_carry_n_3,
       CYINIT => '1',
-      DI(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3 downto 0),
+      DI(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3 downto 0),
       O(3 downto 0) => requestMoreValues2(3 downto 0),
       S(3) => requestMoreValues2_carry_i_1_n_0,
       S(2) => requestMoreValues2_carry_i_2_n_0,
@@ -17734,7 +17966,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       CO(1) => \requestMoreValues2_carry__0_n_2\,
       CO(0) => \requestMoreValues2_carry__0_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7 downto 4),
+      DI(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7 downto 4),
       O(3 downto 0) => requestMoreValues2(7 downto 4),
       S(3) => \requestMoreValues2_carry__0_i_1_n_0\,
       S(2) => \requestMoreValues2_carry__0_i_2_n_0\,
@@ -17746,7 +17978,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7),
       I1 => \^ethernetloadfloor_reg[15]_0\(6),
       O => \requestMoreValues2_carry__0_i_1_n_0\
     );
@@ -17755,7 +17987,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(6),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(6),
       I1 => \^ethernetloadfloor_reg[15]_0\(5),
       O => \requestMoreValues2_carry__0_i_2_n_0\
     );
@@ -17764,7 +17996,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(5),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(5),
       I1 => \^ethernetloadfloor_reg[15]_0\(4),
       O => \requestMoreValues2_carry__0_i_3_n_0\
     );
@@ -17773,7 +18005,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(4),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(4),
       I1 => \^ethernetloadfloor_reg[15]_0\(3),
       O => \requestMoreValues2_carry__0_i_4_n_0\
     );
@@ -17785,7 +18017,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       CO(1) => \requestMoreValues2_carry__1_n_2\,
       CO(0) => \requestMoreValues2_carry__1_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11 downto 8),
+      DI(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11 downto 8),
       O(3 downto 0) => requestMoreValues2(11 downto 8),
       S(3) => \requestMoreValues2_carry__1_i_1_n_0\,
       S(2) => \requestMoreValues2_carry__1_i_2_n_0\,
@@ -17797,7 +18029,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11),
       I1 => \^ethernetloadfloor_reg[15]_0\(10),
       O => \requestMoreValues2_carry__1_i_1_n_0\
     );
@@ -17806,7 +18038,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(10),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(10),
       I1 => \^ethernetloadfloor_reg[15]_0\(9),
       O => \requestMoreValues2_carry__1_i_2_n_0\
     );
@@ -17815,7 +18047,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(9),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(9),
       I1 => \^ethernetloadfloor_reg[15]_0\(8),
       O => \requestMoreValues2_carry__1_i_3_n_0\
     );
@@ -17824,7 +18056,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(8),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(8),
       I1 => \^ethernetloadfloor_reg[15]_0\(7),
       O => \requestMoreValues2_carry__1_i_4_n_0\
     );
@@ -17836,7 +18068,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       CO(1) => \requestMoreValues2_carry__2_n_2\,
       CO(0) => \requestMoreValues2_carry__2_n_3\,
       CYINIT => '0',
-      DI(3 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15 downto 12),
+      DI(3 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15 downto 12),
       O(3 downto 0) => requestMoreValues2(15 downto 12),
       S(3) => \requestMoreValues2_carry__2_i_1_n_0\,
       S(2) => \requestMoreValues2_carry__2_i_2_n_0\,
@@ -17848,7 +18080,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15),
       I1 => \^ethernetloadfloor_reg[15]_0\(14),
       O => \requestMoreValues2_carry__2_i_1_n_0\
     );
@@ -17857,7 +18089,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(14),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(14),
       I1 => \^ethernetloadfloor_reg[15]_0\(13),
       O => \requestMoreValues2_carry__2_i_2_n_0\
     );
@@ -17866,7 +18098,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(13),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(13),
       I1 => \^ethernetloadfloor_reg[15]_0\(12),
       O => \requestMoreValues2_carry__2_i_3_n_0\
     );
@@ -17875,7 +18107,7 @@ requestMoreValues2_carry: unisim.vcomponents.CARRY4
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(12),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(12),
       I1 => \^ethernetloadfloor_reg[15]_0\(11),
       O => \requestMoreValues2_carry__2_i_4_n_0\
     );
@@ -18073,7 +18305,7 @@ requestMoreValues2_carry_i_1: unisim.vcomponents.LUT2
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3),
       I1 => \^ethernetloadfloor_reg[15]_0\(2),
       O => requestMoreValues2_carry_i_1_n_0
     );
@@ -18082,7 +18314,7 @@ requestMoreValues2_carry_i_2: unisim.vcomponents.LUT2
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(2),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(2),
       I1 => \^ethernetloadfloor_reg[15]_0\(1),
       O => requestMoreValues2_carry_i_2_n_0
     );
@@ -18091,7 +18323,7 @@ requestMoreValues2_carry_i_3: unisim.vcomponents.LUT2
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(1),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(1),
       I1 => \^ethernetloadfloor_reg[15]_0\(0),
       O => requestMoreValues2_carry_i_3_n_0
     );
@@ -18100,7 +18332,7 @@ requestMoreValues2_carry_i_4: unisim.vcomponents.LUT2
       INIT => X"9"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
       I1 => ethernetLoadFloor(0),
       O => requestMoreValues2_carry_i_4_n_0
     );
@@ -18120,10 +18352,10 @@ requestMoreValues_i_2: unisim.vcomponents.LUT4
       INIT => X"FFFE"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(6),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(7),
-      I2 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(8),
-      I3 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(9),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(6),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(7),
+      I2 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(8),
+      I3 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(9),
       O => requestMoreValues_i_2_n_0
     );
 requestMoreValues_i_3: unisim.vcomponents.LUT6
@@ -18131,8 +18363,8 @@ requestMoreValues_i_3: unisim.vcomponents.LUT6
       INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(14),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(14),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15),
       I2 => requestMoreValues_i_5_n_0,
       I3 => requestMoreValues_i_6_n_0,
       I4 => requestMoreValues_i_7_n_0,
@@ -18145,10 +18377,10 @@ requestMoreValues_i_4: unisim.vcomponents.LUT5
     )
         port map (
       I0 => requestMoreValues_i_9_n_0,
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(5),
-      I2 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(4),
-      I3 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(3),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(2),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(5),
+      I2 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(4),
+      I3 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(3),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(2),
       O => requestMoreValues_i_4_n_0
     );
 requestMoreValues_i_5: unisim.vcomponents.LUT4
@@ -18200,12 +18432,12 @@ requestMoreValues_i_9: unisim.vcomponents.LUT6
       INIT => X"FFFFFFFFFFFFFFFE"
     )
         port map (
-      I0 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(13),
-      I1 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(12),
-      I2 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(11),
-      I3 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(10),
-      I4 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(0),
-      I5 => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(1),
+      I0 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(13),
+      I1 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(12),
+      I2 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(11),
+      I3 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(10),
+      I4 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(0),
+      I5 => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(1),
       O => requestMoreValues_i_9_n_0
     );
 requestMoreValues_reg: unisim.vcomponents.FDRE
@@ -18301,9 +18533,9 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationReceiver is
   signal \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived\ : STD_LOGIC;
   signal \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\ : STD_LOGIC;
   signal \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\ : STD_LOGIC;
-  signal \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\ : STD_LOGIC_VECTOR ( 15 downto 10 );
-  signal \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\ : STD_LOGIC_VECTOR ( 31 downto 16 );
-  signal \RadiationReceiver__radiationProcessor1__radiationValue\ : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\ : STD_LOGIC_VECTOR ( 15 downto 10 );
+  signal \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\ : STD_LOGIC_VECTOR ( 31 downto 16 );
+  signal \RadiationReceiver__radiationProcessor2__radiationValue\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal axi4ListSlaveInterface_RadiationReceiver_n_14 : STD_LOGIC;
   signal axi4ListSlaveInterface_RadiationReceiver_n_15 : STD_LOGIC;
   signal axi4ListSlaveInterface_RadiationReceiver_n_16 : STD_LOGIC;
@@ -18316,72 +18548,72 @@ architecture STRUCTURE of HaccPL_RadiationReceiver_0_0_RadiationReceiver is
   signal ethernetLoadFloor : STD_LOGIC_VECTOR ( 15 downto 1 );
   signal ethernetLoadFloor_Write : STD_LOGIC;
   signal ethernetValue : STD_LOGIC_VECTOR ( 15 downto 1 );
-  signal hardwareAcceleratedHistogram2_n_10 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_11 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_12 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_13 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_14 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_15 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_16 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_7 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_8 : STD_LOGIC;
-  signal hardwareAcceleratedHistogram2_n_9 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_10 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_11 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_12 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_13 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_14 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_15 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_16 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_7 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_8 : STD_LOGIC;
+  signal hardwareAcceleratedHistogram1_n_9 : STD_LOGIC;
   signal histogramReadAddress_Write : STD_LOGIC;
   signal p1_ethernetValue_Write : STD_LOGIC;
   signal p1_valueProcessingFinished_Write : STD_LOGIC;
   signal p2_risingValueReady : STD_LOGIC;
-  signal radiationProcessor1_n_10 : STD_LOGIC;
-  signal radiationProcessor1_n_142 : STD_LOGIC;
-  signal radiationProcessor1_n_159 : STD_LOGIC;
-  signal radiationProcessor1_n_160 : STD_LOGIC;
-  signal radiationProcessor1_n_161 : STD_LOGIC;
-  signal radiationProcessor1_n_162 : STD_LOGIC;
-  signal radiationProcessor1_n_163 : STD_LOGIC;
-  signal radiationProcessor1_n_164 : STD_LOGIC;
-  signal radiationProcessor1_n_165 : STD_LOGIC;
-  signal radiationProcessor1_n_166 : STD_LOGIC;
-  signal radiationProcessor1_n_167 : STD_LOGIC;
-  signal radiationProcessor1_n_168 : STD_LOGIC;
-  signal radiationProcessor1_n_169 : STD_LOGIC;
-  signal radiationProcessor1_n_170 : STD_LOGIC;
-  signal radiationProcessor1_n_171 : STD_LOGIC;
-  signal radiationProcessor1_n_172 : STD_LOGIC;
-  signal radiationProcessor1_n_173 : STD_LOGIC;
-  signal radiationProcessor1_n_174 : STD_LOGIC;
-  signal radiationProcessor1_n_175 : STD_LOGIC;
-  signal radiationProcessor1_n_46 : STD_LOGIC;
-  signal radiationProcessor1_n_47 : STD_LOGIC;
-  signal radiationProcessor1_n_48 : STD_LOGIC;
-  signal radiationProcessor1_n_49 : STD_LOGIC;
-  signal radiationProcessor1_n_50 : STD_LOGIC;
-  signal radiationProcessor1_n_51 : STD_LOGIC;
-  signal radiationProcessor1_n_52 : STD_LOGIC;
-  signal radiationProcessor1_n_53 : STD_LOGIC;
-  signal radiationProcessor1_n_54 : STD_LOGIC;
-  signal radiationProcessor1_n_55 : STD_LOGIC;
-  signal radiationProcessor1_n_56 : STD_LOGIC;
-  signal radiationProcessor1_n_57 : STD_LOGIC;
-  signal radiationProcessor1_n_58 : STD_LOGIC;
-  signal radiationProcessor1_n_59 : STD_LOGIC;
-  signal radiationProcessor1_n_60 : STD_LOGIC;
-  signal radiationProcessor1_n_61 : STD_LOGIC;
-  signal radiationProcessor1_n_64 : STD_LOGIC;
-  signal radiationProcessor1_n_80 : STD_LOGIC;
-  signal radiationProcessor1_n_81 : STD_LOGIC;
-  signal radiationProcessor1_n_82 : STD_LOGIC;
-  signal radiationProcessor1_n_83 : STD_LOGIC;
-  signal radiationProcessor1_n_84 : STD_LOGIC;
-  signal radiationProcessor1_n_85 : STD_LOGIC;
-  signal radiationProcessor1_n_86 : STD_LOGIC;
-  signal radiationProcessor1_n_87 : STD_LOGIC;
-  signal radiationProcessor1_n_88 : STD_LOGIC;
-  signal radiationProcessor1_n_89 : STD_LOGIC;
-  signal radiationProcessor1_n_90 : STD_LOGIC;
-  signal radiationProcessor1_n_91 : STD_LOGIC;
-  signal radiationProcessor1_n_92 : STD_LOGIC;
-  signal radiationProcessor1_n_93 : STD_LOGIC;
-  signal radiationProcessor1_n_94 : STD_LOGIC;
-  signal radiationProcessor1_n_95 : STD_LOGIC;
+  signal radiationProcessor2_n_10 : STD_LOGIC;
+  signal radiationProcessor2_n_142 : STD_LOGIC;
+  signal radiationProcessor2_n_159 : STD_LOGIC;
+  signal radiationProcessor2_n_160 : STD_LOGIC;
+  signal radiationProcessor2_n_161 : STD_LOGIC;
+  signal radiationProcessor2_n_162 : STD_LOGIC;
+  signal radiationProcessor2_n_163 : STD_LOGIC;
+  signal radiationProcessor2_n_164 : STD_LOGIC;
+  signal radiationProcessor2_n_165 : STD_LOGIC;
+  signal radiationProcessor2_n_166 : STD_LOGIC;
+  signal radiationProcessor2_n_167 : STD_LOGIC;
+  signal radiationProcessor2_n_168 : STD_LOGIC;
+  signal radiationProcessor2_n_169 : STD_LOGIC;
+  signal radiationProcessor2_n_170 : STD_LOGIC;
+  signal radiationProcessor2_n_171 : STD_LOGIC;
+  signal radiationProcessor2_n_172 : STD_LOGIC;
+  signal radiationProcessor2_n_173 : STD_LOGIC;
+  signal radiationProcessor2_n_174 : STD_LOGIC;
+  signal radiationProcessor2_n_175 : STD_LOGIC;
+  signal radiationProcessor2_n_46 : STD_LOGIC;
+  signal radiationProcessor2_n_47 : STD_LOGIC;
+  signal radiationProcessor2_n_48 : STD_LOGIC;
+  signal radiationProcessor2_n_49 : STD_LOGIC;
+  signal radiationProcessor2_n_50 : STD_LOGIC;
+  signal radiationProcessor2_n_51 : STD_LOGIC;
+  signal radiationProcessor2_n_52 : STD_LOGIC;
+  signal radiationProcessor2_n_53 : STD_LOGIC;
+  signal radiationProcessor2_n_54 : STD_LOGIC;
+  signal radiationProcessor2_n_55 : STD_LOGIC;
+  signal radiationProcessor2_n_56 : STD_LOGIC;
+  signal radiationProcessor2_n_57 : STD_LOGIC;
+  signal radiationProcessor2_n_58 : STD_LOGIC;
+  signal radiationProcessor2_n_59 : STD_LOGIC;
+  signal radiationProcessor2_n_60 : STD_LOGIC;
+  signal radiationProcessor2_n_61 : STD_LOGIC;
+  signal radiationProcessor2_n_64 : STD_LOGIC;
+  signal radiationProcessor2_n_80 : STD_LOGIC;
+  signal radiationProcessor2_n_81 : STD_LOGIC;
+  signal radiationProcessor2_n_82 : STD_LOGIC;
+  signal radiationProcessor2_n_83 : STD_LOGIC;
+  signal radiationProcessor2_n_84 : STD_LOGIC;
+  signal radiationProcessor2_n_85 : STD_LOGIC;
+  signal radiationProcessor2_n_86 : STD_LOGIC;
+  signal radiationProcessor2_n_87 : STD_LOGIC;
+  signal radiationProcessor2_n_88 : STD_LOGIC;
+  signal radiationProcessor2_n_89 : STD_LOGIC;
+  signal radiationProcessor2_n_90 : STD_LOGIC;
+  signal radiationProcessor2_n_91 : STD_LOGIC;
+  signal radiationProcessor2_n_92 : STD_LOGIC;
+  signal radiationProcessor2_n_93 : STD_LOGIC;
+  signal radiationProcessor2_n_94 : STD_LOGIC;
+  signal radiationProcessor2_n_95 : STD_LOGIC;
   signal radiationValuesSent_reg : STD_LOGIC_VECTOR ( 31 downto 16 );
   signal risingEthernetValueWrite : STD_LOGIC;
   signal \risingValueProcessingFinished_Write__0\ : STD_LOGIC;
@@ -18405,12 +18637,12 @@ axi4ListSlaveInterface_RadiationReceiver: entity work.HaccPL_RadiationReceiver_0
       D(9 downto 0) => HardwareAcceleratedHistogram_histogramReadAddress_Write(9 downto 0),
       E(0) => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_WriteReceived\,
       HardwareAcceleratedHistogram_histogramReadAddress_WriteReceived_reg_0(0) => histogramReadAddress_Write,
-      Q(5) => radiationProcessor1_n_47,
-      Q(4) => radiationProcessor1_n_48,
-      Q(3) => radiationProcessor1_n_49,
-      Q(2) => radiationProcessor1_n_50,
-      Q(1) => radiationProcessor1_n_51,
-      Q(0) => radiationProcessor1_n_52,
+      Q(5) => radiationProcessor2_n_47,
+      Q(4) => radiationProcessor2_n_48,
+      Q(3) => radiationProcessor2_n_49,
+      Q(2) => radiationProcessor2_n_50,
+      Q(1) => radiationProcessor2_n_51,
+      Q(0) => radiationProcessor2_n_52,
       RadiationProcessor_countAmount_WriteReceived_reg_0(0) => countAmount_Write,
       \RadiationProcessor_countAmount_Write_reg[31]_0\(31 downto 0) => RadiationProcessor_countAmount_Write(31 downto 0),
       RadiationProcessor_debugSource_WriteReceived_reg_0(0) => debugSource_Write,
@@ -18423,8 +18655,8 @@ axi4ListSlaveInterface_RadiationReceiver: entity work.HaccPL_RadiationReceiver_0
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived\,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\,
-      \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(15 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(31 downto 16),
-      SR(0) => radiationProcessor1_n_10,
+      \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(15 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(31 downto 16),
+      SR(0) => radiationProcessor2_n_10,
       S_AXI_ACLK => S_AXI_ACLK,
       S_AXI_ARADDR(5 downto 0) => S_AXI_ARADDR(5 downto 0),
       S_AXI_ARVALID => S_AXI_ARVALID,
@@ -18444,55 +18676,55 @@ axi4ListSlaveInterface_RadiationReceiver: entity work.HaccPL_RadiationReceiver_0
       \axi_araddr_reg[3]_2\ => axi4ListSlaveInterface_RadiationReceiver_n_17,
       axi_arready_reg_0 => S_AXI_ARREADY,
       axi_awready_reg_0 => S_AXI_AWREADY,
-      \axi_rdata_reg[0]_0\ => hardwareAcceleratedHistogram2_n_7,
-      \axi_rdata_reg[0]_1\ => radiationProcessor1_n_95,
-      \axi_rdata_reg[0]_2\ => radiationProcessor1_n_142,
-      \axi_rdata_reg[10]_0\ => radiationProcessor1_n_168,
-      \axi_rdata_reg[11]_0\ => radiationProcessor1_n_169,
-      \axi_rdata_reg[12]_0\ => radiationProcessor1_n_170,
-      \axi_rdata_reg[13]_0\ => radiationProcessor1_n_171,
-      \axi_rdata_reg[14]_0\ => radiationProcessor1_n_172,
-      \axi_rdata_reg[15]_0\ => radiationProcessor1_n_173,
+      \axi_rdata_reg[0]_0\ => hardwareAcceleratedHistogram1_n_7,
+      \axi_rdata_reg[0]_1\ => radiationProcessor2_n_95,
+      \axi_rdata_reg[0]_2\ => radiationProcessor2_n_142,
+      \axi_rdata_reg[10]_0\ => radiationProcessor2_n_168,
+      \axi_rdata_reg[11]_0\ => radiationProcessor2_n_169,
+      \axi_rdata_reg[12]_0\ => radiationProcessor2_n_170,
+      \axi_rdata_reg[13]_0\ => radiationProcessor2_n_171,
+      \axi_rdata_reg[14]_0\ => radiationProcessor2_n_172,
+      \axi_rdata_reg[15]_0\ => radiationProcessor2_n_173,
       \axi_rdata_reg[15]_1\(14 downto 0) => ethernetValue(15 downto 1),
       \axi_rdata_reg[15]_2\(14 downto 0) => ethernetLoadFloor(15 downto 1),
-      \axi_rdata_reg[16]_0\ => radiationProcessor1_n_64,
-      \axi_rdata_reg[17]_0\ => radiationProcessor1_n_80,
-      \axi_rdata_reg[18]_0\ => radiationProcessor1_n_81,
-      \axi_rdata_reg[19]_0\ => radiationProcessor1_n_82,
-      \axi_rdata_reg[1]_0\ => hardwareAcceleratedHistogram2_n_8,
-      \axi_rdata_reg[1]_1\ => radiationProcessor1_n_159,
-      \axi_rdata_reg[20]_0\ => radiationProcessor1_n_83,
-      \axi_rdata_reg[21]_0\ => radiationProcessor1_n_84,
-      \axi_rdata_reg[22]_0\ => radiationProcessor1_n_85,
-      \axi_rdata_reg[23]_0\ => radiationProcessor1_n_86,
-      \axi_rdata_reg[24]_0\ => radiationProcessor1_n_87,
-      \axi_rdata_reg[25]_0\ => radiationProcessor1_n_88,
-      \axi_rdata_reg[26]_0\ => radiationProcessor1_n_89,
-      \axi_rdata_reg[27]_0\ => radiationProcessor1_n_90,
-      \axi_rdata_reg[28]_0\ => radiationProcessor1_n_91,
-      \axi_rdata_reg[29]_0\ => radiationProcessor1_n_92,
-      \axi_rdata_reg[2]_0\ => hardwareAcceleratedHistogram2_n_9,
-      \axi_rdata_reg[2]_1\ => radiationProcessor1_n_160,
-      \axi_rdata_reg[30]_0\ => radiationProcessor1_n_93,
+      \axi_rdata_reg[16]_0\ => radiationProcessor2_n_64,
+      \axi_rdata_reg[17]_0\ => radiationProcessor2_n_80,
+      \axi_rdata_reg[18]_0\ => radiationProcessor2_n_81,
+      \axi_rdata_reg[19]_0\ => radiationProcessor2_n_82,
+      \axi_rdata_reg[1]_0\ => hardwareAcceleratedHistogram1_n_8,
+      \axi_rdata_reg[1]_1\ => radiationProcessor2_n_159,
+      \axi_rdata_reg[20]_0\ => radiationProcessor2_n_83,
+      \axi_rdata_reg[21]_0\ => radiationProcessor2_n_84,
+      \axi_rdata_reg[22]_0\ => radiationProcessor2_n_85,
+      \axi_rdata_reg[23]_0\ => radiationProcessor2_n_86,
+      \axi_rdata_reg[24]_0\ => radiationProcessor2_n_87,
+      \axi_rdata_reg[25]_0\ => radiationProcessor2_n_88,
+      \axi_rdata_reg[26]_0\ => radiationProcessor2_n_89,
+      \axi_rdata_reg[27]_0\ => radiationProcessor2_n_90,
+      \axi_rdata_reg[28]_0\ => radiationProcessor2_n_91,
+      \axi_rdata_reg[29]_0\ => radiationProcessor2_n_92,
+      \axi_rdata_reg[2]_0\ => hardwareAcceleratedHistogram1_n_9,
+      \axi_rdata_reg[2]_1\ => radiationProcessor2_n_160,
+      \axi_rdata_reg[30]_0\ => radiationProcessor2_n_93,
       \axi_rdata_reg[31]_0\(30 downto 0) => debugSource(31 downto 1),
-      \axi_rdata_reg[31]_1\ => radiationProcessor1_n_94,
+      \axi_rdata_reg[31]_1\ => radiationProcessor2_n_94,
       \axi_rdata_reg[31]_2\(15 downto 0) => countAmount(31 downto 16),
-      \axi_rdata_reg[3]_0\ => hardwareAcceleratedHistogram2_n_10,
-      \axi_rdata_reg[3]_1\ => radiationProcessor1_n_161,
-      \axi_rdata_reg[4]_0\ => hardwareAcceleratedHistogram2_n_11,
-      \axi_rdata_reg[4]_1\ => radiationProcessor1_n_162,
-      \axi_rdata_reg[5]_0\ => hardwareAcceleratedHistogram2_n_12,
-      \axi_rdata_reg[5]_1\ => radiationProcessor1_n_163,
-      \axi_rdata_reg[6]_0\ => hardwareAcceleratedHistogram2_n_13,
-      \axi_rdata_reg[6]_1\ => radiationProcessor1_n_164,
-      \axi_rdata_reg[7]_0\ => hardwareAcceleratedHistogram2_n_14,
-      \axi_rdata_reg[7]_1\ => radiationProcessor1_n_165,
-      \axi_rdata_reg[8]_0\ => hardwareAcceleratedHistogram2_n_15,
-      \axi_rdata_reg[8]_1\ => radiationProcessor1_n_166,
-      \axi_rdata_reg[9]_0\ => hardwareAcceleratedHistogram2_n_16,
-      \axi_rdata_reg[9]_1\ => radiationProcessor1_n_167,
+      \axi_rdata_reg[3]_0\ => hardwareAcceleratedHistogram1_n_10,
+      \axi_rdata_reg[3]_1\ => radiationProcessor2_n_161,
+      \axi_rdata_reg[4]_0\ => hardwareAcceleratedHistogram1_n_11,
+      \axi_rdata_reg[4]_1\ => radiationProcessor2_n_162,
+      \axi_rdata_reg[5]_0\ => hardwareAcceleratedHistogram1_n_12,
+      \axi_rdata_reg[5]_1\ => radiationProcessor2_n_163,
+      \axi_rdata_reg[6]_0\ => hardwareAcceleratedHistogram1_n_13,
+      \axi_rdata_reg[6]_1\ => radiationProcessor2_n_164,
+      \axi_rdata_reg[7]_0\ => hardwareAcceleratedHistogram1_n_14,
+      \axi_rdata_reg[7]_1\ => radiationProcessor2_n_165,
+      \axi_rdata_reg[8]_0\ => hardwareAcceleratedHistogram1_n_15,
+      \axi_rdata_reg[8]_1\ => radiationProcessor2_n_166,
+      \axi_rdata_reg[9]_0\ => hardwareAcceleratedHistogram1_n_16,
+      \axi_rdata_reg[9]_1\ => radiationProcessor2_n_167,
       axi_wready_reg_0 => S_AXI_WREADY,
-      doutb(5 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(15 downto 10),
+      doutb(5 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(15 downto 10),
       p1_ethernetValue_Write => p1_ethernetValue_Write,
       p1_valueProcessingFinished_Write => p1_valueProcessingFinished_Write,
       radiationValuesSent_reg(15 downto 0) => radiationValuesSent_reg(31 downto 16),
@@ -18500,122 +18732,122 @@ axi4ListSlaveInterface_RadiationReceiver: entity work.HaccPL_RadiationReceiver_0
       \risingValueProcessingFinished_Write__0\ => \risingValueProcessingFinished_Write__0\,
       startReceivingData => startReceivingData
     );
-hardwareAcceleratedHistogram2: entity work.HaccPL_RadiationReceiver_0_0_HardwareAcceleratedHistogram
+hardwareAcceleratedHistogram1: entity work.HaccPL_RadiationReceiver_0_0_HardwareAcceleratedHistogram
      port map (
-      D(9 downto 0) => \RadiationReceiver__radiationProcessor1__radiationValue\(9 downto 0),
+      D(9 downto 0) => \RadiationReceiver__radiationProcessor2__radiationValue\(9 downto 0),
       E(0) => risingValueReady,
-      Q(8) => radiationProcessor1_n_53,
-      Q(7) => radiationProcessor1_n_54,
-      Q(6) => radiationProcessor1_n_55,
-      Q(5) => radiationProcessor1_n_56,
-      Q(4) => radiationProcessor1_n_57,
-      Q(3) => radiationProcessor1_n_58,
-      Q(2) => radiationProcessor1_n_59,
-      Q(1) => radiationProcessor1_n_60,
-      Q(0) => radiationProcessor1_n_61,
-      SR(0) => radiationProcessor1_n_10,
-      \axi_rdata_reg[0]\ => radiationProcessor1_n_46,
+      Q(8) => radiationProcessor2_n_53,
+      Q(7) => radiationProcessor2_n_54,
+      Q(6) => radiationProcessor2_n_55,
+      Q(5) => radiationProcessor2_n_56,
+      Q(4) => radiationProcessor2_n_57,
+      Q(3) => radiationProcessor2_n_58,
+      Q(2) => radiationProcessor2_n_59,
+      Q(1) => radiationProcessor2_n_60,
+      Q(0) => radiationProcessor2_n_61,
+      SR(0) => radiationProcessor2_n_10,
+      \axi_rdata_reg[0]\ => radiationProcessor2_n_46,
       \axi_rdata_reg[0]_0\ => axi4ListSlaveInterface_RadiationReceiver_n_17,
       \axi_rdata_reg[0]_1\ => axi4ListSlaveInterface_RadiationReceiver_n_16,
       clk => clk,
-      doutb(5 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue\(15 downto 10),
-      \histogramDataInA_reg[15]_0\(0) => radiationProcessor1_n_175,
-      \histogramReadAddress_reg[0]_0\ => hardwareAcceleratedHistogram2_n_7,
-      \histogramReadAddress_reg[1]_0\ => hardwareAcceleratedHistogram2_n_8,
-      \histogramReadAddress_reg[2]_0\ => hardwareAcceleratedHistogram2_n_9,
-      \histogramReadAddress_reg[3]_0\ => hardwareAcceleratedHistogram2_n_10,
-      \histogramReadAddress_reg[4]_0\ => hardwareAcceleratedHistogram2_n_11,
-      \histogramReadAddress_reg[5]_0\ => hardwareAcceleratedHistogram2_n_12,
-      \histogramReadAddress_reg[6]_0\ => hardwareAcceleratedHistogram2_n_13,
-      \histogramReadAddress_reg[7]_0\ => hardwareAcceleratedHistogram2_n_14,
-      \histogramReadAddress_reg[8]_0\ => hardwareAcceleratedHistogram2_n_15,
-      \histogramReadAddress_reg[9]_0\ => hardwareAcceleratedHistogram2_n_16,
+      doutb(5 downto 0) => \RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue\(15 downto 10),
+      \histogramDataInA_reg[15]_0\(0) => radiationProcessor2_n_175,
+      \histogramReadAddress_reg[0]_0\ => hardwareAcceleratedHistogram1_n_7,
+      \histogramReadAddress_reg[1]_0\ => hardwareAcceleratedHistogram1_n_8,
+      \histogramReadAddress_reg[2]_0\ => hardwareAcceleratedHistogram1_n_9,
+      \histogramReadAddress_reg[3]_0\ => hardwareAcceleratedHistogram1_n_10,
+      \histogramReadAddress_reg[4]_0\ => hardwareAcceleratedHistogram1_n_11,
+      \histogramReadAddress_reg[5]_0\ => hardwareAcceleratedHistogram1_n_12,
+      \histogramReadAddress_reg[6]_0\ => hardwareAcceleratedHistogram1_n_13,
+      \histogramReadAddress_reg[7]_0\ => hardwareAcceleratedHistogram1_n_14,
+      \histogramReadAddress_reg[8]_0\ => hardwareAcceleratedHistogram1_n_15,
+      \histogramReadAddress_reg[9]_0\ => hardwareAcceleratedHistogram1_n_16,
       \histogramReadAddress_reg[9]_1\(0) => histogramReadAddress_Write,
       \histogramReadAddress_reg[9]_2\(9 downto 0) => HardwareAcceleratedHistogram_histogramReadAddress_Write(9 downto 0),
-      histogramWriteA_reg_0 => radiationProcessor1_n_174,
+      histogramWriteA_reg_0 => radiationProcessor2_n_174,
       p2_risingValueReady_reg_0(0) => p2_risingValueReady
     );
-radiationProcessor1: entity work.HaccPL_RadiationReceiver_0_0_RadiationProcessor
+radiationProcessor2: entity work.HaccPL_RadiationReceiver_0_0_RadiationProcessor
      port map (
       D(31 downto 0) => RadiationProcessor_countAmount_Write(31 downto 0),
       E(0) => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_WriteReceived\,
-      Q(14) => radiationProcessor1_n_47,
-      Q(13) => radiationProcessor1_n_48,
-      Q(12) => radiationProcessor1_n_49,
-      Q(11) => radiationProcessor1_n_50,
-      Q(10) => radiationProcessor1_n_51,
-      Q(9) => radiationProcessor1_n_52,
-      Q(8) => radiationProcessor1_n_53,
-      Q(7) => radiationProcessor1_n_54,
-      Q(6) => radiationProcessor1_n_55,
-      Q(5) => radiationProcessor1_n_56,
-      Q(4) => radiationProcessor1_n_57,
-      Q(3) => radiationProcessor1_n_58,
-      Q(2) => radiationProcessor1_n_59,
-      Q(1) => radiationProcessor1_n_60,
-      Q(0) => radiationProcessor1_n_61,
+      Q(14) => radiationProcessor2_n_47,
+      Q(13) => radiationProcessor2_n_48,
+      Q(12) => radiationProcessor2_n_49,
+      Q(11) => radiationProcessor2_n_50,
+      Q(10) => radiationProcessor2_n_51,
+      Q(9) => radiationProcessor2_n_52,
+      Q(8) => radiationProcessor2_n_53,
+      Q(7) => radiationProcessor2_n_54,
+      Q(6) => radiationProcessor2_n_55,
+      Q(5) => radiationProcessor2_n_56,
+      Q(4) => radiationProcessor2_n_57,
+      Q(3) => radiationProcessor2_n_58,
+      Q(2) => radiationProcessor2_n_59,
+      Q(1) => radiationProcessor2_n_60,
+      Q(0) => radiationProcessor2_n_61,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived\,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived\,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived\,
       \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\ => \RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived\,
-      SR(0) => radiationProcessor1_n_10,
+      SR(0) => radiationProcessor2_n_10,
       S_AXI_ARESETN => S_AXI_ARESETN,
       \axi_rdata_reg[0]\ => axi4ListSlaveInterface_RadiationReceiver_n_17,
       \axi_rdata_reg[0]_0\ => axi4ListSlaveInterface_RadiationReceiver_n_16,
       \axi_rdata_reg[16]\ => axi4ListSlaveInterface_RadiationReceiver_n_14,
       \axi_rdata_reg[16]_0\ => axi4ListSlaveInterface_RadiationReceiver_n_15,
       clk => clk,
-      \countAmount_reg[0]_0\ => radiationProcessor1_n_142,
-      \countAmount_reg[10]_0\ => radiationProcessor1_n_168,
-      \countAmount_reg[11]_0\ => radiationProcessor1_n_169,
-      \countAmount_reg[12]_0\ => radiationProcessor1_n_170,
-      \countAmount_reg[13]_0\ => radiationProcessor1_n_171,
-      \countAmount_reg[14]_0\ => radiationProcessor1_n_172,
-      \countAmount_reg[15]_0\ => radiationProcessor1_n_173,
-      \countAmount_reg[1]_0\ => radiationProcessor1_n_159,
-      \countAmount_reg[2]_0\ => radiationProcessor1_n_160,
+      \countAmount_reg[0]_0\ => radiationProcessor2_n_142,
+      \countAmount_reg[10]_0\ => radiationProcessor2_n_168,
+      \countAmount_reg[11]_0\ => radiationProcessor2_n_169,
+      \countAmount_reg[12]_0\ => radiationProcessor2_n_170,
+      \countAmount_reg[13]_0\ => radiationProcessor2_n_171,
+      \countAmount_reg[14]_0\ => radiationProcessor2_n_172,
+      \countAmount_reg[15]_0\ => radiationProcessor2_n_173,
+      \countAmount_reg[1]_0\ => radiationProcessor2_n_159,
+      \countAmount_reg[2]_0\ => radiationProcessor2_n_160,
       \countAmount_reg[31]_0\(15 downto 0) => countAmount(31 downto 16),
       \countAmount_reg[31]_1\(0) => countAmount_Write,
-      \countAmount_reg[3]_0\ => radiationProcessor1_n_161,
-      \countAmount_reg[4]_0\ => radiationProcessor1_n_162,
-      \countAmount_reg[5]_0\ => radiationProcessor1_n_163,
-      \countAmount_reg[6]_0\ => radiationProcessor1_n_164,
-      \countAmount_reg[7]_0\ => radiationProcessor1_n_165,
-      \countAmount_reg[8]_0\ => radiationProcessor1_n_166,
-      \countAmount_reg[9]_0\ => radiationProcessor1_n_167,
+      \countAmount_reg[3]_0\ => radiationProcessor2_n_161,
+      \countAmount_reg[4]_0\ => radiationProcessor2_n_162,
+      \countAmount_reg[5]_0\ => radiationProcessor2_n_163,
+      \countAmount_reg[6]_0\ => radiationProcessor2_n_164,
+      \countAmount_reg[7]_0\ => radiationProcessor2_n_165,
+      \countAmount_reg[8]_0\ => radiationProcessor2_n_166,
+      \countAmount_reg[9]_0\ => radiationProcessor2_n_167,
       \debugSource_reg[31]_0\(30 downto 0) => debugSource(31 downto 1),
       \debugSource_reg[31]_1\(0) => debugSource_Write,
       \debugSource_reg[31]_2\(31 downto 0) => RadiationProcessor_debugSource_Write(31 downto 0),
-      doutb(9 downto 0) => \RadiationReceiver__radiationProcessor1__radiationValue\(9 downto 0),
-      \ethernetLoadFloor_reg[0]_0\ => radiationProcessor1_n_95,
+      doutb(9 downto 0) => \RadiationReceiver__radiationProcessor2__radiationValue\(9 downto 0),
+      \ethernetLoadFloor_reg[0]_0\ => radiationProcessor2_n_95,
       \ethernetLoadFloor_reg[15]_0\(14 downto 0) => ethernetLoadFloor(15 downto 1),
       \ethernetLoadFloor_reg[15]_1\(0) => ethernetLoadFloor_Write,
       \ethernetLoadFloor_reg[15]_2\(15 downto 0) => RadiationProcessor_ethernetLoadFloor_Write(15 downto 0),
       \ethernetValue_reg[15]_0\(14 downto 0) => ethernetValue(15 downto 1),
-      \ethernetValue_reg[16]_0\ => radiationProcessor1_n_64,
-      \ethernetValue_reg[17]_0\ => radiationProcessor1_n_80,
-      \ethernetValue_reg[18]_0\ => radiationProcessor1_n_81,
-      \ethernetValue_reg[19]_0\ => radiationProcessor1_n_82,
-      \ethernetValue_reg[20]_0\ => radiationProcessor1_n_83,
-      \ethernetValue_reg[21]_0\ => radiationProcessor1_n_84,
-      \ethernetValue_reg[22]_0\ => radiationProcessor1_n_85,
-      \ethernetValue_reg[23]_0\ => radiationProcessor1_n_86,
-      \ethernetValue_reg[24]_0\ => radiationProcessor1_n_87,
-      \ethernetValue_reg[25]_0\ => radiationProcessor1_n_88,
-      \ethernetValue_reg[26]_0\ => radiationProcessor1_n_89,
-      \ethernetValue_reg[27]_0\ => radiationProcessor1_n_90,
-      \ethernetValue_reg[28]_0\ => radiationProcessor1_n_91,
-      \ethernetValue_reg[29]_0\ => radiationProcessor1_n_92,
-      \ethernetValue_reg[30]_0\ => radiationProcessor1_n_93,
-      \ethernetValue_reg[31]_0\ => radiationProcessor1_n_94,
+      \ethernetValue_reg[16]_0\ => radiationProcessor2_n_64,
+      \ethernetValue_reg[17]_0\ => radiationProcessor2_n_80,
+      \ethernetValue_reg[18]_0\ => radiationProcessor2_n_81,
+      \ethernetValue_reg[19]_0\ => radiationProcessor2_n_82,
+      \ethernetValue_reg[20]_0\ => radiationProcessor2_n_83,
+      \ethernetValue_reg[21]_0\ => radiationProcessor2_n_84,
+      \ethernetValue_reg[22]_0\ => radiationProcessor2_n_85,
+      \ethernetValue_reg[23]_0\ => radiationProcessor2_n_86,
+      \ethernetValue_reg[24]_0\ => radiationProcessor2_n_87,
+      \ethernetValue_reg[25]_0\ => radiationProcessor2_n_88,
+      \ethernetValue_reg[26]_0\ => radiationProcessor2_n_89,
+      \ethernetValue_reg[27]_0\ => radiationProcessor2_n_90,
+      \ethernetValue_reg[28]_0\ => radiationProcessor2_n_91,
+      \ethernetValue_reg[29]_0\ => radiationProcessor2_n_92,
+      \ethernetValue_reg[30]_0\ => radiationProcessor2_n_93,
+      \ethernetValue_reg[31]_0\ => radiationProcessor2_n_94,
       \ethernetValue_reg[31]_1\(31 downto 0) => RadiationProcessor_ethernetValue_Write(31 downto 0),
-      \ethernetValuesReceived_reg[31]_0\(15 downto 0) => \RadiationReceiver__radiationProcessor1__ethernetValuesReceived\(31 downto 16),
+      \ethernetValuesReceived_reg[31]_0\(15 downto 0) => \RadiationReceiver__radiationProcessor2__ethernetValuesReceived\(31 downto 16),
       histogramWriteA_reg(0) => p2_risingValueReady,
       p1_ethernetValue_Write => p1_ethernetValue_Write,
       p1_valueProcessingFinished_Write => p1_valueProcessingFinished_Write,
-      p1_valueReady_reg_0(0) => radiationProcessor1_n_175,
-      p2_risingValueReady_reg => radiationProcessor1_n_174,
-      \radiationTimer_reg[0]_0\ => radiationProcessor1_n_46,
+      p1_valueReady_reg_0(0) => radiationProcessor2_n_175,
+      p2_risingValueReady_reg => radiationProcessor2_n_174,
+      \radiationTimer_reg[0]_0\ => radiationProcessor2_n_46,
       \radiationValuesSent_reg[31]_0\(15 downto 0) => radiationValuesSent_reg(31 downto 16),
       requestEthernetValues => requestEthernetValues,
       risingEthernetValueWrite => risingEthernetValueWrite,

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Apr 11 12:26:04 2023
+// Date        : Tue Apr 11 17:21:03 2023
 // Host        : Sofia running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ HaccPL_RadiationReceiver_0_0_sim_netlist.v
@@ -93,7 +93,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
     \axi_rdata_reg[15]_2 ,
     radiationValuesSent_reg,
     \axi_rdata_reg[31]_2 ,
-    RadiationReceiver__radiationProcessor1__ethernetValuesReceived,
+    RadiationReceiver__radiationProcessor2__ethernetValuesReceived,
     p1_ethernetValue_Write,
     p1_valueProcessingFinished_Write,
     S_AXI_AWVALID,
@@ -185,7 +185,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
   input [14:0]\axi_rdata_reg[15]_2 ;
   input [15:0]radiationValuesSent_reg;
   input [15:0]\axi_rdata_reg[31]_2 ;
-  input [15:0]RadiationReceiver__radiationProcessor1__ethernetValuesReceived;
+  input [15:0]RadiationReceiver__radiationProcessor2__ethernetValuesReceived;
   input p1_ethernetValue_Write;
   input p1_valueProcessingFinished_Write;
   input S_AXI_AWVALID;
@@ -242,7 +242,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived;
-  wire [15:0]RadiationReceiver__radiationProcessor1__ethernetValuesReceived;
+  wire [15:0]RadiationReceiver__radiationProcessor2__ethernetValuesReceived;
   wire [0:0]SR;
   wire S_AXI_ACLK;
   wire [5:0]S_AXI_ARADDR;
@@ -1808,7 +1808,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[0]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [0]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[16]_i_2_n_0 ));
   LUT5 #(
@@ -1827,7 +1827,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[1]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [1]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[1]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[1]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[17]_i_2_n_0 ));
   LUT5 #(
@@ -1846,7 +1846,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[2]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [2]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[2]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[2]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[18]_i_2_n_0 ));
   LUT5 #(
@@ -1865,7 +1865,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[3]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [3]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[19]_i_2_n_0 ));
   LUT6 #(
@@ -1904,7 +1904,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[4]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [4]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[4]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[4]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[20]_i_2_n_0 ));
   LUT5 #(
@@ -1923,7 +1923,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[5]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [5]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[5]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[5]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[21]_i_2_n_0 ));
   LUT5 #(
@@ -1942,7 +1942,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[6]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [6]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[6]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[6]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[22]_i_2_n_0 ));
   LUT5 #(
@@ -1961,7 +1961,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[7]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [7]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[23]_i_2_n_0 ));
   LUT5 #(
@@ -1980,7 +1980,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[8]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [8]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[8]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[8]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[24]_i_2_n_0 ));
   LUT5 #(
@@ -1999,7 +1999,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[9]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [9]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[9]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[9]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[25]_i_2_n_0 ));
   LUT5 #(
@@ -2018,7 +2018,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[10]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [10]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[10]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[10]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[26]_i_2_n_0 ));
   LUT5 #(
@@ -2037,7 +2037,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[11]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [11]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[27]_i_2_n_0 ));
   LUT5 #(
@@ -2056,7 +2056,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[12]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [12]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[12]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[12]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[28]_i_2_n_0 ));
   LUT5 #(
@@ -2075,7 +2075,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[13]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [13]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[13]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[13]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[29]_i_2_n_0 ));
   LUT6 #(
@@ -2114,7 +2114,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[14]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [14]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[14]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[14]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[30]_i_2_n_0 ));
   LUT3 #(
@@ -2170,7 +2170,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Axi4ListSlaveInterface_Radiatio
         .I1(radiationValuesSent_reg[15]),
         .I2(\axi_rdata[31]_i_8_n_0 ),
         .I3(\axi_rdata_reg[31]_2 [15]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15]),
         .I5(\axi_rdata[31]_i_9_n_0 ),
         .O(\axi_rdata[31]_i_4_n_0 ));
   LUT6 #(
@@ -3191,7 +3191,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
   wire [9:0]D;
   wire [0:0]E;
   wire [8:0]Q;
-  wire [9:0]RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue;
+  wire [9:0]RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue;
   wire [0:0]SR;
   wire \axi_rdata_reg[0] ;
   wire \axi_rdata_reg[0]_0 ;
@@ -3260,7 +3260,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(\axi_rdata_reg[0] ),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[0]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[0]),
         .I5(D[0]),
         .O(\histogramReadAddress_reg[0]_0 ));
   LUT6 #(
@@ -3270,7 +3270,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[0]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[1]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[1]),
         .I5(D[1]),
         .O(\histogramReadAddress_reg[1]_0 ));
   LUT6 #(
@@ -3280,7 +3280,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[1]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[2]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[2]),
         .I5(D[2]),
         .O(\histogramReadAddress_reg[2]_0 ));
   LUT6 #(
@@ -3290,7 +3290,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[2]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[3]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[3]),
         .I5(D[3]),
         .O(\histogramReadAddress_reg[3]_0 ));
   LUT6 #(
@@ -3300,7 +3300,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[3]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[4]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[4]),
         .I5(D[4]),
         .O(\histogramReadAddress_reg[4]_0 ));
   LUT6 #(
@@ -3310,7 +3310,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[4]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[5]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[5]),
         .I5(D[5]),
         .O(\histogramReadAddress_reg[5]_0 ));
   LUT6 #(
@@ -3320,7 +3320,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[5]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[6]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[6]),
         .I5(D[6]),
         .O(\histogramReadAddress_reg[6]_0 ));
   LUT6 #(
@@ -3330,7 +3330,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[6]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[7]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[7]),
         .I5(D[7]),
         .O(\histogramReadAddress_reg[7]_0 ));
   LUT6 #(
@@ -3340,7 +3340,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[7]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[8]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[8]),
         .I5(D[8]),
         .O(\histogramReadAddress_reg[8]_0 ));
   LUT6 #(
@@ -3350,7 +3350,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .I1(Q[8]),
         .I2(\axi_rdata_reg[0]_0 ),
         .I3(\axi_rdata_reg[0]_1 ),
-        .I4(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue[9]),
+        .I4(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue[9]),
         .I5(D[9]),
         .O(\histogramReadAddress_reg[9]_0 ));
   FDRE \histogramAddressA_reg[0] 
@@ -3683,7 +3683,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram
         .dina(histogramDataInA),
         .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .douta(histogramDataOutA),
-        .doutb({doutb,RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue}),
+        .doutb({doutb,RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue}),
         .wea(histogramWriteA),
         .web(1'b0));
   FDRE p1_risingValueReady_reg
@@ -3855,7 +3855,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived;
-  wire [15:0]RadiationReceiver__radiationProcessor1__ethernetValuesReceived;
+  wire [15:0]RadiationReceiver__radiationProcessor2__ethernetValuesReceived;
   wire [0:0]SR;
   wire S_AXI_ARESETN;
   wire \axi_rdata_reg[0] ;
@@ -3887,6 +3887,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   wire [0:0]\debugSource_reg[31]_1 ;
   wire [31:0]\debugSource_reg[31]_2 ;
   wire [9:0]doutb;
+  wire \ethernetHoldInterruptTimer[7]_i_1_n_0 ;
+  wire \ethernetHoldInterruptTimer[7]_i_3_n_0 ;
+  wire \ethernetHoldInterruptTimer[7]_i_4_n_0 ;
+  wire \ethernetHoldInterruptTimer[7]_i_5_n_0 ;
+  wire [7:0]ethernetHoldInterruptTimer_reg;
   wire [0:0]ethernetLoadFloor;
   wire \ethernetLoadFloor_reg[0]_0 ;
   wire [14:0]\ethernetLoadFloor_reg[15]_0 ;
@@ -3977,7 +3982,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   wire \ethernetValuesReceived_reg[8]_i_1_n_6 ;
   wire \ethernetValuesReceived_reg[8]_i_1_n_7 ;
   wire getNextValue;
-  wire \hardwareAcceleratedHistogram2/p1_valueReady ;
+  wire \hardwareAcceleratedHistogram1/p1_valueReady ;
   wire [0:0]histogramWriteA_reg;
   wire i__carry__0_i_1__0_n_0;
   wire i__carry__0_i_1_n_0;
@@ -4099,6 +4104,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   wire p2_risingEthernetValueWrite;
   wire p2_risingValueReady_reg;
   wire p3_risingEthernetValueWrite;
+  wire [7:0]p_0_in;
   wire p_0_in0;
   wire radiationMemoryAddressA;
   wire \radiationMemoryAddressA[0]_i_3_n_0 ;
@@ -4289,6 +4295,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   wire \radiationValuesSent_reg[8]_i_1_n_7 ;
   wire requestEthernetValues;
   wire requestEthernetValues_i_1_n_0;
+  wire requestEthernetValues_i_2_n_0;
+  wire requestEthernetValues_i_3_n_0;
   wire requestMoreValues;
   wire requestMoreValues0;
   wire requestMoreValues12_in;
@@ -4463,7 +4471,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[0]_i_4 
        (.I0(countAmount[0]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[0]),
@@ -4473,7 +4481,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[10]_i_4 
        (.I0(countAmount[10]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[10]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[10]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[10]),
@@ -4483,7 +4491,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[11]_i_4 
        (.I0(countAmount[11]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[11]),
@@ -4493,7 +4501,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[12]_i_4 
        (.I0(countAmount[12]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[12]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[12]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[12]),
@@ -4503,7 +4511,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[13]_i_4 
        (.I0(countAmount[13]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[13]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[13]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[13]),
@@ -4513,7 +4521,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[14]_i_4 
        (.I0(countAmount[14]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[14]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[14]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[14]),
@@ -4523,7 +4531,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[15]_i_6 
        (.I0(countAmount[15]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[15]),
@@ -4565,7 +4573,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[1]_i_4 
        (.I0(countAmount[1]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[1]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[1]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[1]),
@@ -4655,7 +4663,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[2]_i_4 
        (.I0(countAmount[2]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[2]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[2]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[2]),
@@ -4681,7 +4689,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[3]_i_4 
        (.I0(countAmount[3]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[3]),
@@ -4691,7 +4699,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[4]_i_4 
        (.I0(countAmount[4]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[4]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[4]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[4]),
@@ -4701,7 +4709,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[5]_i_4 
        (.I0(countAmount[5]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[5]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[5]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[5]),
@@ -4711,7 +4719,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[6]_i_4 
        (.I0(countAmount[6]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[6]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[6]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[6]),
@@ -4721,7 +4729,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[7]_i_4 
        (.I0(countAmount[7]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[7]),
@@ -4731,7 +4739,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[8]_i_4 
        (.I0(countAmount[8]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[8]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[8]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[8]),
@@ -4741,7 +4749,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(64'hCFAFCFA0C0AFC0A0)) 
     \axi_rdata[9]_i_6 
        (.I0(countAmount[9]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[9]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[9]),
         .I2(\axi_rdata_reg[0] ),
         .I3(\axi_rdata_reg[0]_0 ),
         .I4(nextValueDelaySaved[9]),
@@ -5131,6 +5139,154 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .D(\debugSource_reg[31]_2 [9]),
         .Q(\debugSource_reg[31]_0 [8]),
         .R(SR));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    \ethernetHoldInterruptTimer[0]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[0]),
+        .O(p_0_in[0]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \ethernetHoldInterruptTimer[1]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[0]),
+        .I1(ethernetHoldInterruptTimer_reg[1]),
+        .O(p_0_in[1]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \ethernetHoldInterruptTimer[2]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[0]),
+        .I1(ethernetHoldInterruptTimer_reg[1]),
+        .I2(ethernetHoldInterruptTimer_reg[2]),
+        .O(p_0_in[2]));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT4 #(
+    .INIT(16'h7F80)) 
+    \ethernetHoldInterruptTimer[3]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[1]),
+        .I1(ethernetHoldInterruptTimer_reg[0]),
+        .I2(ethernetHoldInterruptTimer_reg[2]),
+        .I3(ethernetHoldInterruptTimer_reg[3]),
+        .O(p_0_in[3]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT5 #(
+    .INIT(32'h7FFF8000)) 
+    \ethernetHoldInterruptTimer[4]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[2]),
+        .I1(ethernetHoldInterruptTimer_reg[0]),
+        .I2(ethernetHoldInterruptTimer_reg[1]),
+        .I3(ethernetHoldInterruptTimer_reg[3]),
+        .I4(ethernetHoldInterruptTimer_reg[4]),
+        .O(p_0_in[4]));
+  LUT6 #(
+    .INIT(64'h7FFFFFFF80000000)) 
+    \ethernetHoldInterruptTimer[5]_i_1 
+       (.I0(ethernetHoldInterruptTimer_reg[3]),
+        .I1(ethernetHoldInterruptTimer_reg[1]),
+        .I2(ethernetHoldInterruptTimer_reg[0]),
+        .I3(ethernetHoldInterruptTimer_reg[2]),
+        .I4(ethernetHoldInterruptTimer_reg[4]),
+        .I5(ethernetHoldInterruptTimer_reg[5]),
+        .O(p_0_in[5]));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT2 #(
+    .INIT(4'h6)) 
+    \ethernetHoldInterruptTimer[6]_i_1 
+       (.I0(\ethernetHoldInterruptTimer[7]_i_4_n_0 ),
+        .I1(ethernetHoldInterruptTimer_reg[6]),
+        .O(p_0_in[6]));
+  LUT3 #(
+    .INIT(8'hF7)) 
+    \ethernetHoldInterruptTimer[7]_i_1 
+       (.I0(requestEthernetValues_i_2_n_0),
+        .I1(S_AXI_ARESETN),
+        .I2(\ethernetHoldInterruptTimer[7]_i_3_n_0 ),
+        .O(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  LUT3 #(
+    .INIT(8'h78)) 
+    \ethernetHoldInterruptTimer[7]_i_2 
+       (.I0(\ethernetHoldInterruptTimer[7]_i_4_n_0 ),
+        .I1(ethernetHoldInterruptTimer_reg[6]),
+        .I2(ethernetHoldInterruptTimer_reg[7]),
+        .O(p_0_in[7]));
+  LUT5 #(
+    .INIT(32'h00080000)) 
+    \ethernetHoldInterruptTimer[7]_i_3 
+       (.I0(ethernetHoldInterruptTimer_reg[4]),
+        .I1(ethernetHoldInterruptTimer_reg[5]),
+        .I2(ethernetHoldInterruptTimer_reg[6]),
+        .I3(ethernetHoldInterruptTimer_reg[7]),
+        .I4(\ethernetHoldInterruptTimer[7]_i_5_n_0 ),
+        .O(\ethernetHoldInterruptTimer[7]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \ethernetHoldInterruptTimer[7]_i_4 
+       (.I0(ethernetHoldInterruptTimer_reg[5]),
+        .I1(ethernetHoldInterruptTimer_reg[3]),
+        .I2(ethernetHoldInterruptTimer_reg[1]),
+        .I3(ethernetHoldInterruptTimer_reg[0]),
+        .I4(ethernetHoldInterruptTimer_reg[2]),
+        .I5(ethernetHoldInterruptTimer_reg[4]),
+        .O(\ethernetHoldInterruptTimer[7]_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT4 #(
+    .INIT(16'h0004)) 
+    \ethernetHoldInterruptTimer[7]_i_5 
+       (.I0(ethernetHoldInterruptTimer_reg[0]),
+        .I1(ethernetHoldInterruptTimer_reg[1]),
+        .I2(ethernetHoldInterruptTimer_reg[3]),
+        .I3(ethernetHoldInterruptTimer_reg[2]),
+        .O(\ethernetHoldInterruptTimer[7]_i_5_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[0] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[0]),
+        .Q(ethernetHoldInterruptTimer_reg[0]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[1] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[1]),
+        .Q(ethernetHoldInterruptTimer_reg[1]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[2] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[2]),
+        .Q(ethernetHoldInterruptTimer_reg[2]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[3] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[3]),
+        .Q(ethernetHoldInterruptTimer_reg[3]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[4] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[4]),
+        .Q(ethernetHoldInterruptTimer_reg[4]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[5] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[5]),
+        .Q(ethernetHoldInterruptTimer_reg[5]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[6] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[6]),
+        .Q(ethernetHoldInterruptTimer_reg[6]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
+  FDRE \ethernetHoldInterruptTimer_reg[7] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(p_0_in[7]),
+        .Q(ethernetHoldInterruptTimer_reg[7]),
+        .R(\ethernetHoldInterruptTimer[7]_i_1_n_0 ));
   FDRE \ethernetLoadFloor_reg[0] 
        (.C(clk),
         .CE(\ethernetLoadFloor_reg[15]_1 ),
@@ -5422,13 +5578,13 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   LUT1 #(
     .INIT(2'h1)) 
     \ethernetValuesReceived[0]_i_2 
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
         .O(\ethernetValuesReceived[0]_i_2_n_0 ));
   FDRE \ethernetValuesReceived_reg[0] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[0]_i_1_n_7 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
         .R(SR));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \ethernetValuesReceived_reg[0]_i_1 
@@ -5437,24 +5593,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b1}),
         .O({\ethernetValuesReceived_reg[0]_i_1_n_4 ,\ethernetValuesReceived_reg[0]_i_1_n_5 ,\ethernetValuesReceived_reg[0]_i_1_n_6 ,\ethernetValuesReceived_reg[0]_i_1_n_7 }),
-        .S({RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3:1],\ethernetValuesReceived[0]_i_2_n_0 }));
+        .S({RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3:1],\ethernetValuesReceived[0]_i_2_n_0 }));
   FDRE \ethernetValuesReceived_reg[10] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[8]_i_1_n_5 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[10]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[10]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[11] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[8]_i_1_n_4 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[12] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[12]_i_1_n_7 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[12]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[12]),
         .R(SR));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \ethernetValuesReceived_reg[12]_i_1 
@@ -5463,24 +5619,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\ethernetValuesReceived_reg[12]_i_1_n_4 ,\ethernetValuesReceived_reg[12]_i_1_n_5 ,\ethernetValuesReceived_reg[12]_i_1_n_6 ,\ethernetValuesReceived_reg[12]_i_1_n_7 }),
-        .S(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15:12]));
+        .S(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15:12]));
   FDRE \ethernetValuesReceived_reg[13] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[12]_i_1_n_6 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[13]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[13]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[14] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[12]_i_1_n_5 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[14]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[14]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[15] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[12]_i_1_n_4 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[16] 
        (.C(clk),
@@ -5518,7 +5674,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[0]_i_1_n_6 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[1]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[1]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[20] 
        (.C(clk),
@@ -5608,7 +5764,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[0]_i_1_n_5 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[2]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[2]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[30] 
        (.C(clk),
@@ -5626,13 +5782,13 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[0]_i_1_n_4 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[4] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[4]_i_1_n_7 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[4]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[4]),
         .R(SR));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \ethernetValuesReceived_reg[4]_i_1 
@@ -5641,30 +5797,30 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\ethernetValuesReceived_reg[4]_i_1_n_4 ,\ethernetValuesReceived_reg[4]_i_1_n_5 ,\ethernetValuesReceived_reg[4]_i_1_n_6 ,\ethernetValuesReceived_reg[4]_i_1_n_7 }),
-        .S(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7:4]));
+        .S(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7:4]));
   FDRE \ethernetValuesReceived_reg[5] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[4]_i_1_n_6 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[5]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[5]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[6] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[4]_i_1_n_5 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[6]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[6]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[7] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[4]_i_1_n_4 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7]),
         .R(SR));
   FDRE \ethernetValuesReceived_reg[8] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[8]_i_1_n_7 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[8]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[8]),
         .R(SR));
   (* ADDER_THRESHOLD = "11" *) 
   CARRY4 \ethernetValuesReceived_reg[8]_i_1 
@@ -5673,29 +5829,29 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O({\ethernetValuesReceived_reg[8]_i_1_n_4 ,\ethernetValuesReceived_reg[8]_i_1_n_5 ,\ethernetValuesReceived_reg[8]_i_1_n_6 ,\ethernetValuesReceived_reg[8]_i_1_n_7 }),
-        .S(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11:8]));
+        .S(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11:8]));
   FDRE \ethernetValuesReceived_reg[9] 
        (.C(clk),
         .CE(risingEthernetValueWrite),
         .D(\ethernetValuesReceived_reg[8]_i_1_n_6 ),
-        .Q(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[9]),
+        .Q(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[9]),
         .R(SR));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h4F)) 
     \histogramDataInA[15]_i_1 
-       (.I0(\hardwareAcceleratedHistogram2/p1_valueReady ),
+       (.I0(\hardwareAcceleratedHistogram1/p1_valueReady ),
         .I1(valueReady_reg_0),
         .I2(S_AXI_ARESETN),
         .O(p1_valueReady_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT4 #(
     .INIT(16'h8808)) 
     histogramWriteA_i_1
        (.I0(histogramWriteA_reg),
         .I1(S_AXI_ARESETN),
         .I2(valueReady_reg_0),
-        .I3(\hardwareAcceleratedHistogram2/p1_valueReady ),
+        .I3(\hardwareAcceleratedHistogram1/p1_valueReady ),
         .O(p2_risingValueReady_reg));
   LUT4 #(
     .INIT(16'h9009)) 
@@ -6089,7 +6245,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .I2(nextValueDelay_reg[2]),
         .I3(nextValueDelay_reg[1]),
         .O(\nextValueDelay[0]_i_10_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \nextValueDelay[0]_i_11 
@@ -6138,7 +6294,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .I2(nextValueDelay_reg[0]),
         .I3(\nextValueDelay[0]_i_3_n_0 ),
         .O(\nextValueDelay[0]_i_7_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     \nextValueDelay[0]_i_8 
@@ -6435,7 +6591,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .I3(p1_nextValueDelay[0]),
         .I4(p1_getNextValue_i_9_n_0),
         .O(p1_getNextValue_i_5_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     p1_getNextValue_i_6
@@ -6444,7 +6600,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .I2(nextValueDelay_reg[9]),
         .I3(nextValueDelay_reg[8]),
         .O(p1_getNextValue_i_6_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     p1_getNextValue_i_7
@@ -6671,7 +6827,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(4'h2)) 
     p1_risingValueReady_i_1
        (.I0(valueReady_reg_0),
-        .I1(\hardwareAcceleratedHistogram2/p1_valueReady ),
+        .I1(\hardwareAcceleratedHistogram1/p1_valueReady ),
         .O(valueReady_reg_1));
   FDRE p1_valueProcessingFinished_Write_reg
        (.C(clk),
@@ -6683,7 +6839,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.C(clk),
         .CE(1'b1),
         .D(valueReady_reg_0),
-        .Q(\hardwareAcceleratedHistogram2/p1_valueReady ),
+        .Q(\hardwareAcceleratedHistogram1/p1_valueReady ),
         .R(SR));
   FDRE p2_getNextValue_reg
        (.C(clk),
@@ -7242,7 +7398,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     \radiationTimer[31]_i_1 
        (.I0(S_AXI_ARESETN),
         .I1(valueReady_reg_0),
-        .I2(\hardwareAcceleratedHistogram2/p1_valueReady ),
+        .I2(\hardwareAcceleratedHistogram1/p1_valueReady ),
         .I3(p1_valueProcessingFinished_Write),
         .I4(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived),
         .O(\radiationTimer[31]_i_1_n_0 ));
@@ -7770,16 +7926,34 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
         .D(\radiationValuesSent_reg[8]_i_1_n_6 ),
         .Q(radiationValuesSent_reg[9]),
         .R(SR));
-  LUT6 #(
-    .INIT(64'hFE00FE000000FE00)) 
+  LUT5 #(
+    .INIT(32'h0000FE00)) 
     requestEthernetValues_i_1
-       (.I0(requestEthernetValues),
+       (.I0(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived),
         .I1(requestMoreValues),
-        .I2(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived),
+        .I2(requestEthernetValues),
         .I3(S_AXI_ARESETN),
-        .I4(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived),
-        .I5(p1_clearRequestEthernetValues_Write),
+        .I4(requestEthernetValues_i_2_n_0),
         .O(requestEthernetValues_i_1_n_0));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    requestEthernetValues_i_2
+       (.I0(requestEthernetValues_i_3_n_0),
+        .I1(ethernetHoldInterruptTimer_reg[3]),
+        .I2(ethernetHoldInterruptTimer_reg[4]),
+        .I3(ethernetHoldInterruptTimer_reg[5]),
+        .I4(ethernetHoldInterruptTimer_reg[6]),
+        .O(requestEthernetValues_i_2_n_0));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFF2)) 
+    requestEthernetValues_i_3
+       (.I0(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived),
+        .I1(p1_clearRequestEthernetValues_Write),
+        .I2(ethernetHoldInterruptTimer_reg[1]),
+        .I3(ethernetHoldInterruptTimer_reg[2]),
+        .I4(ethernetHoldInterruptTimer_reg[0]),
+        .I5(ethernetHoldInterruptTimer_reg[7]),
+        .O(requestEthernetValues_i_3_n_0));
   FDRE requestEthernetValues_reg
        (.C(clk),
         .CE(1'b1),
@@ -8079,7 +8253,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.CI(1'b0),
         .CO({requestMoreValues2_carry_n_0,requestMoreValues2_carry_n_1,requestMoreValues2_carry_n_2,requestMoreValues2_carry_n_3}),
         .CYINIT(1'b1),
-        .DI(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3:0]),
+        .DI(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3:0]),
         .O(requestMoreValues2[3:0]),
         .S({requestMoreValues2_carry_i_1_n_0,requestMoreValues2_carry_i_2_n_0,requestMoreValues2_carry_i_3_n_0,requestMoreValues2_carry_i_4_n_0}));
   (* ADDER_THRESHOLD = "35" *) 
@@ -8087,31 +8261,31 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.CI(requestMoreValues2_carry_n_0),
         .CO({requestMoreValues2_carry__0_n_0,requestMoreValues2_carry__0_n_1,requestMoreValues2_carry__0_n_2,requestMoreValues2_carry__0_n_3}),
         .CYINIT(1'b0),
-        .DI(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7:4]),
+        .DI(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7:4]),
         .O(requestMoreValues2[7:4]),
         .S({requestMoreValues2_carry__0_i_1_n_0,requestMoreValues2_carry__0_i_2_n_0,requestMoreValues2_carry__0_i_3_n_0,requestMoreValues2_carry__0_i_4_n_0}));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__0_i_1
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7]),
         .I1(\ethernetLoadFloor_reg[15]_0 [6]),
         .O(requestMoreValues2_carry__0_i_1_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__0_i_2
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[6]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[6]),
         .I1(\ethernetLoadFloor_reg[15]_0 [5]),
         .O(requestMoreValues2_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__0_i_3
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[5]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[5]),
         .I1(\ethernetLoadFloor_reg[15]_0 [4]),
         .O(requestMoreValues2_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__0_i_4
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[4]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[4]),
         .I1(\ethernetLoadFloor_reg[15]_0 [3]),
         .O(requestMoreValues2_carry__0_i_4_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -8119,31 +8293,31 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.CI(requestMoreValues2_carry__0_n_0),
         .CO({requestMoreValues2_carry__1_n_0,requestMoreValues2_carry__1_n_1,requestMoreValues2_carry__1_n_2,requestMoreValues2_carry__1_n_3}),
         .CYINIT(1'b0),
-        .DI(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11:8]),
+        .DI(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11:8]),
         .O(requestMoreValues2[11:8]),
         .S({requestMoreValues2_carry__1_i_1_n_0,requestMoreValues2_carry__1_i_2_n_0,requestMoreValues2_carry__1_i_3_n_0,requestMoreValues2_carry__1_i_4_n_0}));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__1_i_1
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11]),
         .I1(\ethernetLoadFloor_reg[15]_0 [10]),
         .O(requestMoreValues2_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__1_i_2
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[10]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[10]),
         .I1(\ethernetLoadFloor_reg[15]_0 [9]),
         .O(requestMoreValues2_carry__1_i_2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__1_i_3
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[9]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[9]),
         .I1(\ethernetLoadFloor_reg[15]_0 [8]),
         .O(requestMoreValues2_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__1_i_4
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[8]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[8]),
         .I1(\ethernetLoadFloor_reg[15]_0 [7]),
         .O(requestMoreValues2_carry__1_i_4_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -8151,31 +8325,31 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
        (.CI(requestMoreValues2_carry__1_n_0),
         .CO({requestMoreValues2_carry__2_n_0,requestMoreValues2_carry__2_n_1,requestMoreValues2_carry__2_n_2,requestMoreValues2_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15:12]),
+        .DI(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15:12]),
         .O(requestMoreValues2[15:12]),
         .S({requestMoreValues2_carry__2_i_1_n_0,requestMoreValues2_carry__2_i_2_n_0,requestMoreValues2_carry__2_i_3_n_0,requestMoreValues2_carry__2_i_4_n_0}));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__2_i_1
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15]),
         .I1(\ethernetLoadFloor_reg[15]_0 [14]),
         .O(requestMoreValues2_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__2_i_2
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[14]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[14]),
         .I1(\ethernetLoadFloor_reg[15]_0 [13]),
         .O(requestMoreValues2_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__2_i_3
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[13]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[13]),
         .I1(\ethernetLoadFloor_reg[15]_0 [12]),
         .O(requestMoreValues2_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry__2_i_4
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[12]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[12]),
         .I1(\ethernetLoadFloor_reg[15]_0 [11]),
         .O(requestMoreValues2_carry__2_i_4_n_0));
   (* ADDER_THRESHOLD = "35" *) 
@@ -8293,25 +8467,25 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry_i_1
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3]),
         .I1(\ethernetLoadFloor_reg[15]_0 [2]),
         .O(requestMoreValues2_carry_i_1_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry_i_2
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[2]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[2]),
         .I1(\ethernetLoadFloor_reg[15]_0 [1]),
         .O(requestMoreValues2_carry_i_2_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry_i_3
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[1]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[1]),
         .I1(\ethernetLoadFloor_reg[15]_0 [0]),
         .O(requestMoreValues2_carry_i_3_n_0));
   LUT2 #(
     .INIT(4'h9)) 
     requestMoreValues2_carry_i_4
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
         .I1(ethernetLoadFloor),
         .O(requestMoreValues2_carry_i_4_n_0));
   LUT4 #(
@@ -8325,16 +8499,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   LUT4 #(
     .INIT(16'hFFFE)) 
     requestMoreValues_i_2
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[6]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[7]),
-        .I2(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[8]),
-        .I3(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[9]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[6]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[7]),
+        .I2(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[8]),
+        .I3(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[9]),
         .O(requestMoreValues_i_2_n_0));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
     requestMoreValues_i_3
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[14]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[15]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[14]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[15]),
         .I2(requestMoreValues_i_5_n_0),
         .I3(requestMoreValues_i_6_n_0),
         .I4(requestMoreValues_i_7_n_0),
@@ -8344,10 +8518,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
     .INIT(32'hFFFFFFFE)) 
     requestMoreValues_i_4
        (.I0(requestMoreValues_i_9_n_0),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[5]),
-        .I2(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[4]),
-        .I3(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[3]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[2]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[5]),
+        .I2(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[4]),
+        .I3(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[3]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[2]),
         .O(requestMoreValues_i_4_n_0));
   LUT4 #(
     .INIT(16'hFFFE)) 
@@ -8384,12 +8558,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
     requestMoreValues_i_9
-       (.I0(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[13]),
-        .I1(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[12]),
-        .I2(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[11]),
-        .I3(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[10]),
-        .I4(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[0]),
-        .I5(RadiationReceiver__radiationProcessor1__ethernetValuesReceived[1]),
+       (.I0(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[13]),
+        .I1(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[12]),
+        .I2(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[11]),
+        .I3(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[10]),
+        .I4(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[0]),
+        .I5(RadiationReceiver__radiationProcessor2__ethernetValuesReceived[1]),
         .O(requestMoreValues_i_9_n_0));
   FDRE requestMoreValues_reg
        (.C(clk),
@@ -8489,9 +8663,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationReceiver
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived;
   wire RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived;
-  wire [15:10]RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue;
-  wire [31:16]RadiationReceiver__radiationProcessor1__ethernetValuesReceived;
-  wire [9:0]RadiationReceiver__radiationProcessor1__radiationValue;
+  wire [15:10]RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue;
+  wire [31:16]RadiationReceiver__radiationProcessor2__ethernetValuesReceived;
+  wire [9:0]RadiationReceiver__radiationProcessor2__radiationValue;
   wire S_AXI_ACLK;
   wire [5:0]S_AXI_ARADDR;
   wire S_AXI_ARESETN;
@@ -8522,72 +8696,72 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationReceiver
   wire [15:1]ethernetLoadFloor;
   wire ethernetLoadFloor_Write;
   wire [15:1]ethernetValue;
-  wire hardwareAcceleratedHistogram2_n_10;
-  wire hardwareAcceleratedHistogram2_n_11;
-  wire hardwareAcceleratedHistogram2_n_12;
-  wire hardwareAcceleratedHistogram2_n_13;
-  wire hardwareAcceleratedHistogram2_n_14;
-  wire hardwareAcceleratedHistogram2_n_15;
-  wire hardwareAcceleratedHistogram2_n_16;
-  wire hardwareAcceleratedHistogram2_n_7;
-  wire hardwareAcceleratedHistogram2_n_8;
-  wire hardwareAcceleratedHistogram2_n_9;
+  wire hardwareAcceleratedHistogram1_n_10;
+  wire hardwareAcceleratedHistogram1_n_11;
+  wire hardwareAcceleratedHistogram1_n_12;
+  wire hardwareAcceleratedHistogram1_n_13;
+  wire hardwareAcceleratedHistogram1_n_14;
+  wire hardwareAcceleratedHistogram1_n_15;
+  wire hardwareAcceleratedHistogram1_n_16;
+  wire hardwareAcceleratedHistogram1_n_7;
+  wire hardwareAcceleratedHistogram1_n_8;
+  wire hardwareAcceleratedHistogram1_n_9;
   wire histogramReadAddress_Write;
   wire p1_ethernetValue_Write;
   wire p1_valueProcessingFinished_Write;
   wire p2_risingValueReady;
-  wire radiationProcessor1_n_10;
-  wire radiationProcessor1_n_142;
-  wire radiationProcessor1_n_159;
-  wire radiationProcessor1_n_160;
-  wire radiationProcessor1_n_161;
-  wire radiationProcessor1_n_162;
-  wire radiationProcessor1_n_163;
-  wire radiationProcessor1_n_164;
-  wire radiationProcessor1_n_165;
-  wire radiationProcessor1_n_166;
-  wire radiationProcessor1_n_167;
-  wire radiationProcessor1_n_168;
-  wire radiationProcessor1_n_169;
-  wire radiationProcessor1_n_170;
-  wire radiationProcessor1_n_171;
-  wire radiationProcessor1_n_172;
-  wire radiationProcessor1_n_173;
-  wire radiationProcessor1_n_174;
-  wire radiationProcessor1_n_175;
-  wire radiationProcessor1_n_46;
-  wire radiationProcessor1_n_47;
-  wire radiationProcessor1_n_48;
-  wire radiationProcessor1_n_49;
-  wire radiationProcessor1_n_50;
-  wire radiationProcessor1_n_51;
-  wire radiationProcessor1_n_52;
-  wire radiationProcessor1_n_53;
-  wire radiationProcessor1_n_54;
-  wire radiationProcessor1_n_55;
-  wire radiationProcessor1_n_56;
-  wire radiationProcessor1_n_57;
-  wire radiationProcessor1_n_58;
-  wire radiationProcessor1_n_59;
-  wire radiationProcessor1_n_60;
-  wire radiationProcessor1_n_61;
-  wire radiationProcessor1_n_64;
-  wire radiationProcessor1_n_80;
-  wire radiationProcessor1_n_81;
-  wire radiationProcessor1_n_82;
-  wire radiationProcessor1_n_83;
-  wire radiationProcessor1_n_84;
-  wire radiationProcessor1_n_85;
-  wire radiationProcessor1_n_86;
-  wire radiationProcessor1_n_87;
-  wire radiationProcessor1_n_88;
-  wire radiationProcessor1_n_89;
-  wire radiationProcessor1_n_90;
-  wire radiationProcessor1_n_91;
-  wire radiationProcessor1_n_92;
-  wire radiationProcessor1_n_93;
-  wire radiationProcessor1_n_94;
-  wire radiationProcessor1_n_95;
+  wire radiationProcessor2_n_10;
+  wire radiationProcessor2_n_142;
+  wire radiationProcessor2_n_159;
+  wire radiationProcessor2_n_160;
+  wire radiationProcessor2_n_161;
+  wire radiationProcessor2_n_162;
+  wire radiationProcessor2_n_163;
+  wire radiationProcessor2_n_164;
+  wire radiationProcessor2_n_165;
+  wire radiationProcessor2_n_166;
+  wire radiationProcessor2_n_167;
+  wire radiationProcessor2_n_168;
+  wire radiationProcessor2_n_169;
+  wire radiationProcessor2_n_170;
+  wire radiationProcessor2_n_171;
+  wire radiationProcessor2_n_172;
+  wire radiationProcessor2_n_173;
+  wire radiationProcessor2_n_174;
+  wire radiationProcessor2_n_175;
+  wire radiationProcessor2_n_46;
+  wire radiationProcessor2_n_47;
+  wire radiationProcessor2_n_48;
+  wire radiationProcessor2_n_49;
+  wire radiationProcessor2_n_50;
+  wire radiationProcessor2_n_51;
+  wire radiationProcessor2_n_52;
+  wire radiationProcessor2_n_53;
+  wire radiationProcessor2_n_54;
+  wire radiationProcessor2_n_55;
+  wire radiationProcessor2_n_56;
+  wire radiationProcessor2_n_57;
+  wire radiationProcessor2_n_58;
+  wire radiationProcessor2_n_59;
+  wire radiationProcessor2_n_60;
+  wire radiationProcessor2_n_61;
+  wire radiationProcessor2_n_64;
+  wire radiationProcessor2_n_80;
+  wire radiationProcessor2_n_81;
+  wire radiationProcessor2_n_82;
+  wire radiationProcessor2_n_83;
+  wire radiationProcessor2_n_84;
+  wire radiationProcessor2_n_85;
+  wire radiationProcessor2_n_86;
+  wire radiationProcessor2_n_87;
+  wire radiationProcessor2_n_88;
+  wire radiationProcessor2_n_89;
+  wire radiationProcessor2_n_90;
+  wire radiationProcessor2_n_91;
+  wire radiationProcessor2_n_92;
+  wire radiationProcessor2_n_93;
+  wire radiationProcessor2_n_94;
+  wire radiationProcessor2_n_95;
   wire [31:16]radiationValuesSent_reg;
   wire requestEthernetValues;
   wire risingEthernetValueWrite;
@@ -8610,7 +8784,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationReceiver
        (.D(HardwareAcceleratedHistogram_histogramReadAddress_Write),
         .E(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_WriteReceived),
         .HardwareAcceleratedHistogram_histogramReadAddress_WriteReceived_reg_0(histogramReadAddress_Write),
-        .Q({radiationProcessor1_n_47,radiationProcessor1_n_48,radiationProcessor1_n_49,radiationProcessor1_n_50,radiationProcessor1_n_51,radiationProcessor1_n_52}),
+        .Q({radiationProcessor2_n_47,radiationProcessor2_n_48,radiationProcessor2_n_49,radiationProcessor2_n_50,radiationProcessor2_n_51,radiationProcessor2_n_52}),
         .RadiationProcessor_countAmount_WriteReceived_reg_0(countAmount_Write),
         .\RadiationProcessor_countAmount_Write_reg[31]_0 (RadiationProcessor_countAmount_Write),
         .RadiationProcessor_debugSource_WriteReceived_reg_0(debugSource_Write),
@@ -8623,8 +8797,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationReceiver
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived),
-        .RadiationReceiver__radiationProcessor1__ethernetValuesReceived(RadiationReceiver__radiationProcessor1__ethernetValuesReceived),
-        .SR(radiationProcessor1_n_10),
+        .RadiationReceiver__radiationProcessor2__ethernetValuesReceived(RadiationReceiver__radiationProcessor2__ethernetValuesReceived),
+        .SR(radiationProcessor2_n_10),
         .S_AXI_ACLK(S_AXI_ACLK),
         .S_AXI_ARADDR(S_AXI_ARADDR),
         .S_AXI_ARVALID(S_AXI_ARVALID),
@@ -8644,152 +8818,152 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationReceiver
         .\axi_araddr_reg[3]_2 (axi4ListSlaveInterface_RadiationReceiver_n_17),
         .axi_arready_reg_0(S_AXI_ARREADY),
         .axi_awready_reg_0(S_AXI_AWREADY),
-        .\axi_rdata_reg[0]_0 (hardwareAcceleratedHistogram2_n_7),
-        .\axi_rdata_reg[0]_1 (radiationProcessor1_n_95),
-        .\axi_rdata_reg[0]_2 (radiationProcessor1_n_142),
-        .\axi_rdata_reg[10]_0 (radiationProcessor1_n_168),
-        .\axi_rdata_reg[11]_0 (radiationProcessor1_n_169),
-        .\axi_rdata_reg[12]_0 (radiationProcessor1_n_170),
-        .\axi_rdata_reg[13]_0 (radiationProcessor1_n_171),
-        .\axi_rdata_reg[14]_0 (radiationProcessor1_n_172),
-        .\axi_rdata_reg[15]_0 (radiationProcessor1_n_173),
+        .\axi_rdata_reg[0]_0 (hardwareAcceleratedHistogram1_n_7),
+        .\axi_rdata_reg[0]_1 (radiationProcessor2_n_95),
+        .\axi_rdata_reg[0]_2 (radiationProcessor2_n_142),
+        .\axi_rdata_reg[10]_0 (radiationProcessor2_n_168),
+        .\axi_rdata_reg[11]_0 (radiationProcessor2_n_169),
+        .\axi_rdata_reg[12]_0 (radiationProcessor2_n_170),
+        .\axi_rdata_reg[13]_0 (radiationProcessor2_n_171),
+        .\axi_rdata_reg[14]_0 (radiationProcessor2_n_172),
+        .\axi_rdata_reg[15]_0 (radiationProcessor2_n_173),
         .\axi_rdata_reg[15]_1 (ethernetValue),
         .\axi_rdata_reg[15]_2 (ethernetLoadFloor),
-        .\axi_rdata_reg[16]_0 (radiationProcessor1_n_64),
-        .\axi_rdata_reg[17]_0 (radiationProcessor1_n_80),
-        .\axi_rdata_reg[18]_0 (radiationProcessor1_n_81),
-        .\axi_rdata_reg[19]_0 (radiationProcessor1_n_82),
-        .\axi_rdata_reg[1]_0 (hardwareAcceleratedHistogram2_n_8),
-        .\axi_rdata_reg[1]_1 (radiationProcessor1_n_159),
-        .\axi_rdata_reg[20]_0 (radiationProcessor1_n_83),
-        .\axi_rdata_reg[21]_0 (radiationProcessor1_n_84),
-        .\axi_rdata_reg[22]_0 (radiationProcessor1_n_85),
-        .\axi_rdata_reg[23]_0 (radiationProcessor1_n_86),
-        .\axi_rdata_reg[24]_0 (radiationProcessor1_n_87),
-        .\axi_rdata_reg[25]_0 (radiationProcessor1_n_88),
-        .\axi_rdata_reg[26]_0 (radiationProcessor1_n_89),
-        .\axi_rdata_reg[27]_0 (radiationProcessor1_n_90),
-        .\axi_rdata_reg[28]_0 (radiationProcessor1_n_91),
-        .\axi_rdata_reg[29]_0 (radiationProcessor1_n_92),
-        .\axi_rdata_reg[2]_0 (hardwareAcceleratedHistogram2_n_9),
-        .\axi_rdata_reg[2]_1 (radiationProcessor1_n_160),
-        .\axi_rdata_reg[30]_0 (radiationProcessor1_n_93),
+        .\axi_rdata_reg[16]_0 (radiationProcessor2_n_64),
+        .\axi_rdata_reg[17]_0 (radiationProcessor2_n_80),
+        .\axi_rdata_reg[18]_0 (radiationProcessor2_n_81),
+        .\axi_rdata_reg[19]_0 (radiationProcessor2_n_82),
+        .\axi_rdata_reg[1]_0 (hardwareAcceleratedHistogram1_n_8),
+        .\axi_rdata_reg[1]_1 (radiationProcessor2_n_159),
+        .\axi_rdata_reg[20]_0 (radiationProcessor2_n_83),
+        .\axi_rdata_reg[21]_0 (radiationProcessor2_n_84),
+        .\axi_rdata_reg[22]_0 (radiationProcessor2_n_85),
+        .\axi_rdata_reg[23]_0 (radiationProcessor2_n_86),
+        .\axi_rdata_reg[24]_0 (radiationProcessor2_n_87),
+        .\axi_rdata_reg[25]_0 (radiationProcessor2_n_88),
+        .\axi_rdata_reg[26]_0 (radiationProcessor2_n_89),
+        .\axi_rdata_reg[27]_0 (radiationProcessor2_n_90),
+        .\axi_rdata_reg[28]_0 (radiationProcessor2_n_91),
+        .\axi_rdata_reg[29]_0 (radiationProcessor2_n_92),
+        .\axi_rdata_reg[2]_0 (hardwareAcceleratedHistogram1_n_9),
+        .\axi_rdata_reg[2]_1 (radiationProcessor2_n_160),
+        .\axi_rdata_reg[30]_0 (radiationProcessor2_n_93),
         .\axi_rdata_reg[31]_0 (debugSource),
-        .\axi_rdata_reg[31]_1 (radiationProcessor1_n_94),
+        .\axi_rdata_reg[31]_1 (radiationProcessor2_n_94),
         .\axi_rdata_reg[31]_2 (countAmount),
-        .\axi_rdata_reg[3]_0 (hardwareAcceleratedHistogram2_n_10),
-        .\axi_rdata_reg[3]_1 (radiationProcessor1_n_161),
-        .\axi_rdata_reg[4]_0 (hardwareAcceleratedHistogram2_n_11),
-        .\axi_rdata_reg[4]_1 (radiationProcessor1_n_162),
-        .\axi_rdata_reg[5]_0 (hardwareAcceleratedHistogram2_n_12),
-        .\axi_rdata_reg[5]_1 (radiationProcessor1_n_163),
-        .\axi_rdata_reg[6]_0 (hardwareAcceleratedHistogram2_n_13),
-        .\axi_rdata_reg[6]_1 (radiationProcessor1_n_164),
-        .\axi_rdata_reg[7]_0 (hardwareAcceleratedHistogram2_n_14),
-        .\axi_rdata_reg[7]_1 (radiationProcessor1_n_165),
-        .\axi_rdata_reg[8]_0 (hardwareAcceleratedHistogram2_n_15),
-        .\axi_rdata_reg[8]_1 (radiationProcessor1_n_166),
-        .\axi_rdata_reg[9]_0 (hardwareAcceleratedHistogram2_n_16),
-        .\axi_rdata_reg[9]_1 (radiationProcessor1_n_167),
+        .\axi_rdata_reg[3]_0 (hardwareAcceleratedHistogram1_n_10),
+        .\axi_rdata_reg[3]_1 (radiationProcessor2_n_161),
+        .\axi_rdata_reg[4]_0 (hardwareAcceleratedHistogram1_n_11),
+        .\axi_rdata_reg[4]_1 (radiationProcessor2_n_162),
+        .\axi_rdata_reg[5]_0 (hardwareAcceleratedHistogram1_n_12),
+        .\axi_rdata_reg[5]_1 (radiationProcessor2_n_163),
+        .\axi_rdata_reg[6]_0 (hardwareAcceleratedHistogram1_n_13),
+        .\axi_rdata_reg[6]_1 (radiationProcessor2_n_164),
+        .\axi_rdata_reg[7]_0 (hardwareAcceleratedHistogram1_n_14),
+        .\axi_rdata_reg[7]_1 (radiationProcessor2_n_165),
+        .\axi_rdata_reg[8]_0 (hardwareAcceleratedHistogram1_n_15),
+        .\axi_rdata_reg[8]_1 (radiationProcessor2_n_166),
+        .\axi_rdata_reg[9]_0 (hardwareAcceleratedHistogram1_n_16),
+        .\axi_rdata_reg[9]_1 (radiationProcessor2_n_167),
         .axi_wready_reg_0(S_AXI_WREADY),
-        .doutb(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue),
+        .doutb(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue),
         .p1_ethernetValue_Write(p1_ethernetValue_Write),
         .p1_valueProcessingFinished_Write(p1_valueProcessingFinished_Write),
         .radiationValuesSent_reg(radiationValuesSent_reg),
         .risingEthernetValueWrite(risingEthernetValueWrite),
         .risingValueProcessingFinished_Write__0(risingValueProcessingFinished_Write__0),
         .startReceivingData(startReceivingData));
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram hardwareAcceleratedHistogram2
-       (.D(RadiationReceiver__radiationProcessor1__radiationValue),
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_HardwareAcceleratedHistogram hardwareAcceleratedHistogram1
+       (.D(RadiationReceiver__radiationProcessor2__radiationValue),
         .E(risingValueReady),
-        .Q({radiationProcessor1_n_53,radiationProcessor1_n_54,radiationProcessor1_n_55,radiationProcessor1_n_56,radiationProcessor1_n_57,radiationProcessor1_n_58,radiationProcessor1_n_59,radiationProcessor1_n_60,radiationProcessor1_n_61}),
-        .SR(radiationProcessor1_n_10),
-        .\axi_rdata_reg[0] (radiationProcessor1_n_46),
+        .Q({radiationProcessor2_n_53,radiationProcessor2_n_54,radiationProcessor2_n_55,radiationProcessor2_n_56,radiationProcessor2_n_57,radiationProcessor2_n_58,radiationProcessor2_n_59,radiationProcessor2_n_60,radiationProcessor2_n_61}),
+        .SR(radiationProcessor2_n_10),
+        .\axi_rdata_reg[0] (radiationProcessor2_n_46),
         .\axi_rdata_reg[0]_0 (axi4ListSlaveInterface_RadiationReceiver_n_17),
         .\axi_rdata_reg[0]_1 (axi4ListSlaveInterface_RadiationReceiver_n_16),
         .clk(clk),
-        .doutb(RadiationReceiver__hardwareAcceleratedHistogram2__histogramReadValue),
-        .\histogramDataInA_reg[15]_0 (radiationProcessor1_n_175),
-        .\histogramReadAddress_reg[0]_0 (hardwareAcceleratedHistogram2_n_7),
-        .\histogramReadAddress_reg[1]_0 (hardwareAcceleratedHistogram2_n_8),
-        .\histogramReadAddress_reg[2]_0 (hardwareAcceleratedHistogram2_n_9),
-        .\histogramReadAddress_reg[3]_0 (hardwareAcceleratedHistogram2_n_10),
-        .\histogramReadAddress_reg[4]_0 (hardwareAcceleratedHistogram2_n_11),
-        .\histogramReadAddress_reg[5]_0 (hardwareAcceleratedHistogram2_n_12),
-        .\histogramReadAddress_reg[6]_0 (hardwareAcceleratedHistogram2_n_13),
-        .\histogramReadAddress_reg[7]_0 (hardwareAcceleratedHistogram2_n_14),
-        .\histogramReadAddress_reg[8]_0 (hardwareAcceleratedHistogram2_n_15),
-        .\histogramReadAddress_reg[9]_0 (hardwareAcceleratedHistogram2_n_16),
+        .doutb(RadiationReceiver__hardwareAcceleratedHistogram1__histogramReadValue),
+        .\histogramDataInA_reg[15]_0 (radiationProcessor2_n_175),
+        .\histogramReadAddress_reg[0]_0 (hardwareAcceleratedHistogram1_n_7),
+        .\histogramReadAddress_reg[1]_0 (hardwareAcceleratedHistogram1_n_8),
+        .\histogramReadAddress_reg[2]_0 (hardwareAcceleratedHistogram1_n_9),
+        .\histogramReadAddress_reg[3]_0 (hardwareAcceleratedHistogram1_n_10),
+        .\histogramReadAddress_reg[4]_0 (hardwareAcceleratedHistogram1_n_11),
+        .\histogramReadAddress_reg[5]_0 (hardwareAcceleratedHistogram1_n_12),
+        .\histogramReadAddress_reg[6]_0 (hardwareAcceleratedHistogram1_n_13),
+        .\histogramReadAddress_reg[7]_0 (hardwareAcceleratedHistogram1_n_14),
+        .\histogramReadAddress_reg[8]_0 (hardwareAcceleratedHistogram1_n_15),
+        .\histogramReadAddress_reg[9]_0 (hardwareAcceleratedHistogram1_n_16),
         .\histogramReadAddress_reg[9]_1 (histogramReadAddress_Write),
         .\histogramReadAddress_reg[9]_2 (HardwareAcceleratedHistogram_histogramReadAddress_Write),
-        .histogramWriteA_reg_0(radiationProcessor1_n_174),
+        .histogramWriteA_reg_0(radiationProcessor2_n_174),
         .p2_risingValueReady_reg_0(p2_risingValueReady));
-  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor radiationProcessor1
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_RadiationProcessor radiationProcessor2
        (.D(RadiationProcessor_countAmount_Write),
         .E(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_ethernetValue_WriteReceived),
-        .Q({radiationProcessor1_n_47,radiationProcessor1_n_48,radiationProcessor1_n_49,radiationProcessor1_n_50,radiationProcessor1_n_51,radiationProcessor1_n_52,radiationProcessor1_n_53,radiationProcessor1_n_54,radiationProcessor1_n_55,radiationProcessor1_n_56,radiationProcessor1_n_57,radiationProcessor1_n_58,radiationProcessor1_n_59,radiationProcessor1_n_60,radiationProcessor1_n_61}),
+        .Q({radiationProcessor2_n_47,radiationProcessor2_n_48,radiationProcessor2_n_49,radiationProcessor2_n_50,radiationProcessor2_n_51,radiationProcessor2_n_52,radiationProcessor2_n_53,radiationProcessor2_n_54,radiationProcessor2_n_55,radiationProcessor2_n_56,radiationProcessor2_n_57,radiationProcessor2_n_58,radiationProcessor2_n_59,radiationProcessor2_n_60,radiationProcessor2_n_61}),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_clearRequestEthernetValues_WriteReceived),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_radiationValue_ReadReceived),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_startReceivingData_WriteReceived),
         .RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived(RadiationReceiver__axi4ListSlaveInterface_RadiationReceiver__RadiationProcessor_valueProcessingFinished_WriteReceived),
-        .SR(radiationProcessor1_n_10),
+        .SR(radiationProcessor2_n_10),
         .S_AXI_ARESETN(S_AXI_ARESETN),
         .\axi_rdata_reg[0] (axi4ListSlaveInterface_RadiationReceiver_n_17),
         .\axi_rdata_reg[0]_0 (axi4ListSlaveInterface_RadiationReceiver_n_16),
         .\axi_rdata_reg[16] (axi4ListSlaveInterface_RadiationReceiver_n_14),
         .\axi_rdata_reg[16]_0 (axi4ListSlaveInterface_RadiationReceiver_n_15),
         .clk(clk),
-        .\countAmount_reg[0]_0 (radiationProcessor1_n_142),
-        .\countAmount_reg[10]_0 (radiationProcessor1_n_168),
-        .\countAmount_reg[11]_0 (radiationProcessor1_n_169),
-        .\countAmount_reg[12]_0 (radiationProcessor1_n_170),
-        .\countAmount_reg[13]_0 (radiationProcessor1_n_171),
-        .\countAmount_reg[14]_0 (radiationProcessor1_n_172),
-        .\countAmount_reg[15]_0 (radiationProcessor1_n_173),
-        .\countAmount_reg[1]_0 (radiationProcessor1_n_159),
-        .\countAmount_reg[2]_0 (radiationProcessor1_n_160),
+        .\countAmount_reg[0]_0 (radiationProcessor2_n_142),
+        .\countAmount_reg[10]_0 (radiationProcessor2_n_168),
+        .\countAmount_reg[11]_0 (radiationProcessor2_n_169),
+        .\countAmount_reg[12]_0 (radiationProcessor2_n_170),
+        .\countAmount_reg[13]_0 (radiationProcessor2_n_171),
+        .\countAmount_reg[14]_0 (radiationProcessor2_n_172),
+        .\countAmount_reg[15]_0 (radiationProcessor2_n_173),
+        .\countAmount_reg[1]_0 (radiationProcessor2_n_159),
+        .\countAmount_reg[2]_0 (radiationProcessor2_n_160),
         .\countAmount_reg[31]_0 (countAmount),
         .\countAmount_reg[31]_1 (countAmount_Write),
-        .\countAmount_reg[3]_0 (radiationProcessor1_n_161),
-        .\countAmount_reg[4]_0 (radiationProcessor1_n_162),
-        .\countAmount_reg[5]_0 (radiationProcessor1_n_163),
-        .\countAmount_reg[6]_0 (radiationProcessor1_n_164),
-        .\countAmount_reg[7]_0 (radiationProcessor1_n_165),
-        .\countAmount_reg[8]_0 (radiationProcessor1_n_166),
-        .\countAmount_reg[9]_0 (radiationProcessor1_n_167),
+        .\countAmount_reg[3]_0 (radiationProcessor2_n_161),
+        .\countAmount_reg[4]_0 (radiationProcessor2_n_162),
+        .\countAmount_reg[5]_0 (radiationProcessor2_n_163),
+        .\countAmount_reg[6]_0 (radiationProcessor2_n_164),
+        .\countAmount_reg[7]_0 (radiationProcessor2_n_165),
+        .\countAmount_reg[8]_0 (radiationProcessor2_n_166),
+        .\countAmount_reg[9]_0 (radiationProcessor2_n_167),
         .\debugSource_reg[31]_0 (debugSource),
         .\debugSource_reg[31]_1 (debugSource_Write),
         .\debugSource_reg[31]_2 (RadiationProcessor_debugSource_Write),
-        .doutb(RadiationReceiver__radiationProcessor1__radiationValue),
-        .\ethernetLoadFloor_reg[0]_0 (radiationProcessor1_n_95),
+        .doutb(RadiationReceiver__radiationProcessor2__radiationValue),
+        .\ethernetLoadFloor_reg[0]_0 (radiationProcessor2_n_95),
         .\ethernetLoadFloor_reg[15]_0 (ethernetLoadFloor),
         .\ethernetLoadFloor_reg[15]_1 (ethernetLoadFloor_Write),
         .\ethernetLoadFloor_reg[15]_2 (RadiationProcessor_ethernetLoadFloor_Write),
         .\ethernetValue_reg[15]_0 (ethernetValue),
-        .\ethernetValue_reg[16]_0 (radiationProcessor1_n_64),
-        .\ethernetValue_reg[17]_0 (radiationProcessor1_n_80),
-        .\ethernetValue_reg[18]_0 (radiationProcessor1_n_81),
-        .\ethernetValue_reg[19]_0 (radiationProcessor1_n_82),
-        .\ethernetValue_reg[20]_0 (radiationProcessor1_n_83),
-        .\ethernetValue_reg[21]_0 (radiationProcessor1_n_84),
-        .\ethernetValue_reg[22]_0 (radiationProcessor1_n_85),
-        .\ethernetValue_reg[23]_0 (radiationProcessor1_n_86),
-        .\ethernetValue_reg[24]_0 (radiationProcessor1_n_87),
-        .\ethernetValue_reg[25]_0 (radiationProcessor1_n_88),
-        .\ethernetValue_reg[26]_0 (radiationProcessor1_n_89),
-        .\ethernetValue_reg[27]_0 (radiationProcessor1_n_90),
-        .\ethernetValue_reg[28]_0 (radiationProcessor1_n_91),
-        .\ethernetValue_reg[29]_0 (radiationProcessor1_n_92),
-        .\ethernetValue_reg[30]_0 (radiationProcessor1_n_93),
-        .\ethernetValue_reg[31]_0 (radiationProcessor1_n_94),
+        .\ethernetValue_reg[16]_0 (radiationProcessor2_n_64),
+        .\ethernetValue_reg[17]_0 (radiationProcessor2_n_80),
+        .\ethernetValue_reg[18]_0 (radiationProcessor2_n_81),
+        .\ethernetValue_reg[19]_0 (radiationProcessor2_n_82),
+        .\ethernetValue_reg[20]_0 (radiationProcessor2_n_83),
+        .\ethernetValue_reg[21]_0 (radiationProcessor2_n_84),
+        .\ethernetValue_reg[22]_0 (radiationProcessor2_n_85),
+        .\ethernetValue_reg[23]_0 (radiationProcessor2_n_86),
+        .\ethernetValue_reg[24]_0 (radiationProcessor2_n_87),
+        .\ethernetValue_reg[25]_0 (radiationProcessor2_n_88),
+        .\ethernetValue_reg[26]_0 (radiationProcessor2_n_89),
+        .\ethernetValue_reg[27]_0 (radiationProcessor2_n_90),
+        .\ethernetValue_reg[28]_0 (radiationProcessor2_n_91),
+        .\ethernetValue_reg[29]_0 (radiationProcessor2_n_92),
+        .\ethernetValue_reg[30]_0 (radiationProcessor2_n_93),
+        .\ethernetValue_reg[31]_0 (radiationProcessor2_n_94),
         .\ethernetValue_reg[31]_1 (RadiationProcessor_ethernetValue_Write),
-        .\ethernetValuesReceived_reg[31]_0 (RadiationReceiver__radiationProcessor1__ethernetValuesReceived),
+        .\ethernetValuesReceived_reg[31]_0 (RadiationReceiver__radiationProcessor2__ethernetValuesReceived),
         .histogramWriteA_reg(p2_risingValueReady),
         .p1_ethernetValue_Write(p1_ethernetValue_Write),
         .p1_valueProcessingFinished_Write(p1_valueProcessingFinished_Write),
-        .p1_valueReady_reg_0(radiationProcessor1_n_175),
-        .p2_risingValueReady_reg(radiationProcessor1_n_174),
-        .\radiationTimer_reg[0]_0 (radiationProcessor1_n_46),
+        .p1_valueReady_reg_0(radiationProcessor2_n_175),
+        .p2_risingValueReady_reg(radiationProcessor2_n_174),
+        .\radiationTimer_reg[0]_0 (radiationProcessor2_n_46),
         .\radiationValuesSent_reg[31]_0 (radiationValuesSent_reg),
         .requestEthernetValues(requestEthernetValues),
         .risingEthernetValueWrite(risingEthernetValueWrite),

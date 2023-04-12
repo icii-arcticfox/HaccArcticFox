@@ -156,58 +156,30 @@ void ethernetValuesReceived_write_0(int value)
 }
 
 
-//Functions for axi reg: radiationValue
-//***********************************************
-int radiationValue_read()
-{
-	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
-	return *address;
-}
-int radiationValue_read_0()
-{
-	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
-	return *address;
-}
-void radiationValue_write(int value)
-{
-	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
-	*address = value;
-}
-void radiationValue_write_0(int value)
-{
-	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
-	*address = value;
-}
-
-
 //Functions for axi reg: radiationValuesSent
 //***********************************************
 int radiationValuesSent_read()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
 	return *address;
 }
 int radiationValuesSent_read_0()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
 	return *address;
 }
 void radiationValuesSent_write(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
 	*address = value;
 }
 void radiationValuesSent_write_0(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
 	*address = value;
 }
 
@@ -217,25 +189,25 @@ void radiationValuesSent_write_0(int value)
 int countAmount_read()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
 	return *address;
 }
 int countAmount_read_0()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
 	return *address;
 }
 void countAmount_write(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
 	*address = value;
 }
 void countAmount_write_0(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
 	*address = value;
 }
 
@@ -245,25 +217,25 @@ void countAmount_write_0(int value)
 int nextValueDelaySaved_read()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
 	return *address;
 }
 int nextValueDelaySaved_read_0()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
 	return *address;
 }
 void nextValueDelaySaved_write(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
 	*address = value;
 }
 void nextValueDelaySaved_write_0(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
 	*address = value;
 }
 
@@ -273,13 +245,13 @@ void nextValueDelaySaved_write_0(int value)
 void valueProcessingFinished_write(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
 	*address = value;
 }
 void valueProcessingFinished_write_0(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
 	*address = value;
 }
 
@@ -289,25 +261,109 @@ void valueProcessingFinished_write_0(int value)
 int radiationTimer_read()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
 	return *address;
 }
 int radiationTimer_read_0()
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
 	return *address;
 }
 void radiationTimer_write(int value)
 {
 	int* address;
-	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
 	*address = value;
 }
 void radiationTimer_write_0(int value)
 {
 	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+	*address = value;
+}
+
+
+//Functions for axi reg: radiationValue
+//***********************************************
+int radiationValue_read()
+{
+	int* address;
 	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	return *address;
+}
+int radiationValue_read_0()
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	return *address;
+}
+void radiationValue_write(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	*address = value;
+}
+void radiationValue_write_0(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+	*address = value;
+}
+
+
+//Functions for axi reg: histogramReadAddress
+//***********************************************
+int histogramReadAddress_read()
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+	return *address;
+}
+int histogramReadAddress_read_0()
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+	return *address;
+}
+void histogramReadAddress_write(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+	*address = value;
+}
+void histogramReadAddress_write_0(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+	*address = value;
+}
+
+
+//Functions for axi reg: histogramReadValue
+//***********************************************
+int histogramReadValue_read()
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+	return *address;
+}
+int histogramReadValue_read_0()
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+	return *address;
+}
+void histogramReadValue_write(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+	*address = value;
+}
+void histogramReadValue_write_0(int value)
+{
+	int* address;
+	address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
 	*address = value;
 }
 

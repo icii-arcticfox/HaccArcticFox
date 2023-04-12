@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "HaccPL_RadiationReceiver_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
@@ -95,13 +94,13 @@ read_verilog -library xil_defaultlib {
   C:/HaccArcticFox/Verilog/RadiationProcessor.v
   C:/HaccArcticFox/Verilog/RadiationReceiver.v
 }
-read_ip -quiet c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/BRAM_1024_16.xci
+read_ip -quiet C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/BRAM_1024_16.xci
 set_property used_in_implementation false [get_files -all c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/BRAM_1024_16_ooc.xdc]
 
-read_ip -quiet c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/BRAM_16384_32.xci
+read_ip -quiet C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/BRAM_16384_32.xci
 set_property used_in_implementation false [get_files -all c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/BRAM_16384_32_ooc.xdc]
 
-read_ip -quiet c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0.xci
+read_ip -quiet C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0.xci
 set_property used_in_implementation false [get_files -all c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

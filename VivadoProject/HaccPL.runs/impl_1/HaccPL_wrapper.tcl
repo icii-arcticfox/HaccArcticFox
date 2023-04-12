@@ -140,8 +140,8 @@ OPTRACE "add files" START { }
   add_files -quiet C:/HaccArcticFox/VivadoProject/HaccPL.runs/synth_1/HaccPL_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  read_ip -quiet c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/BRAM_1024_16.xci
-  read_ip -quiet c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/BRAM_16384_32.xci
+  read_ip -quiet C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_1024_16/BRAM_1024_16.xci
+  read_ip -quiet C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/ip/BRAM_16384_32/BRAM_16384_32.xci
   add_files C:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/HaccPL.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }

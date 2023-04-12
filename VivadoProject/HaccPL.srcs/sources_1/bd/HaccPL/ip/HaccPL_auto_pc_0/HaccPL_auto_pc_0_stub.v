@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Apr 11 12:25:35 2023
+// Date        : Tue Apr 11 12:25:34 2023
 // Host        : Sofia running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/HaccArcticFox/VivadoProject/HaccPL.srcs/sources_1/bd/HaccPL/ip/HaccPL_auto_pc_0/HaccPL_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top HaccPL_auto_pc_0 -prefix
+//               HaccPL_auto_pc_0_ HaccPL_auto_pc_0_stub.v
 // Design      : HaccPL_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

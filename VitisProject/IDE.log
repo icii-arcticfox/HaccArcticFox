@@ -13,3 +13,20 @@
 12:47:14 INFO  : Result from executing command 'getProjects': HaccPL_wrapper
 12:47:14 INFO  : Result from executing command 'getPlatforms': HaccPL_wrapper|C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/HaccPL_wrapper.xpfm
 12:50:18 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+17:21:14 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\HaccArcticFox\VitisProject\temp_xsdb_launch_script.tcl
+17:21:21 INFO  : XSCT server has started successfully.
+17:21:21 INFO  : plnx-install-location is set to ''
+17:21:21 INFO  : Successfully done setting XSCT server connection channel  
+17:21:21 INFO  : Successfully done setting workspace for the tool. 
+17:21:25 INFO  : Platform repository initialization has completed.
+17:21:27 INFO  : Registering command handlers for Vitis TCF services
+17:21:32 INFO  : Successfully done query RDI_DATADIR 
+17:24:29 INFO  : Hardware specification for platform project 'HaccPL_wrapper' is updated.
+17:25:32 INFO  : Result from executing command 'getProjects': HaccPL_wrapper
+17:25:32 INFO  : Result from executing command 'getPlatforms': HaccPL_wrapper|C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/HaccPL_wrapper.xpfm
+17:25:57 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+17:26:26 INFO  : The hardware specfication used by project 'HaccPS' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:26:26 INFO  : The file 'C:\HaccArcticFox\VitisProject\HaccPS\_ide\bitstream\HaccPL_wrapper.bit' stored in project is removed.
+17:26:26 INFO  : The updated bitstream files are copied from platform to folder 'C:\HaccArcticFox\VitisProject\HaccPS\_ide\bitstream' in project 'HaccPS'.
+17:26:26 INFO  : The file 'C:\HaccArcticFox\VitisProject\HaccPS\_ide\psinit\ps7_init.tcl' stored in project is removed.
+17:26:34 INFO  : The updated ps init files are copied from platform to folder 'C:\HaccArcticFox\VitisProject\HaccPS\_ide\psinit' in project 'HaccPS'.

@@ -1,6 +1,6 @@
 Nothing to build in platform 'HaccPL_wrapper'
 
-12:50:18 **** Build of configuration Debug for project HaccPS ****
+17:26:03 **** Build of configuration Debug for project HaccPS ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -97,93 +97,125 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IciiAxiFunctions.o
 ../src/IciiAxiFunctions.c:154:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   154 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 20;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValue_read':
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read':
 ../src/IciiAxiFunctions.c:164:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   164 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValue_read_0':
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read_0':
 ../src/IciiAxiFunctions.c:170:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   170 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValue_write':
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write':
 ../src/IciiAxiFunctions.c:176:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   176 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValue_write_0':
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write_0':
 ../src/IciiAxiFunctions.c:182:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   182 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read':
+../src/IciiAxiFunctions.c: In function 'countAmount_read':
 ../src/IciiAxiFunctions.c:192:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   192 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read_0':
+../src/IciiAxiFunctions.c: In function 'countAmount_read_0':
 ../src/IciiAxiFunctions.c:198:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   198 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write':
+../src/IciiAxiFunctions.c: In function 'countAmount_write':
 ../src/IciiAxiFunctions.c:204:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   204 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write_0':
+../src/IciiAxiFunctions.c: In function 'countAmount_write_0':
 ../src/IciiAxiFunctions.c:210:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   210 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
       |          ^
-../src/IciiAxiFunctions.c: In function 'countAmount_read':
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read':
 ../src/IciiAxiFunctions.c:220:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   220 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
       |          ^
-../src/IciiAxiFunctions.c: In function 'countAmount_read_0':
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read_0':
 ../src/IciiAxiFunctions.c:226:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   226 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
       |          ^
-../src/IciiAxiFunctions.c: In function 'countAmount_write':
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write':
 ../src/IciiAxiFunctions.c:232:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   232 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
       |          ^
-../src/IciiAxiFunctions.c: In function 'countAmount_write_0':
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write_0':
 ../src/IciiAxiFunctions.c:238:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   238 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
       |          ^
-../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read':
+../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write':
 ../src/IciiAxiFunctions.c:248:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   248 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
       |          ^
-../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read_0':
+../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write_0':
 ../src/IciiAxiFunctions.c:254:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   254 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
       |          ^
-../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write':
-../src/IciiAxiFunctions.c:260:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-  260 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+../src/IciiAxiFunctions.c: In function 'radiationTimer_read':
+../src/IciiAxiFunctions.c:264:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  264 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
       |          ^
-../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write_0':
-../src/IciiAxiFunctions.c:266:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-  266 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+../src/IciiAxiFunctions.c: In function 'radiationTimer_read_0':
+../src/IciiAxiFunctions.c:270:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  270 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
       |          ^
-../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write':
+../src/IciiAxiFunctions.c: In function 'radiationTimer_write':
 ../src/IciiAxiFunctions.c:276:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   276 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
       |          ^
-../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write_0':
+../src/IciiAxiFunctions.c: In function 'radiationTimer_write_0':
 ../src/IciiAxiFunctions.c:282:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   282 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationTimer_read':
+../src/IciiAxiFunctions.c: In function 'radiationValue_read':
 ../src/IciiAxiFunctions.c:292:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   292 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationTimer_read_0':
+../src/IciiAxiFunctions.c: In function 'radiationValue_read_0':
 ../src/IciiAxiFunctions.c:298:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   298 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationTimer_write':
+../src/IciiAxiFunctions.c: In function 'radiationValue_write':
 ../src/IciiAxiFunctions.c:304:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   304 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
       |          ^
-../src/IciiAxiFunctions.c: In function 'radiationTimer_write_0':
+../src/IciiAxiFunctions.c: In function 'radiationValue_write_0':
 ../src/IciiAxiFunctions.c:310:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   310 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_read':
+../src/IciiAxiFunctions.c:320:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  320 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_read_0':
+../src/IciiAxiFunctions.c:326:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  326 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_write':
+../src/IciiAxiFunctions.c:332:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  332 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_write_0':
+../src/IciiAxiFunctions.c:338:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  338 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_read':
+../src/IciiAxiFunctions.c:348:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  348 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_read_0':
+../src/IciiAxiFunctions.c:354:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  354 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_write':
+../src/IciiAxiFunctions.c:360:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  360 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_write_0':
+../src/IciiAxiFunctions.c:366:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  366 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
       |          ^
 'Finished building: ../src/IciiAxiFunctions.c'
 ' '
@@ -357,6 +389,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size HaccPS.elf  |tee "HaccPS.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 111548	   3048	5363760	5478356	 5397d4	HaccPS.elf
+ 111964	   3048	5363760	5478772	 539974	HaccPS.elf
 'Finished building: HaccPS.elf.size'
 ' '

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1681241053">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1681258761">
   <File Type="BITSTR-BMM" Name="HaccPL_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="HaccPL_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="HaccPL_wrapper_timing_summary_init.rpt"/>
@@ -150,9 +150,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -163,7 +161,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="HaccPL_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="HaccPL_RadiationReceiver_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="HaccPL_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="HaccPL_rst_ps7_0_50M_0"/>

@@ -6,9 +6,14 @@
 #include "ReceiveValue.h"
 #include "UserFunctions.h"
 
+// For debugging, it may be useful to print information to the terminal.
+// To do this, you can use the xil_printf("") function. 
+
 int* _histogram;
 void InitializeHistogram()
 {
+	//You should not have to change this function
+
 	int size = sizeof(int) * HISTOGRAM_SIZE;
 	_histogram = (int*)malloc(size);
 	memset(_histogram, 0, size);
@@ -16,58 +21,26 @@ void InitializeHistogram()
 	SetHistogramPointer(_histogram);
 }
 
-
-int ethernetInterruptsTriggered = 0;
-int valueReadyInterruptsTriggered = 0;
+//Function that handles interrupts from the PL that request new 
+//ethernet data be loaded
 void RequestEthernetValuesInterruptHandler ()
 {
-//	xil_printf("Request Ethernet Values Interrupt Handler\r\n");
-
-	ethernetInterruptsTriggered++;
-//	xil_printf("ethernetInterruptsTriggered: %d\r\n", ethernetInterruptsTriggered);
-
-	int ethernetValuesReceived = ethernetValuesReceived_read();
-	int radiationValuesSent = radiationValuesSent_read();
-
-//	xil_printf("valueReadyInterruptsTriggered: %d\r\n", valueReadyInterruptsTriggered);
-//	xil_printf("ethernetValuesReceived: %d\r\n", ethernetValuesReceived);
-//	xil_printf("radiationValuesSent: %d\r\n", radiationValuesSent);
-
-	RequestData();
+	//Function call that send a packet to the PC requesting more data
+	RequestData(); 
 }
 
+//Function that handles interrupts from the PL that signal a new
+//radiation value is ready to be read
 void ValueReadyInterruptHandler ()
 {
-	valueReadyInterruptsTriggered++;
-	int radiationValue = radiationValue_read();
+	//Read the radiation value from the PL 
+	int radiationValue = radiationValue_read(); 
 
-	if(valueReadyInterruptsTriggered % 100 == 0)
-	{
-//		xil_printf("valueReadyInterruptsTriggered: %d\r\n", valueReadyInterruptsTriggered);
-//		xil_printf("radiationValue: %d\r\n", radiationValue);
-	}
-
+	//Increment the channel within the histogram that corresponds
+	//to the received radiation value
 	_histogram[radiationValue] = _histogram[radiationValue] + 1;
-//	int radiationTime = radiationTimer_read();
 
-//	xil_printf("radiationTime: %d\n\r", radiationTime);
-
-//	xil_printf("\r\n");
-//
-//	int nextValueDelaySaved = nextValueDelaySaved_read();
-//	xil_printf("nextValueDelaySaved: %d\r\n", nextValueDelaySaved);
-//
-//	int radiationValuesRead = radiationValuesRead_read();
-//	xil_printf("radiationValue: %d\n\r", radiationValue);
-
-
+	//Clear all interrupts to enable the next radiation value to 
+	//be read when ready
 	valueProcessingFinished_write(1);
-
-
-//	int ethernetValuesReceived = ethernetValuesReceived_read();
-//
-//	xil_printf("\r\n", ethernetValuesReceived);
-//	xil_printf("ethernetValuesReceived: %d\r\n", ethernetValuesReceived);
-//	xil_printf("radiationValuesRead: %d\r\n", radiationValuesRead);
-
 }

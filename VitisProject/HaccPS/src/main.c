@@ -289,6 +289,7 @@ int useEthernet = 1;
 int main()
 {
 	xil_printf("\r\n");
+	xil_printf("Starting Zybo...");
 	xil_printf("\r\n");
 	xil_printf("\r\n");
 #if LWIP_IPV6==0

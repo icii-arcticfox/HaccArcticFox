@@ -4,5 +4,6 @@
 void InitializeHistogram();
 void RequestEthernetValuesInterruptHandler ();
 void ValueReadyInterruptHandler ();
+int SendResult(int** result);
 
 #endif

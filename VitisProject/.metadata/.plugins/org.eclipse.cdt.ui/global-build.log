@@ -1,31 +1,9 @@
 Nothing to build in platform 'HaccPL_wrapper'
 
-18:03:16 **** Build of configuration Debug for project HaccPS ****
+18:17:36 **** Incremental Build of configuration Debug for project HaccPS ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/UserFunctions.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/UserFunctions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/UserFunctions.d" -MT"src/UserFunctions.o" -o "src/UserFunctions.o" "../src/UserFunctions.c"
-In file included from ../src/UserFunctions.c:2:
-C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:98:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
-   98 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
-      |  ^~~~~~~
-C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:99:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
-   99 | #warning  Please refer the Standalone BSP UG647 for further details
-      |  ^~~~~~~
-'Finished building: ../src/UserFunctions.c'
-' '
-'Building target: HaccPS.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "HaccPS.elf"  ./src/IciiAxiFunctions.o ./src/ReceiveValue.o ./src/UserFunctions.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.Backup.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: HaccPS.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size HaccPS.elf  |tee "HaccPS.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 111872	   3048	5363760	5478680	 539918	HaccPS.elf
-'Finished building: HaccPS.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.

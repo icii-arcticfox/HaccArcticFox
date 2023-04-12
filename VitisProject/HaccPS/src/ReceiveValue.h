@@ -8,10 +8,10 @@
 
 void InitializeDataReception();
 int ProcessPacket(char* payload, u16_t len);
-int SendResult(int** result);
+// int SendResult(int** result);
 void SendDataToPL();
 void RequestData();
 void SetReceiveValueTpcb(void* tpcb);
-void SetHistogramPointer(void* histogramPointer);
+// void SetHistogramPointer(void* histogramPointer);
 
 #endif

@@ -34,10 +34,10 @@ void SetReceiveValueTpcb(void* tpcb)
 }
 
 
-void SetHistogramPointer(void* histogramPointer)
-{
-	_histogram = (int*)histogramPointer;
-}
+// void SetHistogramPointer(void* histogramPointer)
+// {
+// 	_histogram = (int*)histogramPointer;
+// }
 
 void InitializeDataReception()
 {
@@ -181,8 +181,8 @@ int ProcessPacket(char* payload, u16_t len)
 	return valuesExtracted;
 }
 
-int SendResult(int** result)
-{
-	*result = _histogram;
-	return HISTOGRAM_SIZE * 4;
-}
+// int SendResult(int** result)
+// {
+// 	*result = _histogram;
+// 	return HISTOGRAM_SIZE * 4;
+// }

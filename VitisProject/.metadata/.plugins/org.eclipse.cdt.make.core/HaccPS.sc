@@ -4,11 +4,14 @@
     <instance id="xilinx.gnu.armv7.exe.debug.356182885;xilinx.gnu.armv7.exe.debug.356182885.">
                 
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+            <includePath path="#undef __ARM_ARCH_PROFILE" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_FMA" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_COMPLEX" removed="true"/>
             <includePath path="c:\xilinx2\vitis\2020.1\gnu\aarch32\nt\gcc-arm-none-eabi\x86_64-oesdk-mingw32\usr\bin\arm-xilinx-eabi\../../lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/include"/>
+            <includePath path="#undef __ARM_ARCH" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_SIMD32" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_QBIT" removed="true"/>
             <includePath path="#undef __ARM_NEON__" removed="true"/>
@@ -19,6 +22,7 @@
             <includePath path="#undef __ARM_FEATURE_LDREX" removed="true"/>
             <includePath path="C:\Xilinx2\Vitis\2020.1\gnu\aarch32\nt\gcc-arm-none-eabi\bin\\..\aarch32-xilinx-eabi/usr/include"/>
             <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_UNALIGNED" removed="true"/>
             <includePath path="#undef __ARM_NEON_FP" removed="true"/>
@@ -1278,9 +1282,12 @@
     <instance id="xilinx.gnu.armv7.exe.debug.356182885;xilinx.gnu.armv7.exe.debug.356182885.;xilinx.gnu.armv7.c.toolchain.compiler.debug.848813433;xilinx.gnu.armv7.c.compiler.input.1183789715">
                 
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+            <includePath path="#undef __ARM_FEATURE_CLZ" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_NUMERIC_MAXMIN" removed="true"/>
             <includePath path="#undef __ARM_ARCH_PROFILE" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_DSP" removed="true"/>
             <includePath path="c:\xilinx2\vitis\2020.1\gnu\aarch32\nt\gcc-arm-none-eabi\x86_64-oesdk-mingw32\usr\bin\arm-xilinx-eabi\../../lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/include"/>
+            <includePath path="#undef __ARM_FEATURE_SIMD32" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_UNALIGNED" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_QBIT" removed="true"/>
             <includePath path="c:\xilinx2\vitis\2020.1\gnu\aarch32\nt\gcc-arm-none-eabi\x86_64-oesdk-mingw32\usr\bin\arm-xilinx-eabi\../../lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/9.2.0/include-fixed"/>

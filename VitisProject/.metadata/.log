@@ -5103,3 +5103,573 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-13: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:03:33.661
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-13: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.881
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.888
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.889
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.892
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-11 18:09:44.893
+!MESSAGE Generating MD5 hash for file: C:\HaccArcticFox\VitisProject\HaccPL_wrapper\export\HaccPL_wrapper\sw\HaccPL_wrapper\domain_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.894
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:09:44.896
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.337
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.344
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.344
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.347
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-11 18:10:11.348
+!MESSAGE Generating MD5 hash for file: C:\HaccArcticFox\VitisProject\HaccPL_wrapper\export\HaccPL_wrapper\sw\HaccPL_wrapper\domain_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.349
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:11.350
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:16.718
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-630
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:16.724
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-630
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.721
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.731
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.732
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.751
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.751
+!MESSAGE XSCT Command: [version -server], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.754
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.754
+!MESSAGE XSCT Command: [version], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.756
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.756
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.766
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.766
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.791
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.809
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.810
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.839
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.841
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.856
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.857
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.890
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.892
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.905
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.906
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.942
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.943
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.952
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.952
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.975
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.976
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.983
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:17.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.002
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.003
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3E3D6A" && level == 0}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.029
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3E3D6A" && level == 0}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.030
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.033
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.036
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.064
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.066
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.179
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:18.180
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.191
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.258
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.271
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.272
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.307
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.308
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.368
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:21.369
+!MESSAGE XSCT Command: [fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.600
+!MESSAGE XSCT command with result: [fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.661
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.685
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.686
+!MESSAGE XSCT Command: [loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.697
+!MESSAGE XSCT command with result: [loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, HaccPL_wrapper_2]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.698
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.700
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.700
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.712
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.713
+!MESSAGE XSCT Command: [source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.717
+!MESSAGE XSCT command with result: [source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:22.718
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.669
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.671
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.714
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.715
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.755
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:23.757
+!MESSAGE XSCT Command: [dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.270
+!MESSAGE XSCT command with result: [dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.271
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.326
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.435
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.466
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.468
+!MESSAGE XSCT Command: [con], Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:10:24.524
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-27: Launching Debugger_HaccPS-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.323
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.330
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.331
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.335
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-11 18:13:58.336
+!MESSAGE Generating MD5 hash for file: C:\HaccArcticFox\VitisProject\HaccPL_wrapper\export\HaccPL_wrapper\sw\HaccPL_wrapper\domain_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.337
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:13:58.339
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-27: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.098
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.112
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss ], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.113
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.119
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-04-11 18:17:36.120
+!MESSAGE Generating MD5 hash for file: C:\HaccArcticFox\VitisProject\HaccPL_wrapper\export\HaccPL_wrapper\sw\HaccPL_wrapper\domain_ps7_cortexa9_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.123
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:36.126
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/system.mss], Result: [null, ]. Thread: Worker-13: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:40.495
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-699
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:40.503
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-699
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.509
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.520
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.522
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.545
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.546
+!MESSAGE XSCT Command: [version -server], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.562
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.1]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.563
+!MESSAGE XSCT Command: [version], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.565
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.1
+SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.566
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.582
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.583
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.626
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.627
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.642
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.643
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.681
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.682
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.692
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.693
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.711
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.712
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.721
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.721
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.747
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.748
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.763
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.763
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.790
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.791
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.797
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.798
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.814
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.815
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3E3D6A" && level == 0}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.835
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351B3E3D6A" && level == 0}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.836
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.837
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.840
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.856
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.856
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.932
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:41.932
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:44.947
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.036
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.044
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351B3E3D6A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.045
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.063
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z010 (idcode 13722093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.065
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.113
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:45.114
+!MESSAGE XSCT Command: [fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.384
+!MESSAGE XSCT command with result: [fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.410
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.425
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.426
+!MESSAGE XSCT Command: [loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.437
+!MESSAGE XSCT command with result: [loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, HaccPL_wrapper_2]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.438
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.452
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.453
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.466
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.467
+!MESSAGE XSCT Command: [source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.471
+!MESSAGE XSCT command with result: [source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:46.472
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.713
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.714
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.748
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.750
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.772
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:47.774
+!MESSAGE XSCT Command: [dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.479
+!MESSAGE XSCT command with result: [dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.480
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.523
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.615
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.645
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.646
+!MESSAGE XSCT Command: [con], Thread: Worker-28: Launching Debugger_HaccPS-Default_1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-11 18:17:48.692
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-28: Launching Debugger_HaccPS-Default_1

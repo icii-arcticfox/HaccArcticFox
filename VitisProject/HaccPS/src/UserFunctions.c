@@ -18,7 +18,7 @@ void InitializeHistogram()
 	_histogram = (int*)malloc(size);
 	memset(_histogram, 0, size);
 
-	SetHistogramPointer(_histogram);
+	// SetHistogramPointer(_histogram);
 }
 
 //Function that handles interrupts from the PL that request new 
@@ -43,4 +43,26 @@ void ValueReadyInterruptHandler ()
 	//Clear all interrupts to enable the next radiation value to 
 	//be read when ready
 	valueProcessingFinished_write(1);
+}
+
+//Function that will set the resulting histogram to be read to the
+//PC once the test is finished. 
+int SendResult(int** result)
+{
+	//result is a pointer to a pointer, we need to 
+	//de-reference it and set to the _histogram. 
+	//You most likely not need to change this line. 
+	*result = _histogram;
+
+
+	//Once you switch to implementing the hardware 
+	//accelerated histogram, you will need to write 
+	//code here that reads the values from the 
+	//hardware accelerated histogram and stores them
+	//in the correct addresses of _histogram.
+
+
+	//Return the number of bytes to be written to the 
+	//PC. You also shouldn't have to change this line. 
+	return HISTOGRAM_SIZE * 4;
 }

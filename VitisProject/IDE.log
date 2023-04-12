@@ -357,3 +357,99 @@ con
 18:03:07 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
 18:03:16 INFO  : Build configuration of system project is automatically updated to 'Debug'.
 18:03:16 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+18:03:25 INFO  : Disconnected from the channel tcfchan#9.
+18:03:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3E3D6A' is selected.
+18:03:26 INFO  : 'jtag frequency' command is executed.
+18:03:26 INFO  : Context for 'APU' is selected.
+18:03:26 INFO  : System reset is completed.
+18:03:29 INFO  : 'after 3000' command is executed.
+18:03:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}' command is executed.
+18:03:31 INFO  : FPGA configured successfully with bitstream "C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit"
+18:03:31 INFO  : Context for 'APU' is selected.
+18:03:31 INFO  : Hardware design and registers information is loaded from 'C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa'.
+18:03:31 INFO  : 'configparams force-mem-access 1' command is executed.
+18:03:31 INFO  : Context for 'APU' is selected.
+18:03:31 INFO  : Sourcing of 'C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl' is done.
+18:03:32 INFO  : 'ps7_init' command is executed.
+18:03:32 INFO  : 'ps7_post_config' command is executed.
+18:03:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:33 INFO  : The application 'C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:03:33 INFO  : 'configparams force-mem-access 0' command is executed.
+18:03:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}
+fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:03:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:33 INFO  : 'con' command is executed.
+18:03:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:03:33 INFO  : Launch script is exported to file 'C:\HaccArcticFox\VitisProject\.sdk\launch_scripts\single_application_debug\debugger_haccps-default.tcl'
+18:09:44 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+18:10:11 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+18:10:16 INFO  : Disconnected from the channel tcfchan#10.
+18:10:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3E3D6A' is selected.
+18:10:18 INFO  : 'jtag frequency' command is executed.
+18:10:18 INFO  : Context for 'APU' is selected.
+18:10:18 INFO  : System reset is completed.
+18:10:21 INFO  : 'after 3000' command is executed.
+18:10:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}' command is executed.
+18:10:22 INFO  : FPGA configured successfully with bitstream "C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit"
+18:10:22 INFO  : Context for 'APU' is selected.
+18:10:22 INFO  : Hardware design and registers information is loaded from 'C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa'.
+18:10:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:10:22 INFO  : Context for 'APU' is selected.
+18:10:22 INFO  : Sourcing of 'C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl' is done.
+18:10:23 INFO  : 'ps7_init' command is executed.
+18:10:23 INFO  : 'ps7_post_config' command is executed.
+18:10:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:24 INFO  : The application 'C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:10:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:10:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3E3D6A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3E3D6A-13722093-0"}
+fpga -file C:/HaccArcticFox/VitisProject/HaccPS/_ide/bitstream/HaccPL_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/hw/HaccPL_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/HaccArcticFox/VitisProject/HaccPS/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/HaccArcticFox/VitisProject/HaccPS/Debug/HaccPS.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:10:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:24 INFO  : 'con' command is executed.
+18:10:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:10:24 INFO  : Launch script is exported to file 'C:\HaccArcticFox\VitisProject\.sdk\launch_scripts\single_application_debug\debugger_haccps-default.tcl'
+18:13:58 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...
+18:17:36 INFO  : Checking for BSP changes to sync application flags for project 'HaccPS'...

@@ -108,14 +108,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0.xci">
-          <Proxy FileSetName="HaccPL_RadiationReceiver_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0.xci">
           <Proxy FileSetName="HaccPL_processing_system7_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="HaccPL_rst_ps7_0_50M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_RadiationReceiver_0_0/HaccPL_RadiationReceiver_0_0.xci">
+          <Proxy FileSetName="HaccPL_RadiationReceiver_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/HaccPL/hdl/HaccPL_wrapper.v">
@@ -236,9 +236,7 @@
     </Run>
     <Run Id="HaccPL_RadiationReceiver_0_0_synth_1" Type="Ft3:Synth" SrcSet="HaccPL_RadiationReceiver_0_0" Part="xc7z010clg400-1" ConstrsSet="HaccPL_RadiationReceiver_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/HaccPL_RadiationReceiver_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -300,9 +298,7 @@
     </Run>
     <Run Id="HaccPL_RadiationReceiver_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="HaccPL_RadiationReceiver_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="HaccPL_RadiationReceiver_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

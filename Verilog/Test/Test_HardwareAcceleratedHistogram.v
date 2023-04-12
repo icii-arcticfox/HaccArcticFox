@@ -5,16 +5,16 @@ reg clk;
 reg reset;
 
 /*[TestModule --module HardwareAcceleratedHistogram]*/
-/*<>*/HardwareAcceleratedHistogram unitUnderTest_HardwareAcceleratedHistogram (
+/*<>*/ HardwareAcceleratedHistogram unitUnderTest_HardwareAcceleratedHistogram (
 /*<>*/
-/*<>*/);
+/*<>*/ );
 /*<>*/
 /*<>*/
-/*<>*/always #5 clk = !clk;
+/*<>*/ always #5 clk = !clk;
 /*<>*/
-/*<>*/initial begin
+/*<>*/ initial begin
 /*<>*/
-/*<>*/end
+/*<>*/ end
 
 task SendValue;
 

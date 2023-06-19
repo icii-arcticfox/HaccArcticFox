@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="HaccPS" location="C:/HaccArcticFox/VitisProject/HaccPS" platform="C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/HaccPL_wrapper.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="HaccPS_system" sysConfig="HaccPL_wrapper" runtime="cpp" cpu="domain_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4fe1979e21f27b20bc6b3515b5f1a223">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.356182885">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1030378527" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_echo_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,381 @@
+18:03:07 **** Incremental Build of configuration Release for project HaccPS ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/IciiAxiFunctions.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/IciiAxiFunctions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/IciiAxiFunctions.d" -MT"src/IciiAxiFunctions.o" -o "src/IciiAxiFunctions.o" "../src/IciiAxiFunctions.c"
+../src/IciiAxiFunctions.c: In function 'debugSource_read':
+../src/IciiAxiFunctions.c:8:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+    8 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 0;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'debugSource_read_0':
+../src/IciiAxiFunctions.c:14:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   14 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 0;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'debugSource_write':
+../src/IciiAxiFunctions.c:20:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   20 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 0;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'debugSource_write_0':
+../src/IciiAxiFunctions.c:26:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   26 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 0;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'startReceivingData_read':
+../src/IciiAxiFunctions.c:36:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   36 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 4;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'startReceivingData_read_0':
+../src/IciiAxiFunctions.c:42:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   42 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 4;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'startReceivingData_write':
+../src/IciiAxiFunctions.c:48:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   48 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 4;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'startReceivingData_write_0':
+../src/IciiAxiFunctions.c:54:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   54 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 4;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetLoadFloor_read':
+../src/IciiAxiFunctions.c:64:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   64 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 8;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetLoadFloor_read_0':
+../src/IciiAxiFunctions.c:70:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   70 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 8;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetLoadFloor_write':
+../src/IciiAxiFunctions.c:76:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   76 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 8;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetLoadFloor_write_0':
+../src/IciiAxiFunctions.c:82:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   82 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 8;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'clearRequestEthernetValues_write':
+../src/IciiAxiFunctions.c:92:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   92 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 12;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'clearRequestEthernetValues_write_0':
+../src/IciiAxiFunctions.c:98:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   98 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 12;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValue_read':
+../src/IciiAxiFunctions.c:108:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  108 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 16;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValue_read_0':
+../src/IciiAxiFunctions.c:114:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  114 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 16;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValue_write':
+../src/IciiAxiFunctions.c:120:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  120 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 16;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValue_write_0':
+../src/IciiAxiFunctions.c:126:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  126 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 16;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValuesReceived_read':
+../src/IciiAxiFunctions.c:136:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  136 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 20;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValuesReceived_read_0':
+../src/IciiAxiFunctions.c:142:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  142 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 20;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValuesReceived_write':
+../src/IciiAxiFunctions.c:148:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 20;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'ethernetValuesReceived_write_0':
+../src/IciiAxiFunctions.c:154:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  154 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 20;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read':
+../src/IciiAxiFunctions.c:164:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  164 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_read_0':
+../src/IciiAxiFunctions.c:170:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  170 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write':
+../src/IciiAxiFunctions.c:176:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  176 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValuesSent_write_0':
+../src/IciiAxiFunctions.c:182:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  182 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 24;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'countAmount_read':
+../src/IciiAxiFunctions.c:192:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  192 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'countAmount_read_0':
+../src/IciiAxiFunctions.c:198:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  198 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'countAmount_write':
+../src/IciiAxiFunctions.c:204:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  204 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'countAmount_write_0':
+../src/IciiAxiFunctions.c:210:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  210 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 28;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read':
+../src/IciiAxiFunctions.c:220:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  220 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_read_0':
+../src/IciiAxiFunctions.c:226:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  226 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write':
+../src/IciiAxiFunctions.c:232:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  232 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'nextValueDelaySaved_write_0':
+../src/IciiAxiFunctions.c:238:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  238 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 32;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write':
+../src/IciiAxiFunctions.c:248:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  248 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'valueProcessingFinished_write_0':
+../src/IciiAxiFunctions.c:254:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  254 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 36;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationTimer_read':
+../src/IciiAxiFunctions.c:264:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  264 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationTimer_read_0':
+../src/IciiAxiFunctions.c:270:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  270 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationTimer_write':
+../src/IciiAxiFunctions.c:276:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  276 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationTimer_write_0':
+../src/IciiAxiFunctions.c:282:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  282 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 40;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValue_read':
+../src/IciiAxiFunctions.c:292:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  292 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValue_read_0':
+../src/IciiAxiFunctions.c:298:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  298 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValue_write':
+../src/IciiAxiFunctions.c:304:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  304 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'radiationValue_write_0':
+../src/IciiAxiFunctions.c:310:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  310 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 44;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_read':
+../src/IciiAxiFunctions.c:320:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  320 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_read_0':
+../src/IciiAxiFunctions.c:326:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  326 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_write':
+../src/IciiAxiFunctions.c:332:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  332 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadAddress_write_0':
+../src/IciiAxiFunctions.c:338:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  338 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 48;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_read':
+../src/IciiAxiFunctions.c:348:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  348 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_read_0':
+../src/IciiAxiFunctions.c:354:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  354 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_write':
+../src/IciiAxiFunctions.c:360:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  360 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+../src/IciiAxiFunctions.c: In function 'histogramReadValue_write_0':
+../src/IciiAxiFunctions.c:366:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  366 |  address = XPAR_RADIATIONRECEIVER_0_BASEADDR + 52;
+      |          ^
+'Finished building: ../src/IciiAxiFunctions.c'
+' '
+'Building file: ../src/ReceiveValue.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ReceiveValue.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/ReceiveValue.d" -MT"src/ReceiveValue.o" -o "src/ReceiveValue.o" "../src/ReceiveValue.c"
+../src/ReceiveValue.c: In function 'SendDataToPL':
+../src/ReceiveValue.c:68:3: warning: implicit declaration of function 'IncrementGetIndex' [-Wimplicit-function-declaration]
+   68 |   IncrementGetIndex();
+      |   ^~~~~~~~~~~~~~~~~
+../src/ReceiveValue.c: At top level:
+../src/ReceiveValue.c:79:6: warning: conflicting types for 'IncrementGetIndex'
+   79 | void IncrementGetIndex()
+      |      ^~~~~~~~~~~~~~~~~
+../src/ReceiveValue.c:68:3: note: previous implicit declaration of 'IncrementGetIndex' was here
+   68 |   IncrementGetIndex();
+      |   ^~~~~~~~~~~~~~~~~
+../src/ReceiveValue.c: In function 'RequestData':
+../src/ReceiveValue.c:91:3: warning: implicit declaration of function 'tcp_write'; did you mean 'pwrite'? [-Wimplicit-function-declaration]
+   91 |   tcp_write(receiveValueTpcb, requestLetter, 1, 1);
+      |   ^~~~~~~~~
+      |   pwrite
+../src/ReceiveValue.c: In function 'ProcessPacket':
+../src/ReceiveValue.c:108:8: warning: unused variable 'byte' [-Wunused-variable]
+  108 |   u8_t byte = *byteAddress;
+      |        ^~~~
+../src/ReceiveValue.c:111:11: warning: assignment to 'int *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  111 |  position = payload;
+      |           ^
+../src/ReceiveValue.c:115:25: warning: initialization of 'u8_t *' {aka 'unsigned char *'} from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+  115 |   u8_t* backupPointer = position;
+      |                         ^~~~~~~~
+../src/ReceiveValue.c:117:12: warning: assignment to 'int *' from incompatible pointer type 'u8_t *' {aka 'unsigned char *'} [-Wincompatible-pointer-types]
+  117 |   position = backupPointer;
+      |            ^
+../src/ReceiveValue.c:128:25: warning: initialization of 'u8_t *' {aka 'unsigned char *'} from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+  128 |     u8_t* bytePointer = &positionValue;
+      |                         ^
+../src/ReceiveValue.c:139:8: warning: unused variable 'val2' [-Wunused-variable]
+  139 |    int val2 = (positionValue >> 24) & 0xff;
+      |        ^~~~
+../src/ReceiveValue.c:138:8: warning: unused variable 'val1' [-Wunused-variable]
+  138 |    int val1 = (positionValue >> 16) & 0xff;
+      |        ^~~~
+../src/ReceiveValue.c:172:24: warning: initialization of 'u8_t *' {aka 'unsigned char *'} from incompatible pointer type 'int *' [-Wincompatible-pointer-types]
+  172 |    u8_t* bytePointer = position;
+      |                        ^~~~~~~~
+../src/ReceiveValue.c:100:6: warning: unused variable 'previousValue' [-Wunused-variable]
+  100 |  int previousValue = 0;
+      |      ^~~~~~~~~~~~~
+../src/ReceiveValue.c:98:8: warning: unused variable 'current' [-Wunused-variable]
+   98 |  char* current = payload;
+      |        ^~~~~~~
+../src/ReceiveValue.c:97:7: warning: unused variable 'address' [-Wunused-variable]
+   97 |  int* address;
+      |       ^~~~~~~
+'Finished building: ../src/ReceiveValue.c'
+' '
+'Building file: ../src/UserFunctions.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/UserFunctions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/UserFunctions.d" -MT"src/UserFunctions.o" -o "src/UserFunctions.o" "../src/UserFunctions.c"
+In file included from ../src/UserFunctions.c:2:
+C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:98:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+   98 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:99:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+   99 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+'Finished building: ../src/UserFunctions.c'
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'recv_callback':
+../src/echo.c:72:2: warning: implicit declaration of function 'SetReceiveValueTpcb' [-Wimplicit-function-declaration]
+   72 |  SetReceiveValueTpcb((void*)tpcb);
+      |  ^~~~~~~~~~~~~~~~~~~
+../src/echo.c:95:23: warning: implicit declaration of function 'SendResult' [-Wimplicit-function-declaration]
+   95 |    int resultLength = SendResult(&histogramResult);
+      |                       ^~~~~~~~~~
+../src/echo.c:102:4: warning: implicit declaration of function 'startReceivingData_write' [-Wimplicit-function-declaration]
+  102 |    startReceivingData_write(1);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/echo.c:107:26: warning: implicit declaration of function 'ProcessPacket' [-Wimplicit-function-declaration]
+  107 |    int valuesExtracted = ProcessPacket(p->payload, packetLength);
+      |                          ^~~~~~~~~~~~~
+../src/echo.c: In function 'start_application':
+../src/echo.c:149:2: warning: implicit declaration of function 'InitializeDataReception' [-Wimplicit-function-declaration]
+  149 |  InitializeDataReception();
+      |  ^~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.Backup.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.Backup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.Backup.d" -MT"src/main.Backup.o" -o "src/main.Backup.o" "../src/main.Backup.c"
+'Finished building: ../src/main.Backup.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:32:
+C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:98:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+   98 | #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+      |  ^~~~~~~
+C:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include/xbasic_types.h:99:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+   99 | #warning  Please refer the Standalone BSP UG647 for further details
+      |  ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:331:7: warning: extra tokens at end of #endif directive [-Wendif-labels]
+  331 | #endif``
+      |       ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: HaccPS.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/HaccArcticFox/VitisProject/HaccPL_wrapper/export/HaccPL_wrapper/sw/HaccPL_wrapper/domain_ps7_cortexa9_0/bsplib/lib -o "HaccPS.elf"  ./src/IciiAxiFunctions.o ./src/ReceiveValue.o ./src/UserFunctions.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.Backup.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Command canceled
+
+18:03:13 Build Cancelled (took 6s.543ms)
+

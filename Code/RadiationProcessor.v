@@ -122,11 +122,6 @@ end
 /*[SetExternalOrUseHardwareAcceleration]*/
 
 
-//Detect the rising edge of $radiationValue.read.
-/*[RisingEdge $radiationValue.read]*/
-wire risingRadiationValueRead;
-
-
 assign radiationValue = /*[$radiationMemory.dataOutB]*/[15:0];
 
 //Traditionatl non-block automation use!

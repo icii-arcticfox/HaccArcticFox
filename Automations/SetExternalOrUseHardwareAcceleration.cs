@@ -23,7 +23,10 @@ reg valueReady;";
 /*[External]*/
 wire [31:0] radiationValue;
 /*[Interrupt]*/
-reg valueReady;";
+reg valueReady;
+/*[RisingEdge $radiationValue.read]*/
+wire risingRadiationValueRead;
+";
 		}
 
 	}

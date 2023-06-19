@@ -29,14 +29,9 @@ initial begin
 //Send 10000 radiation values. Watch the signals within your waveform, especially memory signals, to get a feel for whether or not your histogram module is creating the histogram correctly. The first pass is to see if things seem to be working or if there is clearly something big that is not working or is misaligned. 
 
 
-//Think about, need to decide how to handle correctly / efficiently
-//Desire is to cycle through address and read out all histogram values 
-/*
-for(i = 0; i < 1024; i = i + 1) begin
-    histogramReadAddress = i;
-    #50;
-end
-*/
+//You will use this in Step 5
+/*[TestHistogram]*/
+
 
 //Wait a bit, then finish the simulation
 

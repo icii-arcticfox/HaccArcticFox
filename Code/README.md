@@ -1,8 +1,6 @@
-# Code Folder
+# Verilog Folder
 <p align="center">
-    <img src="https://icii.io/wp-content/uploads/2023/03/Arctic-Fox.C-1.svg" alt="Arctic Fox Logo" style="width:300px;"/>
+    <img src="https://icii.io/wp-content/uploads/2023/03/Arctic-Fox.Verilog.svg" alt="Arctic Fox Logo" style="width:300px;"/>
 </p>
 
-This folder is used for non-Verilog, non-Automation code. Driver code for Axi protocols is generated here. Additionally, code/scripts for sending commands, programming, testing, etc. gets placed here.
-
-If you think this name is ambiguous, we agree. Please recommend a better name for this folder!
+This folder is used for Verilog source code. Please place all Verilog code to be analyzed by Arctic Fox in this folder. For Arctic Fox Cloud, any Verilog code not contained in this folder will be excluded from Arctic Fox processing.

@@ -7,6 +7,18 @@ reg reset;
 
 //Instantiate the module to be tested here. We recommend that you use the TestModule automation. 
 
+
+// These will be used in Step 5
+reg [31:0] generatedHistogram [0:1023];
+reg [31:0] detectedHistogram [0:1023];
+initial begin
+    for(i = 0; i < 1024; i = i + 1) begin
+        generatedHistogram[i] = 0;
+        detectedHistogram[i] = 0;
+    end
+end
+
+
 task SendValue;
     begin
         radiationValue = $random;
@@ -15,6 +27,8 @@ task SendValue;
         #50;
         valueReady = 0;
         #20;
+        
+        generatedHistogram[radiationValue] = generatedHistogram[radiationValue] + 1;
     end
 endtask
 

@@ -39,11 +39,6 @@ int ethernetValuesReceived_read_0();
 void ethernetValuesReceived_write(int value);
 void ethernetValuesReceived_write_0(int value);
 
-int radiationValue_read();
-int radiationValue_read_0();
-void radiationValue_write(int value);
-void radiationValue_write_0(int value);
-
 int radiationValuesSent_read();
 int radiationValuesSent_read_0();
 void radiationValuesSent_write(int value);
@@ -66,5 +61,10 @@ int radiationTimer_read();
 int radiationTimer_read_0();
 void radiationTimer_write(int value);
 void radiationTimer_write_0(int value);
+
+int radiationValue_read();
+int radiationValue_read_0();
+void radiationValue_write(int value);
+void radiationValue_write_0(int value);
 
 #endif

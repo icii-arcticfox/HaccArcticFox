@@ -60,6 +60,11 @@ int SendResult(int** result)
 	//code here that reads the values from the 
 	//hardware accelerated histogram and stores them
 	//in the correct addresses of _histogram.
+	for(int i = 0; i < 1024; i++)
+	{
+		histogramReadAddress_write(i);
+		_histogram[i] = histogramReadValue_read();
+	}
 
 
 	//Return the number of bytes to be written to the 

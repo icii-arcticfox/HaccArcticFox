@@ -63,8 +63,10 @@ end
 #1000;
 histogramMatch = 1;
 for(i = 0; i < 1024; i = i + 1) begin
-    if(generatedHistogram[i] !== detectedHistogram[i])
+    if(generatedHistogram[i] !== detectedHistogram[i]) begin
         $display(""Histogram mismatch at addres: %d, generated value: %d, detected value: %d"", i, generatedHistogram[i], detectedHistogram[i]);
+        histogramMatch = 0;
+    end
 end
 
 if(histogramMatch === 1)

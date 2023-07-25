@@ -14,7 +14,7 @@ public class TestHistogram : VerilogAutomation
 		string histogramAddressTag = "histogramAddress";
 		string histogramValueTag = "histogramValue";
 
-		foreach(AutomationBase automation in hardwareAcceleratedHistogram.Automations)
+		foreach(Automation automation in hardwareAcceleratedHistogram.Automations)
 		{
 			if(
 				automation.Items.Contains(histogramAddressTag) 
@@ -38,7 +38,9 @@ public class TestHistogram : VerilogAutomation
 
 		else
 		{
-		CodeAfterAutomation += $@"
+			Module.AddToStart(this, "reg histogramMatch;");
+
+			CodeAfterAutomation += $@"
 for(i = 0; i < 1024; i = i + 1) begin
     {_externalHistogramAddress.Name}_WriteValue = i;
 
@@ -61,11 +63,11 @@ end
 #1000;
 histogramMatch = 1;
 for(i = 0; i < 1024; i = i + 1) begin
-    if(generatedHistogram[i] != detectedHistogram[i])
+    if(generatedHistogram[i] !== detectedHistogram[i])
         $display(""Histogram mismatch at addres: %d, generated value: %d, detected value: %d"", i, generatedHistogram[i], detectedHistogram[i]);
 end
 
-if(histogramMatch == 1)
+if(histogramMatch === 1)
     $display(""Detected histogram correctly!"");
 else
     $display(""ERROR! Histogram NOT detected correctly!"");

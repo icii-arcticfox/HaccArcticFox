@@ -11,9 +11,9 @@ public class IfValueReadySetTo0 : IfAutomation
 	// 	Values.Get($"@{Module.ModuleName}.radiationValue.read.rising")
     // };
 	
-    protected override Dependencies Dependencies => GetDependencies();
+    protected override Dependencies Dependencies => GetMyDependencies();
 
-	private Dependencies GetDependencies()
+	private Dependencies GetMyDependencies()
 	{
 		StringRequest useHardwareAcceleration = Values.Get("UseHardwareAcceleration");
 		useHardwareAcceleration.WhenSet(value => 

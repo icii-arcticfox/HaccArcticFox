@@ -24,7 +24,7 @@
     <Option Name="SimulatorInstallDirVCS" Val=""/>
     <Option Name="SimulatorInstallDirRiviera" Val=""/>
     <Option Name="SimulatorInstallDirActiveHdl" Val=""/>
-    <Option Name="BoardPart" Val=""/>
+    <Option Name="BoardPart" Val="digilentinc.com:zybo-z7-10:part0:1.1"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -94,11 +94,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0.xci">
-          <Proxy FileSetName="HaccPL_rst_ps7_0_50M_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_processing_system7_0_0/HaccPL_processing_system7_0_0.xci">
           <Proxy FileSetName="HaccPL_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="HaccPL.bd" FileRelPathName="ip/HaccPL_rst_ps7_0_50M_0/HaccPL_rst_ps7_0_50M_0.xci">
+          <Proxy FileSetName="HaccPL_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/HaccPL/hdl/HaccPL_wrapper.v">
@@ -283,7 +283,9 @@
       <RQSFiles/>
     </Run>
   </Runs>
-  <Board/>
+  <Board>
+    <Jumpers/>
+  </Board>
   <DashboardSummary Version="1" Minor="0">
     <Dashboards>
       <Dashboard Name="default_dashboard">
